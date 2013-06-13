@@ -13,7 +13,8 @@
  */
 
 html, body {
-  font-family: schoolbook-web, Georgia, "Times New Roman", Times , Serif;
+  font-family: Georgia, "Times New Roman", Times , Serif;
+  font-size: 16px;
   color: #222;
   background-color: #efeeeb;
   margin: 0;
@@ -87,7 +88,7 @@ header > div {
 }
 
 #madeinBadge h1 {
-  margin-top: -2em;
+  margin-top: -1.8em;
   background: url(assets/madeinStamford.png) no-repeat;
   width: 180px;
   height: 180px;
@@ -101,19 +102,22 @@ header > div {
 }
 
 #nav ul {
-  margin: .5em 0;
+  padding: 0;
+  margin: 0;
   font-family: "futura-pt";
-  padding: .5em 0;
   border-top: 2px solid #333;
 }
 
 #nav li {
-  display: inline;
+  display: inline-block;
   list-style-type: none;
-  margin-right: 1em;
 }
 
 #nav a:link, #nav a:visited {
+  padding: .5em .5em .5em 0;
+  margin-right: .5em;
+  border-right: 2px solid #333;
+  display: block;
   letter-spacing: .3em;
   font-weight: bold;
   text-decoration: none;
@@ -310,6 +314,12 @@ span.field-label { /* The inline field label used by the Fences module */
  */
 
 #footer {
+}
+
+footer > div {
+  border-top: 3px solid #333;
+  border-bottom: 6px solid #333;
+  margin-bottom: 2em;
 }
 
 /*
