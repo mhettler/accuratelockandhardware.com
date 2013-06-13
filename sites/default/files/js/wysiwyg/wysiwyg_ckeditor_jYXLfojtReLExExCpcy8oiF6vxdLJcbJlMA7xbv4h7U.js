@@ -1,0 +1,1 @@
+window.CKEDITOR_BASEPATH = '/accuratelockandhardware.com/sites/all/libraries/ckeditor/';
