@@ -76,9 +76,11 @@
   <div class="contentWidth">
 	
 	<div class="logo">
-		<h1>Accurate</h1>
-		<h2>Locks &amp; Hardware</h2>
-    </div>
+		<h1>Accurate Lock &amp; Hardware</h1>
+  </div>
+	<div id="madeinBadge">
+	  <h1>Made in Stamford, Connecticut, U.S.A​.</h1>
+	</div>
 	
     <?php if ($logo): ?>
     <div class="headerBadge">
@@ -118,39 +120,40 @@
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
+    
+    <div id="nav">
+    
+          <?php if ($main_menu): ?>
+            <nav id="main-menu" class="contentWidth" role="navigation">
+              <?php
+              // This code snippet is hard to modify. We recommend turning off the
+              // "Main menu" on your sub-theme's settings form, deleting this PHP
+              // code block, and, instead, using the "Menu block" module.
+              // @see http://drupal.org/project/menu_block
+              print theme('links__system_main_menu', array(
+                'links' => $main_menu,
+                'attributes' => array(
+                  'class' => array('links', 'inline', 'clearfix'),
+                ),
+                'heading' => array(
+                  'text' => t('Main menu'),
+                  'level' => 'h2',
+                  'class' => array('element-invisible'),
+                ),
+              )); ?>
+            </nav>
+          <?php endif; ?>
+    
+          <?php print render($page['navigation']); ?>
+    
+        </div><!-- /#navigation -->
+    
   
   </div>
   </header>
 
   <div id="main">
   
-    <div id="nav">
-
-      <?php if ($main_menu): ?>
-        <nav id="main-menu" class="contentWidth" role="navigation">
-          <?php
-          // This code snippet is hard to modify. We recommend turning off the
-          // "Main menu" on your sub-theme's settings form, deleting this PHP
-          // code block, and, instead, using the "Menu block" module.
-          // @see http://drupal.org/project/menu_block
-          print theme('links__system_main_menu', array(
-            'links' => $main_menu,
-            'attributes' => array(
-              'class' => array('links', 'inline', 'clearfix'),
-            ),
-            'heading' => array(
-              'text' => t('Main menu'),
-              'level' => 'h2',
-              'class' => array('element-invisible'),
-            ),
-          )); ?>
-        </nav>
-      <?php endif; ?>
-
-      <?php print render($page['navigation']); ?>
-
-    </div><!-- /#navigation -->
-
     <div id="content" class="column contentWidth" role="main">
     <div>
       <?php print render($page['highlighted']); ?>

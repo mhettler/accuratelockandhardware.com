@@ -12,7 +12,7 @@
 ; page at admin/appearance.
 
 screenshot  = screenshot.png
-name        = Accurate Locks Theme
+name        = Accurate Lock & Hardware Theme
 description = Custom Drupal theme for Accurate Locks and Hardware by Matthew Hettler and Mathew Suen. 2013.
 
 
@@ -50,7 +50,7 @@ stylesheets[all][] = system.menus.css
 ; Then we add our own stylesheets.
 stylesheets[all][] = css/normalize.css
 stylesheets[all][] = css/wireframes.css
-stylesheets[all][] = css/layouts/responsive-sidebars.css
+; stylesheets[all][] = css/layouts/responsive-sidebars.css
 stylesheets[all][] = css/page-backgrounds.css
 stylesheets[all][] = css/tabs.css
 stylesheets[all][] = css/pages.css

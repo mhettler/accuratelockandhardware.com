@@ -97,6 +97,11 @@
     <script src="<?php print $base_path . $path_to_zen; ?>/js/html5.js"></script>
     <![endif]-->
   <?php endif; ?>
+  
+  <!-- Include Typekit -->
+  <script type="text/javascript" src="//use.typekit.net/pbf7mzx.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <?php if ($skip_link_text && $skip_link_anchor): ?>
