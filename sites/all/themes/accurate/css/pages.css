@@ -233,6 +233,10 @@ h1 {
 #content {
 }
 
+#content article {
+	width: 65%;
+}
+
 .region-highlighted {
 }
 
