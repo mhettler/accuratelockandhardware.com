@@ -73,7 +73,7 @@ header > div {
 }
 
 #header h1, #header h2 {
-  font-family: "alternate-gothic-no-1-d";
+  font-family: "alternate-gothic-no-1-d", Impact;
   font-weight: normal;
   margin: 0;
   padding: 0;
@@ -104,7 +104,7 @@ header > div {
 #nav ul {
   padding: 0;
   margin: 0;
-  font-family: "futura-pt";
+  font-family: "futura-pt", "Century Gothic", Helvetica, Arial, sans-serif;
   border-top: 2px solid #333;
 }
 
@@ -139,10 +139,54 @@ header > div {
   vertical-align: bottom;
 }
 
-#name-and-slogan { /* Wrapper for website name and slogan */
+/* @group Product Filters */
+
+.productFilterBar {
+  font-family: "futura-pt", "Century Gothic", Helvetica, Arial, sans-serif;
+  letter-spacing: .3em;
+  font-weight: bold;
+  padding: .5em 0;
+  border-bottom: 3px solid #333;
+}
+
+.views-exposed-widget > * {
+  display: inline-block;
+}
+
+.views-exposed-widget {
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
+  padding: .5em 1em !important;
+}
+
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 0em !important;
+}
+
+/* @end */
+
+/* @group Filtered Product List */
+
+.view-content {
+  
+}
+
+.view-content .productItem {
+  overflow: auto;
+  border-bottom: 3px solid #333;
+  padding-bottom: .5em;
+  margin-bottom: .5em;
+}
+
+.view-content .productItem img {
+  margin-right: .5em;
   float: left;
 }
 
+/* @end */
+#name-and-slogan { /* Wrapper for website name and slogan */
+  float: left;
+}
 #site-name { /* The name of the website */
   margin: 0;
   font-size: 2em;
