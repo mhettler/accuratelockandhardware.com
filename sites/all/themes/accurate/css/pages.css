@@ -76,7 +76,7 @@ header > div {
   font-family: "adrianna-extended";
   text-transform: uppercase;
   padding-bottom: 1em;
-  border-bottom: 6px solid #333;
+  border-bottom: 3px solid #333;
   overflow: auto;
   font-size: .8em;
   font-weight: bold;
