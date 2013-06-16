@@ -74,9 +74,17 @@
 
   <header id="header" role="banner">
   <div class="contentWidth">
-	
+  
+  <div id="masthead">
+    <p>Proprietors:<br />Ron &amp; Rodd Salvatore</p>
+    <p>1 Annie Place<br />Stamford, Conn. U.S.A. 06902</p>
+<!--    <p>Designed &amp; manufactured in<br />Stamford, Conn. U.S.A.</p>-->
+    <p>Telephone: 203.348.8865<br />Facsimile: 203.348.5234</p>
+  </div>
 	<div class="logo">
+	  <img src="<?php print path_to_theme(); ?>/css/assets/banner.png" alt="The Accurate Lock & Hardware Company" />
 		<h1>Accurate Lock &amp; Hardware</h1>
+		<h2>Designed &amp; manufactured in Stamford, Conn. U.S.A.</h2>
   </div>
 	<div id="madeinBadge">
 	  <h1>Made in Stamford, Connecticut, U.S.A​.</h1>
