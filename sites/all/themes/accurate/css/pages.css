@@ -79,7 +79,7 @@ header > div {
   border-bottom: 3px solid #333;
   overflow: auto;
   font-size: .8em;
-  font-weight: bold;
+/*  font-weight: bold;*/
 }
 
 #masthead p {
