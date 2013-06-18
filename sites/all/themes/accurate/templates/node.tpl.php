@@ -96,7 +96,12 @@
       <?php if ($display_submitted): ?>
         <p class="submitted">
           <?php print $user_picture; ?>
-          <?php print $submitted; ?>
+          <?php //print $submitted; ?>
+          <?php
+          	if ($submitted) { 
+         		echo date( "F j, Y",$node->created);  
+   			}
+   		  ?>
         </p>
       <?php endif; ?>
 
