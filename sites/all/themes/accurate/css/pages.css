@@ -66,8 +66,17 @@ body {
  
 
 header {
+<<<<<<< HEAD
+  font-family: "liquor-store", "Century Gothic", Helvetica, Arial, sans-serif;
+  margin: 2em 0 0 0;
+=======
   font-family: "proxima-nova", "Century Gothic", Helvetica, Arial, sans-serif;
+<<<<<<< HEAD
 /*  margin: 1em 0 2em 0;*/
+=======
+  margin: 1em 0 2em 0;
+>>>>>>> a73567a6119559b1f970637f31ddb9aadab4eafc
+>>>>>>> e2d3929aea66a9db63ff6b2439f9638b76a0ee87
   text-transform: uppercase;
   padding: 1em 0 0 0;
 /*  color: #efebe3;*/
