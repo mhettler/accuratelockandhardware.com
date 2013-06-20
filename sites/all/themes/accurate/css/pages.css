@@ -20,7 +20,12 @@ html, body {
   font: 16px Georgia, "Times New Roman", Times , Serif;
 }
 
+body {
+  border-top: 10px solid #2c6bc6;
+}
+
 #page {
+  border-top: 10px solid #bc3f3f;
   padding: 0;
   margin: 0;
 }
@@ -32,7 +37,7 @@ html, body {
 
 #skip-link {
   margin: 0;
-
+  padding: 0;
 }
 #skip-link a,
 #skip-link a:visited {
@@ -62,7 +67,7 @@ html, body {
 
 header {
   font-family: "proxima-nova", "Century Gothic", Helvetica, Arial, sans-serif;
-  margin: 1em 0 2em 0;
+/*  margin: 1em 0 2em 0;*/
   text-transform: uppercase;
   padding: 1em 0 0 0;
 /*  color: #efebe3;*/
@@ -76,7 +81,6 @@ header > div {
   font-family: "adrianna-extended";
   text-transform: uppercase;
   border-top: 2px solid #333;
-  border-bottom: 2px solid #333;
   overflow: auto;
   font-size: .8em;
 /*  font-weight: bold;*/
@@ -92,17 +96,42 @@ header > div {
 
 #masthead p {
   margin: 0;
-  padding: 1em;
-  border-right: 2px solid #333;
+  padding: 8px;
+  border-right: 1px solid #333;
 }
+
+/* @group Social Icons */
 
 #masthead .socialIcons {
   font-family: 'sharetfpg' !important;
   text-align: center;
   font-variant: normal;
   text-transform: none;
-  font-size: 1.35em;
+  font-size: 1.4em;
 }
+
+ul.socialIcons {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.socialIcons li {
+  float: left;
+  width: 20%;
+}
+
+ul.socialIcons li a {
+  border-right: 1px solid #333;
+  padding: 12px;
+  display: block;
+}
+
+ul.socialIcons li a:hover, ul.socialIcons li a:hover {
+  padding-top: 10px !important;
+}
+
+/* @end */
 
 #masthead > div:last-child p {
   border: none;
@@ -122,20 +151,21 @@ header > div {
 }
 
 #header h1 {
-  font: bold 2.2em/1em "proxima-nova";
-  margin: .25em 0;
+  font: normal 2.2em/1em "proxima-nova-soft";
+  margin: .25em auto 0 auto;
   color: #222;
   text-transform: uppercase;
   text-align: center;
 /*  letter-spacing: -.05em;*/
 /*  text-shadow: -2px 2px 0 #efeeeb, -6px 6px 0 #c5beb3;*/
   
-/*  overflow: hidden;
+  overflow: hidden;
   text-indent: -9999em;
-  background-image: url(assets/banner.png);
-  width: 900px;
+  width: 800px;
   height: 50px;
-  display: block;*/
+  display: block;
+  background: url(assets/logotype.png) no-repeat center;
+  background-size: 75%;
 }
 
 #header h2 {
@@ -184,8 +214,8 @@ header > div {
   text-align: center;
 }
 
-#nav a:link, #nav a:visited {
-border-right: 3px solid #333;
+header a:link, header a:visited {
+border-right: 1px solid #333;
   padding: 8px 0;
 /*  padding: 8px 6px 8px 8px;*/
   display: block;
@@ -201,9 +231,9 @@ border-right: 3px solid #333;
   border-right: 0;
 }
 
-#nav a:hover, #nav a:active {
-  padding-top: 5px;
-  border-top: 3px solid #2c6bc6;
+header a:hover, header a:active {
+  padding-top: 6px !important;
+  border-top: 2px solid #2c6bc6;
   color: #bc3f3f;
 }
 
@@ -224,7 +254,7 @@ border-right: 3px solid #333;
 /*  letter-spacing: .3em;*/
   font-weight: bold;
   padding: .5em 0;
-  border-bottom: 3px solid #333;
+  border-bottom: 2px solid #333;
 }
 
 .views-exposed-widget > * {
@@ -342,8 +372,8 @@ article .rightCol {
   display: block;
   float: right !important;
   width: 40.2%;
-  border-left: 2px solid #333;
-  border-bottom: 2px solid #333;
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
 }
 
 .region-highlighted {

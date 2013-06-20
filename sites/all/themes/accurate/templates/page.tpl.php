@@ -84,13 +84,14 @@
 	</div>
   <div id="masthead">
     <div>
-<!--      <p>
-    	  <a href="#"><i class="kicon-share-facebook"></i></a>
-    	  <a href="#"><i class="kicon-share-twitter"></i></a>
-    	  <a href="#"><i class="kicon-share-pinterest"></i></a>
-    	  <a href="#"><i class="kicon-share-gplus"></i></a>
-  	  </p>-->
-  	  <p class="socialIcons">+ 1 T f ⊞</p>
+<!--  	  <p class="socialIcons">+ 1 T f ⊞</p>-->
+  	  <ul class="socialIcons">
+  	    <li><a href="#">+</a></li>
+  	    <li><a href="#">T</a></li>
+  	    <li><a href="#">f</a></li>
+  	    <li><a href="#">1</a></li>
+  	    <li><a href="#">⊞</a></li>
+  	  </ul>
     </div>
     <div class="midCol">
       <p>1 Annie Place<br />Stamford, Conn. U.S.A. 06902</p>
