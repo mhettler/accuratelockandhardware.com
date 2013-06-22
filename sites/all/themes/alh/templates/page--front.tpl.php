@@ -74,34 +74,22 @@
 
   <header id="header" role="banner">
   <div class="contentWidth">
+  
+  <div id="masthead">
+    <p>Proprietors:<br />Ron &amp; Rodd Salvatore</p>
+    <p>1 Annie Place<br />Stamford, Conn. U.S.A. 06902</p>
+<!--    <p>Designed &amp; manufactured in<br />Stamford, Conn. U.S.A.</p>-->
+    <p>Telephone: 203.348.8865<br />Facsimile: 203.348.5234</p>
+  </div>
 	<div class="logo">
-	  <!--<img src="<?php print path_to_theme(); ?>/css/assets/banner.png" alt="The Accurate Lock & Hardware Company" />-->
+	  <img src="<?php print path_to_theme(); ?>/css/assets/banner.png" alt="The Accurate Lock & Hardware Company" />
 		<h1>Accurate Lock &amp; Hardware</h1>
 		<h2>Designed &amp; manufactured in Stamford, Conn. U.S.A.</h2>
   </div>
 	<div id="madeinBadge">
 	  <h1>Made in Stamford, Connecticut, U.S.A​.</h1>
 	</div>
-  <div id="masthead">
-    <div>
-<!--  	  <p class="socialIcons">+ 1 T f ⊞</p>-->
-  	  <ul class="socialIcons">
-  	    <li><a href="#">+</a></li>
-  	    <li><a href="#">T</a></li>
-  	    <li><a href="#">f</a></li>
-<!--  	    <li><a href="#">1</a></li>-->
-  	    <li><a href="#">⊞</a></li>
-  	  </ul>
-    </div>
-    <div class="midCol">
-      <p>1 Annie Place<br />Stamford, Conn. U.S.A. 06902</p>
-    </div>
-    <div>
-  <!--    <p>Designed &amp; manufactured in<br />Stamford, Conn. U.S.A.</p>-->
-      <p>Telephone: 203.348.8865<br />Facsimile: 203.348.5234</p>
-    </div>
-  </div>
-
+	
     <?php if ($logo): ?>
     <div class="headerBadge">
       <!--<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>-->
@@ -179,11 +167,11 @@
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
-<!--      <?php print render($title_prefix); ?>
+      <?php print render($title_prefix); ?>
       <?php if ($title): ?>
         <h1 class="title" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
-      <?php print render($title_suffix); ?>-->
+      <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php print render($tabs); ?>
       <?php print render($page['help']); ?>
