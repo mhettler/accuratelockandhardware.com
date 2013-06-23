@@ -74,42 +74,28 @@
 
   <header id="header" role="banner">
   <div class="contentWidth">
-	<div class="logo">
-	  <!--<img src="<?php print path_to_theme(); ?>/css/assets/banner.png" alt="The Accurate Lock & Hardware Company" />-->
-		<h1>Accurate Lock &amp; Hardware</h1>
-		<h2>Designed &amp; manufactured in Stamford, Conn. U.S.A.</h2>
-  </div>
-	<div id="madeinBadge">
-	  <h1>Made in Stamford, Connecticut, U.S.A​.</h1>
-	</div>
-  <div id="masthead">
-    <div>
-<!--  	  <p class="socialIcons">+ 1 T f ⊞</p>-->
-  	  <ul class="socialIcons">
-  	    <li><a href="#">+</a></li>
-  	    <li><a href="#">T</a></li>
-  	    <li><a href="#">f</a></li>
-<!--  	    <li><a href="#">1</a></li>-->
-  	    <li><a href="#">⊞</a></li>
-  	  </ul>
+  <div id="headerBar">
+  	<div class="logo logoCol">
+  		<h1 id="logo">AL&H</h1>
     </div>
-    <div class="midCol">
-      <p>1 Annie Place<br />Stamford, Conn. U.S.A. 06902</p>
+    <div class="logotype logoCol">
+      <h1>The<br />Accurate<br />Lock &amp; Hardware<br />Company</h1>
     </div>
-    <div>
-  <!--    <p>Designed &amp; manufactured in<br />Stamford, Conn. U.S.A.</p>-->
-      <p>Telephone: 203.348.8865<br />Facsimile: 203.348.5234</p>
+    
+    <div id="masthead">
+      <div class="madein mastCol">
+        <h2>Designed &amp;<br />manufactured in<br />Stamford, Conn. U.S.A.</h2>
+      </div>
+      <div class="mastCol">
+        <p>1 Annie Place<br />Stamford, Conn.<br />U.S.A. 06902</p>
+      </div>
+      <div class="mastCol">
+        <p>T: 203.348.8865<br />F: 203.348.5234<br />E: info@accuratelh.com</p>
+      </div>
     </div>
   </div>
 
-    <?php if ($logo): ?>
-    <div class="headerBadge">
-      <!--<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>-->
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">Made in Stamford, Conn. USA​</a>
-    </div>
-    <?php endif; ?>
-
-    <?php if ($site_name || $site_slogan): ?>
+<!--    <?php if ($site_name || $site_slogan): ?>
       <hgroup id="name-and-slogan">
         <?php if ($site_name): ?>
           <h1 id="site-name">
@@ -120,7 +106,7 @@
         <?php if ($site_slogan): ?>
           <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
         <?php endif; ?>
-      </hgroup><!-- /#name-and-slogan -->
+      </hgroup><!-- /#name-and-slogan --*>
     <?php endif; ?>
 
     <?php if ($secondary_menu): ?>
@@ -139,35 +125,31 @@
       </nav>
     <?php endif; ?>
 
-    <?php print render($page['header']); ?>
-    
-    <div id="nav">
-    
-          <?php if ($main_menu): ?>
-            <nav id="main-menu" class="contentWidth" role="navigation">
-              <?php
-              // This code snippet is hard to modify. We recommend turning off the
-              // "Main menu" on your sub-theme's settings form, deleting this PHP
-              // code block, and, instead, using the "Menu block" module.
-              // @see http://drupal.org/project/menu_block
-              print theme('links__system_main_menu', array(
-                'links' => $main_menu,
-                'attributes' => array(
-                  'class' => array('links', 'inline', 'clearfix'),
-                ),
-                'heading' => array(
-                  'text' => t('Main menu'),
-                  'level' => 'h2',
-                  'class' => array('element-invisible'),
-                ),
-              )); ?>
-            </nav>
-          <?php endif; ?>
-    
-          <?php print render($page['navigation']); ?>
-    
-        </div><!-- /#navigation -->
-    
+    <?php print render($page['header']); ?>-->    
+  </div>
+  <div id="nav" class="contentWidth">
+    <?php if ($main_menu): ?>
+      <nav id="main-menu" role="navigation">
+        <?php
+        // This code snippet is hard to modify. We recommend turning off the
+        // "Main menu" on your sub-theme's settings form, deleting this PHP
+        // code block, and, instead, using the "Menu block" module.
+        // @see http://drupal.org/project/menu_block
+        print theme('links__system_main_menu', array(
+          'links' => $main_menu,
+          'attributes' => array(
+            'class' => array('links', 'inline', 'clearfix'),
+          ),
+          'heading' => array(
+            'text' => t('Main menu'),
+            'level' => 'h2',
+            'class' => array('element-invisible'),
+          ),
+        )); ?>
+      </nav>
+    <?php endif; ?>
+  </div>
+  
   
   </div>
   </header>
@@ -211,7 +193,5 @@
   </div><!-- /#main -->
 
   <?php print render($page['footer']); ?>
-
-</div><!-- /#page -->
-
-<?php print render($page['bottom']); ?>
+  <?php print render($page['bottom']); ?>
+</div><!-- /#page --*>-->

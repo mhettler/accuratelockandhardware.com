@@ -14,10 +14,10 @@
 
 html, body {
   color: #222;
-  background-color: #fff;
   margin: 0;
   padding: 0;
   font: 16px Georgia, "Times New Roman", Times , Serif;
+/*  background: url(assets/bg-sample.jpg) no-repeat center top #fff;*/
 }
 
 body {
@@ -25,6 +25,7 @@ body {
 }
 
 #page {
+  overflow: auto;
   border-top: 10px solid #bc3f3f;
   padding: 0;
   margin: 0;
@@ -58,7 +59,7 @@ body {
 }
 
 .contentWidth {
-  width: 85%;
+  width: 80%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -66,45 +67,66 @@ body {
  
 
 header {
-  font-family: "proxima-nova", "Century Gothic", Helvetica, Arial, sans-serif;
-/*  margin: 1em 0 2em 0;*/
-  text-transform: uppercase;
-  padding: 1em 0 0 0;
-/*  color: #efebe3;*/
+  font: normal 1em/1.5em "futura-pt", futura;
+  padding: 1.5em 0;
 }
 
 header > div {
-  border-bottom: 4px solid #333;
+  margin-bottom: 1.5em;
 }
 
 /* @group Masthead */
 
-/*#masthead * {
-  border-right: none !important;
-}*/
-
-#masthead > div {
-  display: block;
-  width: 33%;
-  text-align: center;
-  margin: 0 auto;
+.logoCol {
   float: left;
 }
 
-#masthead p {
-  margin: 0;
-  padding: 8px;
-  border-left: 1px solid #333;
-  border-right: 1px solid #333;
+#masthead {
+  margin-top: 1.5em;
+  float: right;
+  display: block;
+  overflow: auto;
 }
 
-#masthead {
-  font-family: "adrianna-extended";
-  text-transform: uppercase;
-  border-top: 2px solid #333;
-  overflow: auto;
-  font-size: .8em;
-/*  font-weight: bold;*/
+#masthead > div {
+  display: block;
+  float: left;
+}
+
+#masthead h2, #masthead p {
+/* 1em/1.5em */
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding-left: 2em;
+  margin: 0;
+}
+
+/* @end */
+
+
+/* @group Overlay Header */
+
+header.overlay {
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+header.overlay #nav {
+  border-color: #fff;
+}
+
+header.overlay a:link, header.overlay a:visited {
+  color: #fff;
+  border-color: #fff;
+}
+
+header.overlay a:hover, header.overlay a:active {
+  background-color: rgba(255,255,255, 0.2);
+}
+
+header.overlay h1#logo {
+   background: url(assets/logo-w.png) no-repeat center;
 }
 
 /* @end */
@@ -125,21 +147,6 @@ ul.socialIcons {
   list-style-type: none;
 }
 
-/*ul.socialIcons li {
-  float: left;
-  width: 25%;
-}
-
-ul.socialIcons li a {
-  border-right: 1px solid #333;
-  padding: 12px;
-  display: block;
-}
-
-ul.socialIcons li a:hover, ul.socialIcons li a:hover {
-  padding-top: 9px !important;
-}*/
-
 ul.socialIcons li {
   display: inline-block;
 }
@@ -150,48 +157,34 @@ ul.socialIcons li a {
 
 /* @end */
 
-#masthead > div:last-child p {
-  border: none;
-}
-/*
-#masthead p:first-child {
-  border: 1px solid #333;
-}
-
-#masthead p:last-child {
-  margin-left: 5%;
-}*/
-
 #header h1, #header h2 {
   margin: 0;
   padding: 0;
 }
 
-#header h1 {
-  font: normal 2.2em/1em "proxima-nova-soft";
-  margin: .25em auto 0 auto;
-  color: #222;
-  text-transform: uppercase;
-  text-align: center;
-/*  letter-spacing: -.05em;*/
-/*  text-shadow: -2px 2px 0 #efeeeb, -6px 6px 0 #c5beb3;*/
-  
-/*  overflow: hidden;
-  text-indent: -9999em;
-  width: 800px;
-  height: 50px;
-  display: block;
-  background: url(assets/logotype.png) no-repeat center;
-  background-size: 75%;*/
+#header .logoCol {
+  padding-right: 2em;
 }
 
-#header h2 {
-  font-family: "adrianna-extended";
-  font-size: 1em;
+#header {
+  line-height: 1.5em !important;
+}
+
+h1#logo {
+  color: #222;
   text-transform: uppercase;
-  text-align: center;
-  font-weight: normal;
-  margin: .5em 0 1em 0;
+  overflow: hidden;
+  text-indent: -9999em;
+  width: 100px;
+  height: 100px;
+  display: block;
+  background: url(assets/logo.png) no-repeat center;
+}
+
+#header h1 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
 }
 
 #header img {
@@ -199,6 +192,10 @@ ul.socialIcons li a {
   max-width: 900px;
   display: block;
   margin: 1em auto 0 auto;
+}
+
+#headerBar {
+  overflow: auto;
 }
 
 #madeinBadge h1 {
@@ -216,32 +213,34 @@ ul.socialIcons li a {
   margin: 0;
 }
 
+#nav {
+/*  font: normal .8em/2em monaco, "futura-pt", futura;*/
+  border-top: 3px double #83abdb;
+  border-bottom: 3px double #83abdb;
+}
+
 #nav ul {
   padding: 0;
   margin: 0;
-  border-top: 2px solid #333;
   overflow: auto;
   width: 100%;
 }
 
 #nav li {
   float: left;
-  list-style-type: none;
   width: 20%;
+  list-style-type: none;
   text-align: center;
 }
 
 header a:link, header a:visited {
-  border-right: 1px solid #333;
-  padding: 8px 0;
-/*  padding: 8px 6px 8px 8px;*/
+  border-right: 1px solid #83abdb;
+  padding: .5em 0;
   display: block;
   text-decoration: none;
   font-size: 1em;
   color: #333;
-  font-weight: bold;
-  letter-spacing: .25em;
-/*  text-shadow: -1px 1px 0 #efeeeb, -3px 3px 0 #c5beb3;*/
+  font-weight: normal;
 }
 
 #nav li:last-child a {
@@ -249,9 +248,14 @@ header a:link, header a:visited {
 }
 
 header a:hover, header a:active {
-  padding-top: 5px !important;
-  border-top: 3px solid #2c6bc6;
   color: #bc3f3f;
+  text-decoration: underline;
+  background-color: #f9f9dd;
+}
+
+header a.active {
+  color: #2c6bc6;
+  text-decoration: underline;
 }
 
 #logo { /* Wrapping link for logo */
@@ -346,16 +350,7 @@ header a:hover, header a:active {
 /*
  * Main (container for everything else)
  */
- 
-h2 {
-  text-transform: uppercase;
-  font-family: "proxima-nova", "Century Gothic", Helvetica, Arial, sans-serif;
-/*  letter-spacing: .3em;*/
-  font-size: 1.4em;
-  line-height: 1em;
-  font-weight: bold;
-/*  text-shadow: -2px 2px 0 #efeeeb, -6px 6px 0 #c5beb3;*/
-}
+
 
 #main {
 }
@@ -471,7 +466,7 @@ ul.inline { /* List of links generated by theme_links() */
 ul.inline li {
   display: inline;
   list-style-type: none;
-  padding: 0 1em 0 0; /* LTR */
+  padding: 0; /* LTR */
 }
 
 span.field-label { /* The inline field label used by the Fences module */
