@@ -15,7 +15,7 @@
 html, body {
   min-width: 100%;
   min-height: 100%;
-  color: #222;
+  color: #333;
   margin: 0;
   padding: 0;
   font: 16px Georgia, "Times New Roman", Times , Serif;
@@ -186,7 +186,7 @@ ul.socialIcons li a {
 }
 
 h1#logo a:link, h1#logo a:visited {
-  color: #222;
+  color: #333;
 /*  text-transform: uppercase;*/
   overflow: hidden;
 /*  text-indent: -9999em;*/
