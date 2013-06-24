@@ -13,6 +13,8 @@
  */
 
 html, body {
+  min-width: 100%;
+  min-height: 100%;
   color: #222;
   margin: 0;
   padding: 0;
@@ -110,8 +112,8 @@ header > div {
 header.overlay {
   width: 100%;
   position: absolute;
-  z-index: 999;
-  top: 10px;
+  z-index: 10;
+  top: 20px;
   color: #fff;
   -webkit-font-smoothing: antialiased;
   
@@ -133,8 +135,8 @@ header.overlay a:link, header.overlay a:visited {
   border-color: #fff !important;
 }
 
-header.overlay a:hover, header.overlay a:active {
-  text-decoration: underline;
+header.overlay #nav a:hover, header.overlay #nav a:active {
+  text-decoration: underline !important;
   background-color: rgba(255,255,255, 0.2);
 }
 
@@ -266,14 +268,14 @@ h1#logo a:hover, h1#logo a:active {
   border-right: 0;
 }
 
-header a:hover, header a:active {
+#nav a:hover, #nav a:active {
   color: #bc3f3f;
   text-decoration: underline;
   background-color: #f9f9dd;
 }
 
-header a.active {
-  color: #2c6bc6;
+#nav li a.active {
+  color: #bc3f3f;
   text-decoration: underline;
 }
 
