@@ -155,10 +155,13 @@
   </header>
 
   <div id="main">
+  	
+  	<div id="featuredContent">
+  		<?php print render($page['highlighted']); ?>
+  	</div>
   
     <div id="content" class="column contentWidth" role="main">
     <div>
-      <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
 <!--      <?php print render($title_prefix); ?>
