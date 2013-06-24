@@ -63,13 +63,13 @@ body {
 
 .contentWidth {
   width: 50%;
-  max-width: 1200px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
  
 
-header {
+header, #nav {
   font: normal 1em/1.5em "futura-pt", "futura std";
 }
 
@@ -79,17 +79,17 @@ header > div {
 
 /* @group Masthead */
 
-.logoCol {
+/*.logoCol {
   float: left;
-}
+}*/
 
 #masthead {
+  text-align: right;
   margin-top: 1.5em;
-  float: right;
   display: block;
-  overflow: auto;
   position: fixed;
   bottom: 1em;
+  width: 200px;
 }
 
 /*#masthead > div {
@@ -184,9 +184,17 @@ ul.socialIcons li a {
 }
 
 #header {
-  width: 100%;
+  right: 75%;
+  width: 200px;
   position: fixed;
   line-height: 1.5em !important;
+}
+
+#nav {
+  padding-top: 2em;
+  width: 200px;
+  left: 75%;
+  position: fixed;
 }
 
 h1#logo {
@@ -235,7 +243,6 @@ h1#logo a:hover span, h1#logo a:active span {
 }
 
 #headerBar {
-  overflow: auto;
 }
 
 #madeinBadge h1 {
