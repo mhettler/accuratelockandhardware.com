@@ -148,7 +148,6 @@
     
     <?php print render($page['navigation']); ?>
     
-  </div>
   
   
   </div>
