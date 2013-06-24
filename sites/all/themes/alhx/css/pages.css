@@ -13,7 +13,6 @@
  */
 
 html, body {
-  min-width: 100%;
   min-height: 100%;
   color: #333;
   margin: 0;
@@ -24,6 +23,8 @@ html, body {
 
 body {
   border-top: 10px solid #2c6bc6;
+/*  border-left: 10px solid #2c6bc6;
+  border-right: 10px solid #bc3f3f;*/
 }
 
 #page {
@@ -61,7 +62,7 @@ body {
 }
 
 .contentWidth {
-  width: 80%;
+  width: 50%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -69,12 +70,11 @@ body {
  
 
 header {
-  font: normal 1em/1.5em "futura-pt", futura;
-  padding: 1.5em 0;
+  font: normal 1em/1.5em "futura-pt", "futura std";
 }
 
 header > div {
-  margin-bottom: 1.5em;
+  padding: 2em;
 }
 
 /* @group Masthead */
@@ -88,19 +88,21 @@ header > div {
   float: right;
   display: block;
   overflow: auto;
+  position: fixed;
+  bottom: 1em;
 }
 
-#masthead > div {
+/*#masthead > div {
   display: block;
   float: left;
-}
+}*/
 
 #masthead h2, #masthead p {
 /* 1em/1.5em */
   font-weight: normal;
   font-size: 1em;
   line-height: 1.5em;
-  padding-left: 2em;
+  padding-top: 1.5em;
   margin: 0;
 }
 
@@ -182,6 +184,8 @@ ul.socialIcons li a {
 }
 
 #header {
+  width: 100%;
+  position: fixed;
   line-height: 1.5em !important;
 }
 
@@ -190,16 +194,15 @@ h1#logo {
 }
 
 h1#logo span {
-  float: left;
+  text-align: center;
   display: block;
 }
 
 h1#logo span.subTitle {
   font-weight: normal !important;
-/*  margin-top: 1.5em;*/
+  margin-top: 1.5em;
   font-size: 1em;
   line-height: 1.5em;
-  padding-left: 1.5em;
 }
 
 h1#logo a:link, h1#logo a:visited {
@@ -208,10 +211,9 @@ h1#logo a:link, h1#logo a:visited {
   overflow: hidden;
 /*  text-indent: -9999em;*/
   font-weight: bold;
-  padding-left: 116px;
-  height: 100px;
+  padding-top: 116px;
   display: block;
-  background: url(assets/logo.png) no-repeat left;
+  background: url(assets/logo.png) no-repeat top center;
   text-decoration: none;
 }
 
@@ -233,8 +235,6 @@ h1#logo a:hover span, h1#logo a:active span {
 }
 
 #headerBar {
-  padding-bottom: 1.5em;
-  border-bottom: 3px solid #333;
   overflow: auto;
 }
 
@@ -260,7 +260,6 @@ h1#logo a:hover span, h1#logo a:active span {
 #nav ul {
   padding: 0;
   margin: 0;
-  overflow: auto;
   float: right;
 }
 
@@ -273,7 +272,7 @@ h1#logo a:hover span, h1#logo a:active span {
   display: block;
   text-decoration: none;
   font-size: 1em;
-  color: #333;
+  color: #2c6bc6;
   font-weight: bold;
 }
 
@@ -282,7 +281,7 @@ h1#logo a:hover span, h1#logo a:active span {
 }
 
 #nav a:hover, #nav a:active {
-  color: #2c6bc6;
+  color: #bc3f3f;
   text-decoration: underline;
 }
 

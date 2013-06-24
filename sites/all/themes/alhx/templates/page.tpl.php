@@ -73,7 +73,7 @@
 <div id="page">
 
   <header id="header" role="banner">
-  <div class="contentWidth">
+  <div>
   <div id="headerBar">
     <div class="logotype logoCol">
       <h1 id="logo">
@@ -84,17 +84,6 @@
       </h1>
     </div>
     
-<!--    <div id="masthead">
-      <div class="madein mastCol">
-        <h2>Designed &amp;<br />manufactured in<br />Stamford, Conn. U.S.A.</h2>
-      </div>
-      <div class="mastCol">
-        <p>1 Annie Place<br />Stamford, Conn.<br />U.S.A. 06902</p>
-      </div>
-      <div class="mastCol">
-        <p>T: 203.348.8865<br />F: 203.348.5234<br />E: info@accuratelh.com</p>
-      </div>
-    </div>-->
     <div id="nav">
       <?php if ($main_menu): ?>
         <nav id="main-menu" role="navigation">
@@ -152,9 +141,16 @@
   
     <?php endif; ?>
     
-    <?php print render($page['navigation']); ?>
+
       
-  
+  <div id="masthead">
+    <div class="mastCol">
+      <p>1 Annie Place<br />Stamford, Conn.<br />U.S.A. 06902</p>
+    </div>
+    <div class="mastCol">
+      <p>T: 203.348.8865<br />F: 203.348.5234<br />E: info@accuratelh.com</p>
+    </div>
+  </div>
   </div>
   </header>
 
