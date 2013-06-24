@@ -72,7 +72,7 @@
 
 <div id="page">
 
-  <header id="header" role="banner">
+  <header id="header" role="banner" class="overlay">
   <div class="contentWidth">
   <div id="headerBar">
     <div class="logotype logoCol">

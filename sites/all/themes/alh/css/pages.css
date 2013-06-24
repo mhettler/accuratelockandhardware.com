@@ -108,6 +108,9 @@ header > div {
 /* @group Overlay Header */
 
 header.overlay {
+  position: absolute;
+  z-index: 999;
+  top: 10px;
   color: #fff;
   -webkit-font-smoothing: antialiased;
 }
@@ -117,15 +120,15 @@ header.overlay #nav {
 }
 
 header.overlay a:link, header.overlay a:visited {
-  color: #fff;
-  border-color: #fff;
+  color: #fff !important;
+  border-color: #fff !important;
 }
 
 header.overlay a:hover, header.overlay a:active {
   background-color: rgba(255,255,255, 0.2);
 }
 
-header.overlay h1#logo {
+header.overlay h1#logo a {
    background: url(assets/logo-w.png) no-repeat center;
 }
 
@@ -170,15 +173,21 @@ ul.socialIcons li a {
   line-height: 1.5em !important;
 }
 
-h1#logo {
+h1#logo a:link, h1#logo a:visited {
   color: #222;
-  text-transform: uppercase;
+/*  text-transform: uppercase;*/
   overflow: hidden;
-  text-indent: -9999em;
-  width: 100px;
+/*  text-indent: -9999em;*/
+  font-weight: bold;
+  padding-left: 116px;
   height: 100px;
   display: block;
-  background: url(assets/logo.png) no-repeat center;
+  background: url(assets/logo.png) no-repeat left;
+  text-decoration: none;
+}
+
+h1#logo a:hover, h1#logo a:active {
+  text-decoration: underline;
 }
 
 #header h1 {
@@ -233,7 +242,7 @@ h1#logo {
   text-align: center;
 }
 
-header a:link, header a:visited {
+#nav a:link, #nav a:visited {
   border-right: 1px solid #83abdb;
   padding: .5em 0;
   display: block;
