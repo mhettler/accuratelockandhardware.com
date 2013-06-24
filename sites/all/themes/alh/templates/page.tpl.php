@@ -76,10 +76,15 @@
   <div class="contentWidth">
   <div id="headerBar">
     <div class="logotype logoCol">
-      <h1 id="logo"><a href="/" >The<br />Accurate<br />Lock &amp; Hardware<br />Company</a></h1>
+      <h1 id="logo">
+        <a href="/" >
+          <span>The<br />Accurate<br />Lock &amp; Hardware<br />Company</span>
+          <span class="subTitle">Designed &amp;<br />manufactured in<br />Stamford, Conn. U.S.A.</span>
+        </a>
+      </h1>
     </div>
     
-    <div id="masthead">
+<!--    <div id="masthead">
       <div class="madein mastCol">
         <h2>Designed &amp;<br />manufactured in<br />Stamford, Conn. U.S.A.</h2>
       </div>
@@ -89,7 +94,27 @@
       <div class="mastCol">
         <p>T: 203.348.8865<br />F: 203.348.5234<br />E: info@accuratelh.com</p>
       </div>
-    </div>
+    </div>-->
+    <div id="nav">
+      <?php if ($main_menu): ?>
+        <nav id="main-menu" role="navigation">
+          <?php
+          // This code snippet is hard to modify. We recommend turning off the
+          // "Main menu" on your sub-theme's settings form, deleting this PHP
+          // code block, and, instead, using the "Menu block" module.
+          // @see http://drupal.org/project/menu_block
+          print theme('links__system_main_menu', array(
+            'links' => $main_menu,
+            'attributes' => array(
+              'class' => array('links', 'inline', 'clearfix'),
+            ),
+            'heading' => array(
+              'text' => t('Main menu'),
+              'level' => 'h2',
+              'class' => array('element-invisible'),
+            ),
+          )); ?>
+        </nav>
   </div>
 
     <?php if ($site_name || $site_slogan): ?>
@@ -124,26 +149,7 @@
 
     <?php print render($page['header']); ?>   
   </div>
-  <div id="nav" class="contentWidth">
-    <?php if ($main_menu): ?>
-      <nav id="main-menu" role="navigation">
-        <?php
-        // This code snippet is hard to modify. We recommend turning off the
-        // "Main menu" on your sub-theme's settings form, deleting this PHP
-        // code block, and, instead, using the "Menu block" module.
-        // @see http://drupal.org/project/menu_block
-        print theme('links__system_main_menu', array(
-          'links' => $main_menu,
-          'attributes' => array(
-            'class' => array('links', 'inline', 'clearfix'),
-          ),
-          'heading' => array(
-            'text' => t('Main menu'),
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
-      </nav>
+  
     <?php endif; ?>
     
     <?php print render($page['navigation']); ?>

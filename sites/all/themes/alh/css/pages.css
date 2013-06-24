@@ -185,6 +185,23 @@ ul.socialIcons li a {
   line-height: 1.5em !important;
 }
 
+h1#logo {
+  overflow: auto;
+}
+
+h1#logo span {
+  float: left;
+  display: block;
+}
+
+h1#logo span.subTitle {
+  font-weight: normal !important;
+  margin-top: 1.5em;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding-left: 1.5em;
+}
+
 h1#logo a:link, h1#logo a:visited {
   color: #333;
 /*  text-transform: uppercase;*/
@@ -198,8 +215,8 @@ h1#logo a:link, h1#logo a:visited {
   text-decoration: none;
 }
 
-h1#logo a:hover, h1#logo a:active {
-  text-decoration: underline;
+h1#logo a:hover span, h1#logo a:active span {
+  text-decoration: underline !important;
 }
 
 #header h1 {
@@ -216,6 +233,8 @@ h1#logo a:hover, h1#logo a:active {
 }
 
 #headerBar {
+  padding-bottom: 1.5em;
+  border-bottom: 3px solid #333;
   overflow: auto;
 }
 
@@ -236,32 +255,26 @@ h1#logo a:hover, h1#logo a:active {
 
 #nav {
 /*  font: normal .8em/2em monaco, "futura-pt", futura;*/
-  border-top: 3px double #83abdb;
-  border-bottom: 3px double #83abdb;
 }
 
 #nav ul {
   padding: 0;
   margin: 0;
   overflow: auto;
-  width: 100%;
+  float: right;
 }
 
 #nav li {
-  float: left;
-  width: 20%;
   list-style-type: none;
-  text-align: center;
+  text-align: right;
 }
 
 #nav a:link, #nav a:visited {
-  border-right: 1px solid #83abdb;
-  padding: .5em 0;
   display: block;
   text-decoration: none;
   font-size: 1em;
   color: #333;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 #nav li:last-child a {
@@ -269,13 +282,11 @@ h1#logo a:hover, h1#logo a:active {
 }
 
 #nav a:hover, #nav a:active {
-  color: #bc3f3f;
+  color: #2c6bc6;
   text-decoration: underline;
-  background-color: #f9f9dd;
 }
 
 #nav li a.active {
-  color: #bc3f3f;
   text-decoration: underline;
 }
 
