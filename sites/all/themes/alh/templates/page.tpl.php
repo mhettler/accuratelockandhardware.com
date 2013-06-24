@@ -95,7 +95,7 @@
     </div>
   </div>
 
-<!--    <?php if ($site_name || $site_slogan): ?>
+    <?php if ($site_name || $site_slogan): ?>
       <hgroup id="name-and-slogan">
         <?php if ($site_name): ?>
           <h1 id="site-name">
@@ -125,7 +125,7 @@
       </nav>
     <?php endif; ?>
 
-    <?php print render($page['header']); ?>-->    
+    <?php print render($page['header']); ?>   
   </div>
   <div id="nav" class="contentWidth">
     <?php if ($main_menu): ?>
@@ -148,6 +148,9 @@
         )); ?>
       </nav>
     <?php endif; ?>
+    
+    <?php print render($page['navigation']); ?>
+    
   </div>
   
   
@@ -193,5 +196,6 @@
   </div><!-- /#main -->
 
   <?php print render($page['footer']); ?>
+</div><!-- /#page --*>
+
   <?php print render($page['bottom']); ?>
-</div><!-- /#page --*>-->
