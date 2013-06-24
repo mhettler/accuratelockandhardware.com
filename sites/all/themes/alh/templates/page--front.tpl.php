@@ -103,7 +103,7 @@
         <?php if ($site_slogan): ?>
           <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
         <?php endif; ?>
-      </hgroup><!-- /#name-and-slogan --*>
+      </hgroup><!-- /#name-and-slogan -->
     <?php endif; ?>
 
     <?php if ($secondary_menu): ?>
