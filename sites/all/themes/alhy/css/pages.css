@@ -1,0 +1,634 @@
+/**
+ * @file
+ * Page Styling
+ *
+ * Style the markup found in page.tpl.php. Also includes some styling of
+ * miscellaneous Drupal elements that appear in the $content variable, such as
+ * ul.links, .pager, .more-link, etc.
+ */
+
+
+/*
+ * Body
+ */
+
+html, body {
+  min-height: 100%;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font: 16px Georgia, "Times New Roman", Times , Serif;
+/*  background: url(assets/bg-sample.jpg) no-repeat center top #fff;*/
+}
+
+body {
+/*  border-left: 10px solid #2c6bc6;
+  border-right: 10px solid #bc3f3f;*/
+}
+
+.blueBorder {
+	border-top: 10px solid #2c6bc6;
+	}
+
+#page {
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+ * The skip-link link will be completely hidden until a user tabs to the link.
+ * See the element-focusable rule in system.base.css.
+ */
+
+#skip-link {
+  margin: 0;
+  padding: 0;
+}
+#skip-link a,
+#skip-link a:visited {
+  display: block;
+  width: 100%;
+  padding: 2px 0 3px 0;
+  text-align: center;
+  background-color: #666;
+  color: #fff;
+}
+
+/*
+ * Header
+ */
+
+#wrap {
+  	min-height: 100%;
+}
+
+.contentWidth {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contentWidthY {
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+
+header {
+  font: normal 1.4em/1.5em "futura-pt", "futura std";
+}
+
+header > div {
+}
+
+
+/* @end */
+
+
+/* @group Overlay Header */
+
+header.overlay {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  color: #fff;
+ }
+ 
+header.noOverlay {
+  border-top: 10px solid #bc3f3f;
+}
+
+#nav {
+  border-color: #fff;
+  text-align: center;
+  width: 750px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+header.overlay a:link, header.overlay a:visited {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+header.overlay #nav a:hover, header.overlay #nav a:active {
+  border-bottom: 2px solid #bc3f3f;
+}
+
+header.overlay h1#logo a {
+   background: url(assets/logo-w.png) no-repeat left;
+}
+
+/* @end */
+
+/* @group Social Icons */
+
+#masthead .socialIcons {
+  font-family: 'sharetfpg' !important;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 1.4em;
+}
+
+ul.socialIcons {
+  margin: 0;
+  padding: .2em 0 0 0;
+  list-style-type: none;
+}
+
+ul.socialIcons li {
+  display: inline-block;
+}
+
+ul.socialIcons li a {
+  border: none !important;
+}
+
+/* @end */
+
+#header h1, #header h2 {
+  margin: 0;
+  padding: 0;
+}
+
+#header .logoCol {
+	width: 100%;
+}
+
+#header {
+  width: 100%;
+  text-align: center;
+  line-height: 1.5em !important;
+  overflow: hidden;
+}
+
+h1#logo {
+  overflow: auto;
+}
+
+h1#logo span {
+  text-align: center;
+  display: block;
+}
+
+h1#logo span.subTitle {
+  font-weight: normal !important;
+  margin-top: 1.5em;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+h1#logo a:link, h1#logo a:visited {
+  color: #333;
+/*  text-transform: uppercase;*/
+  overflow: hidden;
+  text-indent: -9999em;
+  font-weight: bold;
+  display: block;
+  background: url(assets/logo.png) no-repeat top center;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+}
+
+li.menu-mlid-715 a:link, li.menu-mlid-715 a:visited {
+  color: #333;
+/*  text-transform: uppercase;*/
+  overflow: hidden;
+  text-indent: -9999em;
+  display: block;
+  background: url(assets/logo-w.png) no-repeat top center;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+}
+
+li.menu-mlid-715 a:hover, li.menu-mlid-715 a:active {
+  border: none !important;
+}
+
+.noOverlay li.menu-mlid-715 a:link, .noOverlay li.menu-mlid-715 a:visited {
+  color: #000;
+  background: url(assets/logo.png) no-repeat top center;
+}
+
+h1#logo a:hover span, h1#logo a:active span {
+  text-decoration: underline !important;
+}
+
+#header h1 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#header img {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 1em auto 0 auto;
+}
+
+#headerBar {
+  overflow: auto;
+  text-align: center;
+}
+
+#madeinBadge h1 {
+/*  margin-top: -1.8em;*/
+  background: url(assets/madeinStamford.png) no-repeat;
+  width: 180px;
+  height: 180px;
+  display: none;
+  text-indent: -999em;
+  position: absolute;
+  right: 180px;
+}
+
+#nav div {
+  margin: 0;
+}
+
+#nav {
+/*  font: normal .8em/2em monaco, "futura-pt", futura;*/
+}
+
+#nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+#nav li {
+  list-style-type: none;
+  text-align: center;
+  float: left;
+  padding: 1.6em;
+  position: relative;
+  top: 35px;
+}
+
+#nav li.menu-mlid-715 {
+	top: 0px;
+	}
+
+#nav a:link, #nav a:visited {
+  display: block;
+  text-decoration: none;
+  font-size: 1em;
+  color: #222;
+  font-weight: regular;
+}
+
+#nav li:last-child a {
+  border-right: 0;
+}
+
+#nav a:hover, #nav a:active {
+  color: #bc3f3f;
+  border-bottom: 2px solid #bc3f3f;
+}
+
+#nav li a.active {
+  border-bottom: 2px solid #000;
+  font-weight: bold;
+}
+
+#nav li a.active:hover {
+  color: #000;
+}
+
+body.front #nav li a.active {
+  border-bottom: none;
+}
+
+#logo { /* Wrapping link for logo */
+  float: left; /* LTR */
+  margin: 0;
+  padding: 0;
+}
+
+#logo img {
+  vertical-align: bottom;
+}
+
+#featuredContent .featuredText {
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	font-size: 1em;
+	}
+#featuredContent .socialMedia {
+	position: absolute;
+	top: 80%;
+	text-align: center;
+	font-size: 1em;
+	height: 48px;
+	}
+#featuredContent .socialMedia p {
+	width: 150px;
+	margin: 0 auto;
+	text-align: center;
+	}
+#featuredContent .socialMedia a {
+	width: 48px;
+    height: 48px;
+    top: 0px;
+    overflow: hidden;
+    text-indent: -9999em;
+    display: block;
+    float: left;
+ 	}
+#featuredContent .socialMedia .socialMail {	
+	background: url(assets/email-48.png) no-repeat top center;
+	}
+#featuredContent .socialMedia .socialFb {	
+	background: url(assets/facebook-48.png) no-repeat top center;
+	}
+#featuredContent .socialMedia .socialTwitter{	
+	background: url(assets/twitter-48.png) no-repeat top center;
+	}
+
+/* @group Product Filters */
+
+.productFilterBar {
+  font-family: "proxima-nova", "Century Gothic", Helvetica, Arial, sans-serif;
+/*  letter-spacing: .3em;*/
+  font-weight: bold;
+  padding: .5em 0;
+  border-bottom: 2px solid #333;
+}
+
+.views-exposed-widget > * {
+  display: inline-block;
+}
+
+.views-exposed-form > div{
+  width: 100%;
+  display: table;
+}
+
+.views-exposed-widget {
+  float: none !important;
+  display: table-cell;
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
+  padding: .5em 1em !important;
+}
+
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 0em !important;
+}
+
+/* @end */
+
+/* @group Filtered Product List */
+
+.view-content {
+  
+}
+
+.view-content .productItem {
+  overflow: auto;
+  border-bottom: 3px solid #333;
+  padding-bottom: .5em;
+  margin-bottom: .5em;
+}
+
+.view-content .productItem img {
+  margin-right: .5em;
+  float: left;
+}
+
+/* @end */
+#name-and-slogan { /* Wrapper for website name and slogan */
+  float: left;
+}
+#site-name { /* The name of the website */
+  margin: 0;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+#site-name a:link,
+#site-name a:visited {
+  color: #000;
+  text-decoration: none;
+}
+#site-name a:hover,
+#site-name a:focus {
+  text-decoration: underline;
+}
+
+#site-slogan { /* The slogan (or tagline) of a website */
+  margin: 0;
+  font-size: 1em;
+}
+
+.region-header { /* Wrapper for any blocks placed in the header region */
+  clear: both; /* Clear the logo */
+}
+
+/*
+ * Main (container for everything else)
+ */
+
+
+#main {
+}
+
+/*
+ * Content
+ */
+
+#featuredContent { 
+  border-bottom: 10px solid #2c6bc6;
+  height: 650px !important;
+  font: normal 3em/1.5em "futura-pt", "futura std";
+  }
+#featuredContent a:link, #featuredContent a:visited { 
+  color: #fff;
+  text-decoration: none;
+  }
+
+#content {
+}
+
+.index {
+  border-top: 10px solid #bc3f3f;
+}
+
+#content article {
+  line-height: 1.8em;
+  padding: 0;
+}
+
+article > div > div > div > div {
+  width: 59.8%;
+  display: block;
+  float: left;
+  padding-right: 1em;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box
+}
+
+article .rightCol {
+  padding-right: 0;
+  padding-left: 1em;
+  display: block;
+  float: right !important;
+  width: 40.2%;
+}
+
+.region-highlighted {
+}
+
+.breadcrumb { /* The path to the current page in the form of a list of links */
+}
+.breadcrumb ol {
+  margin: 0;
+  padding: 0;
+}
+.breadcrumb li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1.title, /* The title of the page */
+h2.node-title, /* Title of a piece of content when it is given in a list of content */
+h2.block-title, /* Block title */
+h2.title, /* Comment section heading */
+h2.comment-form, /* Comment form heading */
+h3.title { /* Comment title */
+  margin: 0;
+}
+
+tr.even { /* Some tables have rows marked even or odd. */
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+tr.odd {
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+div.messages { /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
+  margin: 1.5em 0; /* Drupal core uses "6px 0" margin */
+}
+div.messages ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+div.status { /* Normal priority messages */
+}
+
+div.warning,
+tr.warning { /* Medium priority messages */
+  /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
+}
+
+div.error,
+tr.error { /* High priority messages. See also the .error declaration below. */
+}
+
+.error { /* Errors that are separate from div.messages status messages. */
+  /* color: #e55; */ /* Drupal core uses a #e55 background */
+}
+
+.warning { /* Warnings that are separate from div.messages status messages. */
+  /* color: #e09010; */ /* Drupal core uses a #e09010 background */
+}
+
+.tabs { /* See also the tabs.css file. */
+}
+
+.region-help { /* Help text on a page */
+}
+
+.more-help-link { /* Link to more help */
+}
+
+.region-content { /* Wrapper for the actual page content */
+}
+
+ul.inline { /* List of links generated by theme_links() */
+  display: inline;
+  padding: 0;
+}
+ul.inline li {
+  display: inline;
+  list-style-type: none;
+  padding: 0; /* LTR */
+}
+
+span.field-label { /* The inline field label used by the Fences module */
+  padding: 0 1em 0 0; /* LTR */
+}
+
+.item-list .pager { /* A list of page numbers when more than 1 page of content is available */
+  padding: 0;
+}
+.item-list .pager li { /* Each page number in the pager list */
+  padding: 0 0.5em;
+}
+
+.feed-icon { /* The link to the RSS or Atom feed for the current list of content */
+}
+
+.more-link { /* Aggregator, blog, and forum more link */
+}
+
+/*
+ * First sidebar (on left in LTR languages, on right in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-first
+ * (see the layout.css file.)
+ */
+
+.region-sidebar-first {
+}
+
+/*
+ * Second sidebar (on right in LTR languages, on left in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-second
+ * (see the layout.css file.)
+ */
+
+.region-sidebar-second {
+}
+
+/*
+ * Footer
+ */
+
+#footer {
+  clear: both;
+  font-family: "adrianna-extended";
+  line-height: 1.5em;
+  font-size: .8em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+footer > div {
+  border-top: 3px solid #333;
+  margin-bottom: 4em;
+}
+
+/*
+ * Page bottom
+ */
+
+.region-bottom { /* Wrapper for any blocks placed in the page bottom region */
+}
