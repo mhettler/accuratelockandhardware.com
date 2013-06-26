@@ -70,7 +70,7 @@ body {
  
 
 header, #nav {
-  font: normal 1em/1.5em "futura-pt", "futura std";
+  font: normal 1em/1.5em "futura-pt", "century gothic", "helvetica", "arial", "sans-serif";
 }
 
 header > div {
@@ -309,7 +309,7 @@ h1#logo a:hover span, h1#logo a:active span {
 /* @group Product Filters */
 
 .productFilterBar {
-  font-family: "proxima-nova", "Century Gothic", Helvetica, Arial, sans-serif;
+  font: normal 1em/1.5em "futura-pt", "century gothic", "helvetica", "arial", "sans-serif";
 /*  letter-spacing: .3em;*/
   font-weight: bold;
   padding: .5em 0;
@@ -396,51 +396,59 @@ h1#logo a:hover span, h1#logo a:active span {
 /*
  * Content
  */
-
-#content {
-
-}
-
-#content article {
-  line-height: 1.8em;
-  padding: 0;
-}
-
-article > div > div > div > div {
-  width: 59.8%;
-  display: block;
-  float: left;
-  padding-right: 1em;
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box
-}
-
-article .rightCol {
-  padding-right: 0;
-  padding-left: 1em;
-  display: block;
-  float: right !important;
-  width: 40.2%;
-}
-
-.region-highlighted {
-}
-
-.breadcrumb { /* The path to the current page in the form of a list of links */
-}
-.breadcrumb ol {
-  margin: 0;
-  padding: 0;
-}
-.breadcrumb li {
-  display: inline;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-h1.title, /* The title of the page */
+ 
+ /* @group Content Column */
+ 
+ #content {
+ 
+ }
+ 
+ #content h2 {
+     font: bold 1.6em/1.5em "futura-pt", "century gothic", "helvetica", "arial", "sans-serif";
+ }
+ 
+ #content article {
+   line-height: 1.8em;
+   padding: 0;
+ }
+ 
+ article > div > div > div > div {
+   width: 59.8%;
+   display: block;
+   float: left;
+   padding-right: 1em;
+   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+   box-sizing: border-box
+ }
+ 
+ article .rightCol {
+   padding-right: 0;
+   padding-left: 1em;
+   display: block;
+   float: right !important;
+   width: 40.2%;
+ }
+ 
+ .region-highlighted {
+ }
+ 
+ .breadcrumb { /* The path to the current page in the form of a list of links */
+ }
+ .breadcrumb ol {
+   margin: 0;
+   padding: 0;
+ }
+ .breadcrumb li {
+   display: inline;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ /* @end */
+ 
+ h1.title, /* The title of the page */
 h2.node-title, /* Title of a piece of content when it is given in a list of content */
 h2.block-title, /* Block title */
 h2.title, /* Comment section heading */
@@ -544,23 +552,25 @@ span.field-label { /* The inline field label used by the Fences module */
 .region-sidebar-second {
 }
 
-/*
- * Footer
- */
+/* @group Footer */
 
 #footer {
+  font: normal 1em/1.5em "futura-pt", "century gothic", "helvetica", "arial", "sans-serif";
   clear: both;
-  font-family: "adrianna-extended";
-  line-height: 1.5em;
-  font-size: .8em;
-  text-transform: uppercase;
   text-align: center;
 }
 
+footer {
+  margin-top: 4em;
+  border-top: 6px solid #2c6bc6;
+}
+
 footer > div {
-  border-top: 3px solid #333;
+  border-top: 6px solid #bc3f3f;
   margin-bottom: 4em;
 }
+
+/* @end */
 
 /*
  * Page bottom

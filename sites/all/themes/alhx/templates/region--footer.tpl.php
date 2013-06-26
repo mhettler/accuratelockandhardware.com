@@ -27,8 +27,8 @@
  */
 ?>
 <?php if ($content): ?>
-  <footer id="footer" class="<?php print $classes; ?>">
-  	<div class="contentWidth">
+  <footer id="footer" class="<?php print $classes; ?> contentWidth">
+  	<div>
     	<?php print $content; ?>
     </div>
   </footer><!-- region__footer -->

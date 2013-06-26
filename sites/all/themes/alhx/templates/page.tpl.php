@@ -141,14 +141,14 @@
   
       <?php print render($page['header']); ?>   
       
-      <div id="masthead">
+<!--      <div id="masthead">
         <div class="mastCol">
           <p>1 Annie Place<br />Stamford, Conn.<br />U.S.A. 06902</p>
         </div>
         <div class="mastCol">
           <p>T: 203.348.8865<br />F: 203.348.5234<br />E: info@accuratelh.com</p>
         </div>
-      </div>
+      </div>-->
       
     </div>
     
