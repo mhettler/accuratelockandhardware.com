@@ -85,6 +85,15 @@
         </div>
       </div>
     </div>
+    <div id="contactIcons">
+      <ul>
+        <li><a href="#" class="icon-envelop"></a></li>
+        <li><a href="#" class="icon-location"></a></li>
+<!--        <li><a href="#" class="icon-phone"></a></li>-->
+        <li><a href="#" class="icon-twitter"></a></li>
+        <li><a href="#" class="icon-facebook"></a></li>
+      </ul>
+    </div>
   </header>
   
     <div id="nav">
@@ -150,6 +159,7 @@
         </div>
       </div>-->
       
+
     </div>
     
   <?php endif; ?>

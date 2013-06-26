@@ -77,38 +77,6 @@ header > div {
   padding: 2em;
 }
 
-/* @group Social Media / Contact Icons */
-
-#contactIcons {
-  margin-top: 1em;
-  display: block;
-  position: fixed;
-  bottom: 0em;
-  width: 200px;
-}
-
-#contactIcons ul {
-  padding: 0;
-}
-
-#contactIcons ul li {
-  font-size: 1.2em;
-  display: inline-block;
-  text-align: center;
-}
-
-#contactIcons a:link, #contactIcons a:visited {
-  color: #777;
-  text-decoration: none;
-}
-
-#contactIcons a:hover, #contactIcons a:active {
-  color: #333;
-}
-
-
-/* @end */
-
 /* @group Masthead */
 
 /*.logoCol {
