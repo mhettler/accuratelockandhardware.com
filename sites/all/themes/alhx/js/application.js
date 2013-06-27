@@ -10,7 +10,7 @@ $(document).ready(function() {
     });
     
       function cropScroll() {
-        var currPosition = $(window).scrollTop();
+        var currPosition = Math.abs($(window).scrollTop());
     
         var overClipTop = 0 - currPosition;
         var overClipBottom = overClipTop + $('.splash').height() - 4;     
@@ -24,6 +24,10 @@ $(document).ready(function() {
         $('.overlay').css({clip : overRect});
         $('.underlay').css({clip : underRect});
       };
+      
+      $(window).load(function () {
+        cropScroll();
+      });
       
       $(window).scroll(function () { 
         cropScroll();

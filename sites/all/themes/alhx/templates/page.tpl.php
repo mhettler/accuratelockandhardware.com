@@ -77,23 +77,22 @@
       <div class="headerBar">
         <div class="logotype logoCol">
           <h1 class="logo">
-            <a href="/" >
+            <a href="<?php print url('<front>', array('absolute' => TRUE)); ?>" >
               <span>The<br />Accurate<br />Lock &amp; Hardware<br />Company</span>
               <span class="subTitle">Designed &amp;<br />manufactured in<br />Stamford, Conn.<br />U.S.A.</span>
             </a>
           </h1>
+              <div class="contactIcons">
+                <ul>
+                  <li><a href="#" class="icon-envelop"></a></li>
+                  <li><a href="#" class="icon-location"></a></li>
+          <!--        <li><a href="#" class="icon-phone"></a></li>-->
+                  <li><a href="#" class="icon-twitter"></a></li>
+                  <li><a href="#" class="icon-facebook"></a></li>
+                </ul>
+              </div>
         </div>
       </div>
-      
-          <div class="contactIcons">
-            <ul>
-              <li><a href="#" class="icon-envelop"></a></li>
-              <li><a href="#" class="icon-location"></a></li>
-      <!--        <li><a href="#" class="icon-phone"></a></li>-->
-              <li><a href="#" class="icon-twitter"></a></li>
-              <li><a href="#" class="icon-facebook"></a></li>
-            </ul>
-          </div>
     </div>
   </header>
   
