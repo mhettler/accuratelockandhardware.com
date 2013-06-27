@@ -27,6 +27,10 @@ body {
   border-right: 10px solid #bc3f3f;*/
 }
 
+.splash, .splash img {
+  width: 100%;
+}
+
 #page {
   overflow: auto;
   border-top: 10px solid #bc3f3f;
@@ -69,7 +73,7 @@ body {
 }
  
 
-header, #nav {
+header, .mainNav {
   font: normal 1em/1.5em "futura-pt", "century gothic", "helvetica", "arial", "sans-serif";
 }
 
@@ -79,7 +83,7 @@ header > div {
 
 /* @group Social Media / Contact Icons */
 
-#contactIcons {
+.contactIcons {
   margin-top: 1em;
   display: block;
   position: fixed;
@@ -87,23 +91,23 @@ header > div {
   width: 200px;
 }
 
-#contactIcons ul {
+.contactIcons ul {
   padding: 0;
 }
 
-#contactIcons ul li {
+.contactIcons ul li {
   font-size: 1.2em;
   display: inline-block;
   text-align: center;
 }
 
-#contactIcons a:link, #contactIcons a:visited {
-  color: #777;
+.contactIcons a:link, .contactIcons a:visited {
+  color: #333;
   text-decoration: none;
 }
 
-#contactIcons a:hover, #contactIcons a:active {
-  color: #333;
+.contactIcons a:hover, .contactIcons a:active {
+  color: #000;
 }
 
 
@@ -143,39 +147,35 @@ header > div {
 
 /* @group Overlay Header */
 
-header.overlay {
-  width: 100%;
+.fixed > div {
+  z-index: 20;
   position: absolute;
-  z-index: 10;
-  top: 20px;
-  color: #fff;
-  -webkit-font-smoothing: antialiased;
-  
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-8 */
+  top: 0;
+  left: 0;
 }
 
-header.overlay #nav {
+.overlay {
+  z-index: 21;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.overlay .mainNav {
   border-color: #fff;
 }
 
-header.overlay a:link, header.overlay a:visited {
+.overlay a:link, .overlay a:visited {
   color: #fff !important;
   border-color: #fff !important;
 }
 
-header.overlay #nav a:hover, header.overlay #nav a:active {
+.overlay .mainNav a:hover, .overlay .mainNav a:active {
   text-decoration: underline !important;
   background-color: rgba(255,255,255, 0.2);
 }
 
-header.overlay h1#logo a {
-   background: url(assets/logo-w.png) no-repeat left;
+.overlay h1.logo a {
+   background-image: url(assets/logo-w.png) !important;
 }
 
 /* @end */
@@ -206,46 +206,45 @@ ul.socialIcons li a {
 
 /* @end */
 
-#header h1, #header h2 {
+.header h1, .header h2 {
   margin: 0;
   padding: 0;
 }
 
-#header .logoCol {
+.header .logoCol {
   padding-right: 2em;
 }
 
-#header {
+.header {
   right: 75%;
   width: 200px;
   position: fixed;
   line-height: 1.5em !important;
 }
 
-#nav {
-  padding-top: 2em;
+.mainNav {
   width: 200px;
   left: 75%;
   position: fixed;
 }
 
-h1#logo {
+h1.logo {
   overflow: auto;
 }
 
-h1#logo span {
+h1.logo span {
   text-align: center;
   display: block;
 }
 
-h1#logo span.subTitle {
+h1.logo span.subTitle {
   font-weight: normal !important;
   margin-top: 1.5em;
   font-size: 1em;
   line-height: 1.5em;
 }
 
-h1#logo a:link, h1#logo a:visited {
+h1.logo a:link, h1.logo a:visited {
   color: #333;
 /*  text-transform: uppercase;*/
   overflow: hidden;
@@ -257,24 +256,21 @@ h1#logo a:link, h1#logo a:visited {
   text-decoration: none;
 }
 
-h1#logo a:hover span, h1#logo a:active span {
+h1.logo a:hover span, h1.logo a:active span {
   text-decoration: underline !important;
 }
 
-#header h1 {
+.header h1 {
   font-size: 1em;
   font-weight: bold;
   margin: 0;
 }
 
-#header img {
+.header img {
   width: 100%;
   max-width: 900px;
   display: block;
   margin: 1em auto 0 auto;
-}
-
-#headerBar {
 }
 
 #madeinBadge h1 {
@@ -288,26 +284,26 @@ h1#logo a:hover span, h1#logo a:active span {
   right: 180px;
 }
 
-#nav div {
-  margin: 0;
+.mainNav > div {
+  padding: 2em 2em 2em 4em;
 }
 
-#nav {
+.mainNav {
 /*  font: normal .8em/2em monaco, "futura-pt", futura;*/
 }
 
-#nav ul {
+.mainNav ul {
   padding: 0;
   margin: 0;
   float: right;
 }
 
-#nav li {
+.mainNav li {
   list-style-type: none;
   text-align: right;
 }
 
-#nav a:link, #nav a:visited {
+.mainNav a:link, .mainNav a:visited {
   display: block;
   text-decoration: none;
   font-size: 1em;
@@ -315,16 +311,16 @@ h1#logo a:hover span, h1#logo a:active span {
   font-weight: bold;
 }
 
-#nav li:last-child a {
+.mainNav li:last-child a {
   border-right: 0;
 }
 
-#nav a:hover, #nav a:active {
+.mainNav a:hover, .mainNav a:active {
   color: #bc3f3f;
   text-decoration: underline;
 }
 
-#nav li a.active {
+.mainNav li a.active {
   text-decoration: underline;
 }
 

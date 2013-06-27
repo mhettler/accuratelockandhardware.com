@@ -72,11 +72,11 @@
 
 <div id="page">
 
-  <header id="header" role="banner">
+  <header class="header fixed" role="banner">
     <div>
-      <div id="headerBar">
+      <div class="headerBar">
         <div class="logotype logoCol">
-          <h1 id="logo">
+          <h1 class="logo">
             <a href="/" >
               <span>The<br />Accurate<br />Lock &amp; Hardware<br />Company</span>
               <span class="subTitle">Designed &amp;<br />manufactured in<br />Stamford, Conn.<br />U.S.A.</span>
@@ -84,21 +84,23 @@
           </h1>
         </div>
       </div>
-    </div>
-    <div id="contactIcons">
-      <ul>
-        <li><a href="#" class="icon-envelop"></a></li>
-        <li><a href="#" class="icon-location"></a></li>
-<!--        <li><a href="#" class="icon-phone"></a></li>-->
-        <li><a href="#" class="icon-twitter"></a></li>
-        <li><a href="#" class="icon-facebook"></a></li>
-      </ul>
+      
+          <div class="contactIcons">
+            <ul>
+              <li><a href="#" class="icon-envelop"></a></li>
+              <li><a href="#" class="icon-location"></a></li>
+      <!--        <li><a href="#" class="icon-phone"></a></li>-->
+              <li><a href="#" class="icon-twitter"></a></li>
+              <li><a href="#" class="icon-facebook"></a></li>
+            </ul>
+          </div>
     </div>
   </header>
   
-    <div id="nav">
+    <div class="mainNav fixed">
+      <div>
       <?php if ($main_menu): ?>
-        <nav id="main-menu" role="navigation">
+        <nav class="main-menu" role="navigation">
           <?php
           // This code snippet is hard to modify. We recommend turning off the
           // "Main menu" on your sub-theme's settings form, deleting this PHP
@@ -161,11 +163,11 @@
       
 
     </div>
+  </div>
     
   <?php endif; ?>
 
 <!-- End NAV -->
-
   <div id="main">
   
     <div id="content" class="column contentWidth" role="main">

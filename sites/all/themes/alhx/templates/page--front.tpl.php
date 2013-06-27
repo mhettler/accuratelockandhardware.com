@@ -72,95 +72,110 @@
 
 <div id="page">
 
-  <header id="header" role="banner" class="overlay">
-  <div class="contentWidth">
-  <div id="headerBar">
-    <div class="logotype logoCol">
-      <h1 id="logo"><a href="/" >The<br />Accurate<br />Lock &amp; Hardware<br />Company</a></h1>
-    </div>
-    
-    <div id="masthead">
-      <div class="madein mastCol">
-        <h2>Designed &amp;<br />manufactured in<br />Stamford, Conn. U.S.A.</h2>
-      </div>
-      <div class="mastCol">
-        <p>1 Annie Place<br />Stamford, Conn.<br />U.S.A. 06902</p>
-      </div>
-      <div class="mastCol">
-        <p>T: 203.348.8865<br />F: 203.348.5234<br />E: info@accuratelh.com</p>
-      </div>
-    </div>
-  </div>
-
-    <?php if ($site_name || $site_slogan): ?>
-      <hgroup id="name-and-slogan">
-        <?php if ($site_name): ?>
-          <h1 id="site-name">
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+  <header class="header fixed" role="banner">
+    <div class="dup">
+      <div class="headerBar">
+        <div class="logotype logoCol">
+          <h1 class="logo">
+            <a href="/" >
+              <span>The<br />Accurate<br />Lock &amp; Hardware<br />Company</span>
+              <span class="subTitle">Designed &amp;<br />manufactured in<br />Stamford, Conn.<br />U.S.A.</span>
+            </a>
           </h1>
-        <?php endif; ?>
-
-        <?php if ($site_slogan): ?>
-          <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
-        <?php endif; ?>
-      </hgroup><!-- /#name-and-slogan -->
-    <?php endif; ?>
-
-    <?php if ($secondary_menu): ?>
-      <nav id="secondary-menu" role="navigation">
-        <?php print theme('links__system_secondary_menu', array(
-          'links' => $secondary_menu,
-          'attributes' => array(
-            'class' => array('links', 'inline', 'clearfix'),
-          ),
-          'heading' => array(
-            'text' => $secondary_menu_heading,
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
-      </nav>
-    <?php endif; ?>
-
-    <?php print render($page['header']); ?>   
-  </div>
-  <div id="nav" class="contentWidth">
-    <?php if ($main_menu): ?>
-      <nav id="main-menu" role="navigation">
-        <?php
-        // This code snippet is hard to modify. We recommend turning off the
-        // "Main menu" on your sub-theme's settings form, deleting this PHP
-        // code block, and, instead, using the "Menu block" module.
-        // @see http://drupal.org/project/menu_block
-        print theme('links__system_main_menu', array(
-          'links' => $main_menu,
-          'attributes' => array(
-            'class' => array('links', 'inline', 'clearfix'),
-          ),
-          'heading' => array(
-            'text' => t('Main menu'),
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
-      </nav>
-    <?php endif; ?>
-    
-    <?php print render($page['navigation']); ?>
-    
-  
-  
-  </div>
+        </div>
+      </div>
+      
+          <div class="contactIcons">
+            <ul>
+              <li><a href="#" class="icon-envelop"></a></li>
+              <li><a href="#" class="icon-location"></a></li>
+      <!--        <li><a href="#" class="icon-phone"></a></li>-->
+              <li><a href="#" class="icon-twitter"></a></li>
+              <li><a href="#" class="icon-facebook"></a></li>
+            </ul>
+          </div>
+    </div>
   </header>
+  
+    <div class="mainNav fixed">
+      <div class="dup">
+      <?php if ($main_menu): ?>
+        <nav class="main-menu" role="navigation">
+          <?php
+          // This code snippet is hard to modify. We recommend turning off the
+          // "Main menu" on your sub-theme's settings form, deleting this PHP
+          // code block, and, instead, using the "Menu block" module.
+          // @see http://drupal.org/project/menu_block
+          print theme('links__system_main_menu', array(
+            'links' => $main_menu,
+            'attributes' => array(
+              'class' => array('links', 'inline', 'clearfix'),
+            ),
+            'heading' => array(
+              'text' => t('Main menu'),
+              'level' => 'h2',
+              'class' => array('element-invisible'),
+            ),
+          )); ?>
+        </nav>
+    
+  
+      <?php if ($site_name || $site_slogan): ?>
+        <hgroup id="name-and-slogan">
+          <?php if ($site_name): ?>
+            <h1 id="site-name">
+              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+            </h1>
+          <?php endif; ?>
+  
+          <?php if ($site_slogan): ?>
+            <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
+          <?php endif; ?>
+        </hgroup><!-- /#name-and-slogan -->
+      <?php endif; ?>
+  
+      <?php if ($secondary_menu): ?>
+        <nav id="secondary-menu" role="navigation">
+          <?php print theme('links__system_secondary_menu', array(
+            'links' => $secondary_menu,
+            'attributes' => array(
+              'class' => array('links', 'inline', 'clearfix'),
+            ),
+            'heading' => array(
+              'text' => $secondary_menu_heading,
+              'level' => 'h2',
+              'class' => array('element-invisible'),
+            ),
+          )); ?>
+        </nav>
+      <?php endif; ?>
+  
+      <?php print render($page['header']); ?>   
+      
+<!--      <div id="masthead">
+        <div class="mastCol">
+          <p>1 Annie Place<br />Stamford, Conn.<br />U.S.A. 06902</p>
+        </div>
+        <div class="mastCol">
+          <p>T: 203.348.8865<br />F: 203.348.5234<br />E: info@accuratelh.com</p>
+        </div>
+      </div>-->
+      
 
+    </div>
+  </div>
+    
+  <?php endif; ?>
+
+<!-- End NAV -->
+  <div class="splash">
+    <img src="<?php print base_path() . $directory .'/' ?>images/alhhist.jpg" />
+  </div>
   <div id="main">
-  	
-  	<div id="featuredContent">
-  		<?php print render($page['highlighted']); ?>
-  	</div>
   
     <div id="content" class="column contentWidth" role="main">
     <div>
+      <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
 <!--      <?php print render($title_prefix); ?>
