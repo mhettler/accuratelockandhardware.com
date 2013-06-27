@@ -590,11 +590,12 @@ span.field-label { /* The inline field label used by the Fences module */
 
 footer {
   margin-top: 4em;
-  border-top: 6px solid #2c6bc6;
+  border-top: 1px solid #2c6bc6;
+  padding-top: 1px;
 }
 
 footer > div {
-  border-top: 6px solid #bc3f3f;
+  border-top: 1px solid #bc3f3f;
   margin-bottom: 4em;
 }
 

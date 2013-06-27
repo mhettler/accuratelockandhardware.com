@@ -13,7 +13,7 @@ $(document).ready(function() {
         var currPosition = $(window).scrollTop();
     
         var overClipTop = 0 - currPosition;
-        var overClipBottom = overClipTop + $('.splash').height() - 5;     
+        var overClipBottom = overClipTop + $('.splash').height() - 4;     
         var overRect = 'rect(' +overClipTop + 'px auto ' + overClipBottom + 'px 0px)';
         
         var underClipBottom = currPosition + $(window).height();
