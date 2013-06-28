@@ -17,11 +17,12 @@ html, body {
   color: #333;
   margin: 0;
   padding: 0;
-  font: 16px Georgia, "Times New Roman", Times , Serif;
+  font: 16px/1.8em Georgia, "Times New Roman", Times , Serif;
 /*  background: url(assets/bg-sample.jpg) no-repeat center top #fff;*/
 }
 
 body {
+  border-bottom: 10px solid #2c6bc6;
   border-top: 10px solid #2c6bc6;
 /*  border-left: 10px solid #2c6bc6;
   border-right: 10px solid #bc3f3f;*/
@@ -41,6 +42,7 @@ a:hover, a:active {
 
 #page {
   overflow: auto;
+  border-bottom: 10px solid #bc3f3f;
   border-top: 10px solid #bc3f3f;
   padding: 0;
   margin: 0;
@@ -116,6 +118,8 @@ header > div {
 
 .contactIcons a:hover, .contactIcons a:active {
   color: #000;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #333;
 }
 
 
@@ -226,7 +230,7 @@ ul.socialIcons li a {
 }
 
 .header {
-  right: 75%;
+  right: 77%;
   width: 200px;
   position: fixed;
   line-height: 1.5em !important;
@@ -234,7 +238,7 @@ ul.socialIcons li a {
 
 .mainNav {
   width: 200px;
-  left: 75%;
+  left: 77%;
   position: fixed;
 }
 
@@ -385,10 +389,6 @@ h1.logo a:hover span, h1.logo a:active span {
 
 #content {
  padding-top: 2em;
-}
-
-#content > div {
-  padding: 0 2em;
 }
 
 #content h2 {
@@ -581,7 +581,7 @@ footer {
 
 footer > div {
   border-top: 1px solid #bc3f3f;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 /* @end */
