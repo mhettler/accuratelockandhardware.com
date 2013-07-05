@@ -374,7 +374,7 @@ h1.logo a:hover span, h1.logo a:active span {
 
 .view-content .productItem {
   overflow: auto;
-  border-bottom: 3px solid #333;
+  border-bottom: 1px solid #333;
   padding-bottom: .5em;
   margin-bottom: .5em;
 }
