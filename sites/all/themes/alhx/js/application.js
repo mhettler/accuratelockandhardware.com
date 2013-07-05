@@ -13,11 +13,11 @@ $(document).ready(function() {
         var currPosition = Math.abs($(window).scrollTop());
     
         var overClipTop = 0 - currPosition;
-        var overClipBottom = overClipTop + $('.splash').height() - 4;     
+        var overClipBottom = overClipTop + $('.splash').height() - 9;     
         var overRect = 'rect(' +overClipTop + 'px auto ' + overClipBottom + 'px 0px)';
         
         var underClipBottom = currPosition + $(window).height();
-        var underClipTop= overClipBottom - 16;
+        var underClipTop= overClipBottom;
         
         var underRect = 'rect(' + underClipTop + 'px auto ' + underClipBottom + 'px 0px)';
         
