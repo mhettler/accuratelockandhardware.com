@@ -59,6 +59,20 @@ html[xmlns] .slides {display: block;}
   color: #fff !important;
 }
 
+.flexslider ul#flexslider_views_slideshow_flexslider_galleries-block {
+  height: 100% !important;
+  width: 100% !important;
+  display: block;
+}
+
+.flexslider ul#flexslider_views_slideshow_flexslider_galleries-block li {
+  height: 100% !important;
+  width: 100% !important;
+  display: block;
+  background-position: center center !important;
+  display: none;
+}
+
 .flexslider .caption a {
 } 
 

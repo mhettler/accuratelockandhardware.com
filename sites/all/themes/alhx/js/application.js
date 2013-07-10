@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+  //ms Carousel Fullscreen hack
+    
+  $('.flexslider ul#flexslider_views_slideshow_flexslider_galleries-block img').each(function(){
+    var imgSrc = $(this).attr('src');
+    console.log(imgSrc);
+    $(this).hide();
+    $(this).parent().css({'background' : 'url(' + imgSrc + ') no-repeat', 'background-size' : 'cover'});
+  });
 
   // Duplicate fixed elements to create white overlay version
   
