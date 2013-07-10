@@ -15,7 +15,7 @@
 @import url(http://fonts.googleapis.com/css?family=Old+Standard+TT:400,700,400italic|Archivo+Narrow:700);
 
 html, body {
-  min-height: 100%;
+  height: 100%;
   color: #333;
   margin: 0;
   padding: 0;
@@ -24,15 +24,29 @@ html, body {
 }
 
 body {
-  border-bottom: 10px solid #285993;
   border-top: 10px solid #285993;
 /*  border-left: 10px solid #285993;
   border-right: 10px solid #993333;*/
 }
 
-.splash, .splash img {
-  width: 100%;
+.splash {
+/*  z-index: -999;*/
+  position: relative;
+  height: 85% !important;
+  overflow: hidden;
+/*  display: block;*/
 }
+
+.splash div {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+/*.splash, .splash img {
+  width: 100%;
+}*/
 
 a:link, a:visited {
   color: #285993;
@@ -43,8 +57,7 @@ a:hover, a:active {
 }
 
 #page {
-  overflow: auto;
-  border-bottom: 10px solid #993333;
+  height: 100%;
   border-top: 10px solid #993333;
   padding: 0;
   margin: 0;
@@ -98,8 +111,9 @@ header > div {
 
 .contactIcons {
   margin: 1em auto;
-  position: fixed;
-  bottom: 0em;
+  position: absolute;
+  z-index: 100;
+  bottom: 2em;
   width: 10em;
   font-size: 1.2em;
 }
@@ -121,8 +135,8 @@ header > div {
 
 .contactIcons a:hover, .contactIcons a:active {
   color: #000;
-  padding-bottom: 3px;
-  border-bottom: 1px solid #333;
+/*  padding-bottom: 3px;
+  border-bottom: 1px solid #333;*/
 }
 
 
@@ -163,7 +177,7 @@ header > div {
 /* @group Overlay Header */
 
 .fixed > div {
-  z-index: 20;
+  z-index: 100;
   position: absolute;
   top: 0;
   left: 0;
@@ -171,7 +185,7 @@ header > div {
 }
 
 .overlay {
-  z-index: 21;
+  z-index: 101;
   color: #fff;
   -webkit-font-smoothing: antialiased;
 }
@@ -200,14 +214,6 @@ header > div {
 
 /* @group Social Icons */
 
-#masthead .socialIcons {
-  font-family: 'sharetfpg' !important;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  font-size: 1.4em;
-}
-
 ul.socialIcons {
   margin: 0;
   padding: .2em 0 0 0;
@@ -219,7 +225,20 @@ ul.socialIcons li {
 }
 
 ul.socialIcons li a {
+  text-decoration: none;
   border: none !important;
+}
+
+a.icon-twitter:hover {
+  color: #00b8ef !important;
+}
+
+a.icon-location:hover {
+  color: #df593f !important;
+}
+
+a.icon-facebook:hover{
+  color: #3B5998 !important;
 }
 
 /* @end */
@@ -233,16 +252,24 @@ ul.socialIcons li a {
 
 
 .header {
+  height: 100%;
   right: 77%;
   width: 200px;
   position: fixed;
+  z-index: 100;
   line-height: 1.5em !important;
+}
+
+.header > div, .header > div > div {
+  height: 100%;
+  display: block;
 }
 
 .mainNav {
   width: 200px;
   left: 77%;
   position: fixed;
+  z-index: 100;
 }
 
 h1.logo {

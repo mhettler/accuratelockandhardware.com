@@ -13,7 +13,7 @@ $(document).ready(function() {
         var currPosition = Math.abs($(window).scrollTop());
     
         var overClipTop = 0 - currPosition;
-        var overClipBottom = overClipTop + $('.splash').height() - 9;     
+        var overClipBottom = overClipTop + $('.splash').height();     
         var overRect = 'rect(' +overClipTop + 'px auto ' + overClipBottom + 'px 0px)';
         
         var underClipBottom = currPosition + $(window).height();
@@ -23,6 +23,7 @@ $(document).ready(function() {
         
         $('.overlay').css({clip : overRect});
         $('.underlay').css({clip : underRect});
+
       };
       
       $(window).load(function () {
