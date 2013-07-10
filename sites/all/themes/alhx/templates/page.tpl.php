@@ -168,7 +168,7 @@
 
 <!-- End NAV -->
 
-  <?php if ($page['highlighted']); ?>
+  <?php if ($page['highlighted']): ?>
   <div class="splash">
     <?php print render($page['highlighted']); ?>
   </div>
