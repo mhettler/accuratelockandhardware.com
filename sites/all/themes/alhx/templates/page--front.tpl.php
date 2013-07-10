@@ -77,10 +77,7 @@
     <div class="headerBar">
       <div class="logotype logoCol">
         <h1 class="logo">
-            <a href="<?php print url('<front>', array('absolute' => TRUE)); ?>" >
-<!--              <span>The<br />Accurate<br />Lock &amp; Hardware<br />Company</span>-->
-              <span class="subTitle">Designed &amp;<br />manufactured in<br />Stamford, Conn.<br />U.S.A.</span>
-            </a>
+            <a href="<?php print url('<front>', array('absolute' => TRUE)); ?>" >Lock &amp; Hardware</a>
           </h1>
             <div class="contactIcons">
               <ul>
@@ -116,8 +113,7 @@
               'class' => array('element-invisible'),
             ),
           )); ?>
-        </nav>
-    
+        </nav>    
   
       <?php if ($site_name || $site_slogan): ?>
         <hgroup id="name-and-slogan">

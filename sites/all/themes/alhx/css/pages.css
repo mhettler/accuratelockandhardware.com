@@ -29,6 +29,10 @@ body {
   border-right: 10px solid #993333;*/
 }
 
+h1, h2, h3 {
+  font-family: 'Archivo Narrow';
+}
+
 .splash {
 /*  z-index: -999;*/
   position: relative;
@@ -49,6 +53,7 @@ body {
 }*/
 
 a:link, a:visited {
+  transition: all .1s linear;
   color: #285993;
 }
 
@@ -58,7 +63,7 @@ a:hover, a:active {
 
 #page {
   height: 100%;
-  border-top: 10px solid #993333;
+  border-top: 10px solid #933;
   padding: 0;
   margin: 0;
 }
@@ -291,17 +296,17 @@ h1.logo span.subTitle {
 
 h1.logo a:link, h1.logo a:visited {
   color: #333;
-/*  text-transform: uppercase;*/
-/*  overflow: hidden;*/
-/*  text-indent: -9999em;*/
-  font-weight: bold;
-  padding-top: 116px;
+  padding-top: 3.2em;
+  color: #933;
+  font: normal 1em/1.5em "Monaco", "lucida console", "courier", monospace;
+  text-align: center;
+  overflow: hidden;
   display: block;
   background: url(assets/original-logo.png) no-repeat top center;
   text-decoration: none;
 }
 
-h1.logo a:hover span, h1.logo a:active span {
+h1.logo a:hover, h1.logo a:active {
   text-decoration: underline !important;
 }
 
