@@ -11,21 +11,23 @@
 /*
  * Body
  */
+ 
+@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT:400,700,400italic|Archivo+Narrow:700);
 
 html, body {
   min-height: 100%;
   color: #333;
   margin: 0;
   padding: 0;
-  font: 16px/1.8em Georgia, "Times New Roman", Times , Serif;
+  font: 16px/1.8em "Old Standard TT", "Times New Roman", Times , Serif;
 /*  background: url(assets/bg-sample.jpg) no-repeat center top #fff;*/
 }
 
 body {
-  border-bottom: 10px solid #2c6bc6;
-  border-top: 10px solid #2c6bc6;
-/*  border-left: 10px solid #2c6bc6;
-  border-right: 10px solid #bc3f3f;*/
+  border-bottom: 10px solid #285993;
+  border-top: 10px solid #285993;
+/*  border-left: 10px solid #285993;
+  border-right: 10px solid #993333;*/
 }
 
 .splash, .splash img {
@@ -33,7 +35,7 @@ body {
 }
 
 a:link, a:visited {
-  color: #2c6bc6;
+  color: #285993;
 }
 
 a:hover, a:active {
@@ -42,8 +44,8 @@ a:hover, a:active {
 
 #page {
   overflow: auto;
-  border-bottom: 10px solid #bc3f3f;
-  border-top: 10px solid #bc3f3f;
+  border-bottom: 10px solid #993333;
+  border-top: 10px solid #993333;
   padding: 0;
   margin: 0;
 }
@@ -84,12 +86,12 @@ a:hover, a:active {
  
 
 header, .mainNav {
-  font: normal 1em/1.5em "futura-pt", "century gothic", "helvetica", "arial", "sans-serif";
+  font: normal 1em/1.5em "Monaco", "lucida console", "courier", monospace;
 }
 
 header > div {
   padding-top: 2em;
-  width: 10em;
+  width: 12em;
 }
 
 /* @group Social Media / Contact Icons */
@@ -99,6 +101,7 @@ header > div {
   position: fixed;
   bottom: 0em;
   width: 10em;
+  font-size: 1.2em;
 }
 
 .contactIcons ul {
@@ -164,6 +167,7 @@ header > div {
   position: absolute;
   top: 0;
   left: 0;
+  font-size: .8em;
 }
 
 .overlay {
@@ -187,8 +191,10 @@ header > div {
 }
 
 .overlay h1.logo a {
-   background-image: url(assets/logo-w.png) !important;
+/*   background-image: url(assets/logo-w.png) !important;*/
+   background-image: url(assets/original-logo-w.png) !important;
 }
+
 
 /* @end */
 
@@ -225,9 +231,6 @@ ul.socialIcons li a {
   padding: 0;
 }
 
-.header .logoCol {
-
-}
 
 .header {
   right: 77%;
@@ -243,7 +246,8 @@ ul.socialIcons li a {
 }
 
 h1.logo {
-  overflow: auto;
+/*  overflow: auto;*/
+  min-width: 150px;
 }
 
 h1.logo span {
@@ -261,12 +265,12 @@ h1.logo span.subTitle {
 h1.logo a:link, h1.logo a:visited {
   color: #333;
 /*  text-transform: uppercase;*/
-  overflow: hidden;
+/*  overflow: hidden;*/
 /*  text-indent: -9999em;*/
   font-weight: bold;
   padding-top: 116px;
   display: block;
-  background: url(assets/logo.png) no-repeat top center;
+  background: url(assets/original-logo.png) no-repeat top center;
   text-decoration: none;
 }
 
@@ -296,7 +300,7 @@ h1.logo a:hover span, h1.logo a:active span {
 }
 
 .mainNav {
-/*  font: normal .8em/2em monaco, "futura-pt", futura;*/
+/*  font: normal .8em/2em monaco, "Monaco", futura;*/
 }
 
 .mainNav ul {
@@ -314,7 +318,7 @@ h1.logo a:hover span, h1.logo a:active span {
   display: block;
   text-decoration: none;
   font-size: 1em;
-  color: #2c6bc6;
+  color: #285993;
   font-weight: bold;
 }
 
@@ -323,7 +327,7 @@ h1.logo a:hover span, h1.logo a:active span {
 }
 
 .mainNav a:hover, .mainNav a:active {
-  color: #bc3f3f;
+  color: #993333;
   text-decoration: underline;
 }
 
@@ -336,7 +340,7 @@ h1.logo a:hover span, h1.logo a:active span {
 /* @group Product Filters */
 
 .productFilterBar {
-  font: normal 1em/1.5em "futura-pt", "century gothic", "helvetica", "arial", "sans-serif";
+  font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace;
 /*  letter-spacing: .3em;*/
   font-weight: bold;
   padding: .5em 0;
@@ -392,7 +396,7 @@ h1.logo a:hover span, h1.logo a:active span {
 }
 
 #content h2 {
-  font: bold 1.6em/1.5em "futura-pt", "century gothic", "helvetica", "arial", "sans-serif";
+  font: bold 1.6em/1.5em 'Archivo Narrow';
 }
 
 #content ul {
@@ -568,19 +572,19 @@ span.field-label { /* The inline field label used by the Fences module */
 /* @group Footer */
 
 #footer {
-  font: normal 1em/1.5em "futura-pt", "century gothic", "helvetica", "arial", "sans-serif";
+  font: normal .8em/1.5em "Monaco", "century gothic", "helvetica", "arial", "sans-serif";
   clear: both;
   text-align: center;
 }
 
 footer {
   margin-top: 4em;
-  border-top: 1px solid #2c6bc6;
+  border-top: 1px solid #285993;
   padding-top: 1px;
 }
 
 footer > div {
-  border-top: 1px solid #bc3f3f;
+  border-top: 1px solid #993333;
   margin-bottom: 2em;
 }
 

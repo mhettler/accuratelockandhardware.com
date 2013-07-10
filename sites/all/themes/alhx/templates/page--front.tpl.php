@@ -77,10 +77,7 @@
     <div class="headerBar">
       <div class="logotype logoCol">
         <h1 class="logo">
-          <a href="<?php print url('<front>', array('absolute' => TRUE)); ?>" >
-            <span>The<br />Accurate<br />Lock &amp; Hardware<br />Company</span>
-            <span class="subTitle">Designed &amp;<br />manufactured in<br />Stamford, Conn.<br />U.S.A.</span>
-          </a>
+            <span>Accurate</span>
         </h1>
             <div class="contactIcons">
               <ul>
@@ -168,13 +165,12 @@
 
 <!-- End NAV -->
   <div class="splash">
-    <img src="<?php print base_path() . $directory .'/' ?>images/alhhist.jpg" />
+    <?php print render($page['highlighted']); ?>
   </div>
   <div id="main">
   
     <div id="content" class="column contentWidth" role="main">
     <div>
-      <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
 <!--      <?php print render($title_prefix); ?>

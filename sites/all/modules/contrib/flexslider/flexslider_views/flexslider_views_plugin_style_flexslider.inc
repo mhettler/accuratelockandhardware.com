@@ -16,7 +16,9 @@ class flexslider_views_plugin_style_flexslider extends views_plugin_style {
     $options = parent::option_definition();
 
     $options += array(
-      'flexslider_optionset' => array('default' => 'default'),
+      'optionset' => array('default' => 'default'),
+      'caption_field' => array('' => t('None')),
+      'text_field' => array('' => t('None')),
     );
 
     return $options;
@@ -30,29 +32,54 @@ class flexslider_views_plugin_style_flexslider extends views_plugin_style {
 
     $form['flexslider'] = array(
       '#type' => 'fieldset',
-      '#title' => t('Flex Slider'),
+      '#title' => t('FlexSlider'),
     );
 
     $optionsets = array();
     foreach (flexslider_optionset_load_all() as $name => $optionset) {
       $optionsets[$name] = check_plain($optionset->title);
     }
-    $form['flexslider']['flexslider_optionset'] = array(
+    $form['flexslider']['optionset'] = array(
       '#title' => t('Option set'),
       '#type' => 'select',
       '#options' => $optionsets,
-      '#default_value' => $this->options['flexslider_optionset'],
+      '#default_value' => $this->options['optionset'],
     );
+
+    $link_options = array('' => t('None'));
+    foreach ($this->view->display_handler->get_handlers('field') as $field => $handler) {
+      $link_options[$field] = $handler->ui_name();
+    }
+
+    /*
+    $form['flexslider']['caption_field'] = array(
+      '#type' => 'select',
+      '#title' => t('Caption Field'),
+      '#multiple' => FALSE,
+      '#description' => t('Select a field to be used as a caption. This is typically the name of the image and can be used to link to the source content.'),
+      '#options' => $link_options,
+      '#default_value' => $this->options['caption_field'],
+    );
+
+    $form['flexslider']['text_field'] = array(
+      '#type' => 'select',
+      '#title' => t('Description Field'),
+      '#multiple' => FALSE,
+      '#description' => t('Select a field to be used as a description of the image or extra information for the viewer.'),
+      '#options' => $link_options,
+      '#default_value' => $this->options['text_field'],
+    );
+    */
   }
 
   /**
    * Performs some cleanup tasks on the options array before saving it.
    */
   function options_submit(&$form, &$form_state) {
-    $options = &$form_state['values']['style_options'];
+    $options =& $form_state['values']['style_options'];
 
     // Pull the fieldset values one level up
-    $options += $options['flexslider'];
+    $options = $options['flexslider'];
     unset($options['flexslider']);
   }
 

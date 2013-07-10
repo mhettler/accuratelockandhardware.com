@@ -103,6 +103,7 @@ scripts[] = js/application.js
 
 regions[header]         = Header
 regions[navigation]     = Navigation bar
+regions[filters]    	= Filter bar
 regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content
