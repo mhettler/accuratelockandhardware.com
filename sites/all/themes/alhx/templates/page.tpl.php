@@ -167,9 +167,12 @@
   <?php endif; ?>
 
 <!-- End NAV -->
-<div class="splash">
+
+  <?php if ($page['highlighted']); ?>
+  <div class="splash">
     <?php print render($page['highlighted']); ?>
   </div>
+  <?php endif; ?>
   
   <div id="main">
   
