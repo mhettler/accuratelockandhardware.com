@@ -77,7 +77,14 @@
     <div class="headerBar">
       <div class="logotype logoCol">
         <h1 class="logo">
+<<<<<<< HEAD
             <span>Accurate</span>
+=======
+          <a href="<?php print url('<front>', array('absolute' => TRUE)); ?>" >
+<!--            <span>The<br />Accurate<br />Lock &amp; Hardware<br />Company</span>-->
+            <span class="subTitle">Designed &amp;<br />manufactured in<br />Stamford, Conn.<br />U.S.A.</span>
+          </a>
+>>>>>>> e17d4b9d5b02eea92efc0990a663cf7ba1a4bff0
         </h1>
             <div class="contactIcons">
               <ul>

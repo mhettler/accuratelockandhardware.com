@@ -99,8 +99,8 @@
   <?php endif; ?>
   
   <!-- Include Typekit -->
-  <script type="text/javascript" src="//use.typekit.net/pbf7mzx.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<!--  <script type="text/javascript" src="//use.typekit.net/pbf7mzx.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
   
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
