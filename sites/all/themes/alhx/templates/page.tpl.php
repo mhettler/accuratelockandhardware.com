@@ -78,7 +78,7 @@
         <div class="logotype logoCol">
           <h1 class="logo">
             <a href="<?php print url('<front>', array('absolute' => TRUE)); ?>" >
-              <span>The<br />Accurate<br />Lock &amp; Hardware<br />Company</span>
+<!--              <span>The<br />Accurate<br />Lock &amp; Hardware<br />Company</span>-->
               <span class="subTitle">Designed &amp;<br />manufactured in<br />Stamford, Conn.<br />U.S.A.</span>
             </a>
           </h1>
