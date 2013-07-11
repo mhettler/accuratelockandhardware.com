@@ -36,7 +36,7 @@ h1, h2, h3 {
 .splash {
 /*  z-index: -999;*/
   position: relative;
-  height: 85% !important;
+  height: 70% !important;
   overflow: hidden;
 /*  display: block;*/
 }
@@ -613,6 +613,7 @@ footer {
   margin-top: 4em;
   border-top: 1px solid #285993;
   padding-top: 1px;
+  padding-bottom: 1em;
 }
 
 footer > div {
