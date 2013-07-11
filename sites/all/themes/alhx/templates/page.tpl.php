@@ -165,7 +165,7 @@
 <!-- End NAV -->
 
   <?php if ($page['highlighted']): ?>
-  <div class="splash">
+  <div class="splashSub">
     <?php print render($page['highlighted']); ?>
   </div>
   <?php endif; ?>
@@ -176,11 +176,27 @@
     <div>
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
-<!--      <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
-        <h1 class="title" id="page-title"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>-->
+      <?php
+      $current_path = current_path();
+   		$path_alias = drupal_lookup_path('alias',$current_path);
+   		
+   		$second_level = strstr($path_alias, '/');
+   		
+   		//check if this is a second level url, ie "/academic-programs/march-i"
+   		if ($second_level) {
+   			print render($title_prefix);
+   			if ($title):
+   	  ?>
+   	  			 <h1 class="title" id="page-title"><?php print $title; ?></h1>
+   	  			 
+   	  <?php
+   	  		endif;
+   	  		print render($title_suffix);
+   	  		
+   	  	}
+   	  
+   	  
+   	  ?>
       <?php print $messages; ?>
       <?php print render($tabs); ?>
       <?php print render($page['help']); ?>

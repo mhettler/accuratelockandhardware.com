@@ -5,6 +5,10 @@
  * Style anything that isn't in the $content variable.
  */
 
+.profileTile {
+	width: 32%;
+	float: left;
+	}
 
 .node { /* Node wrapper */
 }

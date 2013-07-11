@@ -36,17 +36,32 @@ h1, h2, h3 {
 .splash {
 /*  z-index: -999;*/
   position: relative;
-  height: 70% !important;
+  height: 80% !important;
   overflow: hidden;
 /*  display: block;*/
 }
 
-.splash div {
+.splash div, .splashSub div {
   z-index: 0;
   height: 100%;
   width: 100%;
   display: block;
 }
+
+.splashSub {
+/*  z-index: -999;*/
+  position: relative;
+  height: 40% !important;
+  overflow: hidden;
+/*  display: block;*/
+}
+
+.caption {
+
+	}
+.captionSub {
+
+	}
 
 /*.splash, .splash img {
   width: 100%;
@@ -380,7 +395,7 @@ h1.logo a:hover, h1.logo a:active {
 }
 
 .views-exposed-widget > * {
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 .views-exposed-form > div{
@@ -389,10 +404,11 @@ h1.logo a:hover, h1.logo a:active {
 }
 
 .views-exposed-widget {
-  float: none !important;
+  /*float: none !important;
   display: table-cell;
   border-top: 2px solid #333;
-  border-right: 2px solid #333;
+  border-right: 2px solid #333;*/
+  width: 100%;
   padding: .5em 1em !important;
 }
 
