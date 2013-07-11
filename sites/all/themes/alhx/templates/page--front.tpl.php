@@ -163,7 +163,7 @@
   <?php endif; ?>
 
 <!-- End NAV -->
-  <div class="splash">
+  <div class="splash homeSplash">
     <?php print render($page['highlighted']); ?>
   </div>
   <div id="main">

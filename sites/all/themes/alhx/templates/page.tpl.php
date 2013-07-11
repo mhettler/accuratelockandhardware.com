@@ -73,7 +73,7 @@
 <div id="page">
 
   <header class="header fixed" role="banner">
-    <div>
+    <div class="dup">
       <div class="headerBar">
         <div class="logotype logoCol">
           <h1 class="logo">
@@ -94,7 +94,7 @@
   </header>
   
     <div class="mainNav fixed">
-      <div>
+      <div class="dup">
       <?php if ($main_menu): ?>
         <nav class="main-menu" role="navigation">
           <?php

@@ -36,16 +36,19 @@ h1, h2, h3 {
 .splash {
 /*  z-index: -999;*/
   position: relative;
-  height: 80% !important;
   overflow: hidden;
 /*  display: block;*/
 }
 
-.splash div, .splashSub div {
+.splash div {
   z-index: 0;
   height: 100%;
   width: 100%;
   display: block;
+}
+
+.homeSplash {
+  height: 80% !important;
 }
 
 .splashSub {
@@ -476,8 +479,12 @@ h1.logo a:hover, h1.logo a:active {
 
 /* @group About Styles */
 
+.innerViewWrap {
+  overflow: auto;
+}
+
 .profileTile > img {
-  border-radius: 90px;
+  border-radius: 50%;
 }
 
 .profileTile {
@@ -658,14 +665,14 @@ span.field-label { /* The inline field label used by the Fences module */
 
 footer {
   margin-top: 4em;
-  border-top: 1px solid #285993;
+  border-top: 2px solid #285993;
   padding-top: 1px;
   padding-bottom: 1em;
 }
 
 footer > div {
-  border-top: 1px solid #993333;
-  margin-bottom: 2em;
+  border-top: 2px solid #993333;
+  margin-bottom: 1.8em;
 }
 
 /* @end */
