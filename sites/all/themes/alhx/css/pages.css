@@ -129,6 +129,38 @@ header > div {
 
 /* @group Social Media / Contact Icons */
 
+/* @group Social Icons */
+
+ul.socialIcons {
+  margin: 0;
+  padding: .2em 0 0 0;
+  list-style-type: none;
+}
+
+ul.socialIcons li {
+  display: inline-block;
+}
+
+ul.socialIcons li a {
+  text-decoration: none;
+  border: none !important;
+}
+
+a.icon-twitter:hover {
+  color: #00b8ef !important;
+}
+
+a.icon-location:hover {
+  color: #df593f !important;
+}
+
+a.icon-facebook:hover{
+  color: #3B5998 !important;
+}
+
+/* @end */
+
+
 .contactIcons {
   margin: 1em auto;
   position: absolute;
@@ -229,37 +261,6 @@ header > div {
    background-image: url(assets/original-logo-w.png) !important;
 }
 
-
-/* @end */
-
-/* @group Social Icons */
-
-ul.socialIcons {
-  margin: 0;
-  padding: .2em 0 0 0;
-  list-style-type: none;
-}
-
-ul.socialIcons li {
-  display: inline-block;
-}
-
-ul.socialIcons li a {
-  text-decoration: none;
-  border: none !important;
-}
-
-a.icon-twitter:hover {
-  color: #00b8ef !important;
-}
-
-a.icon-location:hover {
-  color: #df593f !important;
-}
-
-a.icon-facebook:hover{
-  color: #3B5998 !important;
-}
 
 /* @end */
 
@@ -366,7 +367,6 @@ h1.logo a:hover, h1.logo a:active {
   text-decoration: none;
   font-size: 1em;
   color: #285993;
-  font-weight: bold;
 }
 
 .mainNav li:last-child a {
@@ -470,6 +470,37 @@ h1.logo a:hover, h1.logo a:active {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+/* @end */
+
+/* @group About Styles */
+
+.profileTile > img {
+  border-radius: 90px;
+}
+
+.profileTile {
+  height: 16em;
+  display: block;
+  text-align: center;
+  width: 30%;
+  float: left;
+  margin: .5em 0;
+}
+
+.profileTile h2 {
+  margin: 0;
+  font-size: 1.2em !important;
+}
+
+.profileTile h3 {
+  margin: 0;
+  font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace !important;
+}
+
+.profileTile:nth-child(3n+2) {
+  margin: .5em 5%;
 }
 
 /* @end */
@@ -620,7 +651,7 @@ span.field-label { /* The inline field label used by the Fences module */
 /* @group Footer */
 
 #footer {
-  font: normal .8em/1.5em "Monaco", "century gothic", "helvetica", "arial", "sans-serif";
+  font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace;
   clear: both;
   text-align: center;
 }
