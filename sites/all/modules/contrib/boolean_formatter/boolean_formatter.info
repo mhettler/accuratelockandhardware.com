@@ -1,0 +1,11 @@
+name = Boolean formatter
+description = Provides a Views-style formatter for boolean list fields.
+core = 7.x
+dependencies[] = list
+
+; Information added by drupal.org packaging script on 2013-06-02
+version = "7.x-1.1"
+core = "7.x"
+project = "boolean_formatter"
+datestamp = "1370211352"
+
