@@ -165,7 +165,7 @@
 <!-- End NAV -->
 
   <?php if ($page['highlighted']): ?>
-  <div class="splashSub">
+  <div class="splash splashSub">
     <?php print render($page['highlighted']); ?>
   </div>
   <?php endif; ?>
