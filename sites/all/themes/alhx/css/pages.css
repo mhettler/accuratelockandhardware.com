@@ -63,9 +63,19 @@ h1, h2, h3 {
 
 	}
 .captionSub {
-
+	z-index: 999 !important;
+	position: absolute;
+	top: 150px;
+	text-align: center;
+	display: none !important;
 	}
-
+.captionSub h1, .captionSub p {
+	color: #fff;
+	max-width: 800px;
+	width: 50% !important; 
+	margin-left: auto;
+	margin-right: auto;
+	}
 /*.splash, .splash img {
   width: 100%;
 }*/
