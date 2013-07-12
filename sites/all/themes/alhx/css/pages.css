@@ -559,7 +559,7 @@ h1.logo a:hover, h1.logo a:active {
 	overflow: hidden;
 	}
 .field-type-image img {
-	
+	width: auto;
 	}
 .field-name-field-products {
 	width: 30%;
