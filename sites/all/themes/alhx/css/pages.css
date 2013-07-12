@@ -483,7 +483,7 @@ h1.logo a:hover, h1.logo a:active {
 /* @group Content Column */
 
 #content {
- padding-top: 2em;
+/* padding-top: 2em;*/
 }
 
 #content h2 {
@@ -610,14 +610,14 @@ h1.logo a:hover, h1.logo a:active {
  * Content
  */
  
- h1.title, /* The title of the page */
-h2.node-title, /* Title of a piece of content when it is given in a list of content */
-h2.block-title, /* Block title */
-h2.title, /* Comment section heading */
-h2.comment-form, /* Comment form heading */
-h3.title { /* Comment title */
+/* h1.title, /* The title of the page *!/
+h2.node-title, /* Title of a piece of content when it is given in a list of content *!/
+h2.block-title, /* Block title *!/
+h2.title, /* Comment section heading *!/
+h2.comment-form, /* Comment form heading *!/
+h3.title { /* Comment title *!/
   margin: 0;
-}
+}*/
 
 tr.even { /* Some tables have rows marked even or odd. */
   /* background-color: #eee; */ /* Drupal core uses a #eee background */
