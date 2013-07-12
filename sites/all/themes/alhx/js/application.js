@@ -1,5 +1,32 @@
 $(document).ready(function() {
 
+  //mh Contact Map 41.047467,-73.557295
+  
+  function initialize() {
+	  var mapOptions = {
+		zoom: 14,
+		center: new google.maps.LatLng(41.047467, -73.557295),
+		disableDefaultUI: true,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+  		}
+  		var map = new google.maps.Map(document.getElementById('map-canvas'),
+                                mapOptions);
+                                
+              var image = 'madeInStamford.png';
+			  var myLatLng = new google.maps.LatLng(41.047467, -73.557295);
+			  var beachMarker = new google.maps.Marker({
+				  position: myLatLng,
+				  map: map,
+				  icon: image
+			  });
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+  
+
+
+
+
   //ms Carousel Fullscreen hack
     
   $('.flexslider ul#flexslider_views_slideshow_flexslider_galleries-block img').each(function(){
