@@ -17,8 +17,33 @@ $(document).ready(function() {
 			  var beachMarker = new google.maps.Marker({
 				  position: myLatLng,
 				  map: map,
-				  icon: image
+				  title: "Accurate Lock & Hardware"
 			  });
+			  
+			  var styles = [
+			    {
+			      stylers: [
+			        { hue: "#00d4ff" },
+			        { saturation: -80 },
+			        { lightness: -30 }
+			      ]
+			    },{
+			      featureType: "road",
+			      elementType: "geometry",
+			      stylers: [
+			        { lightness: 20 },
+			        { visibility: "simplified" }
+			      ]
+			    },{
+			      featureType: "road",
+			      elementType: "labels",
+			      stylers: [
+			        { visibility: "off" }
+			      ]
+			    }
+			  ];
+			  
+			  map.setOptions({styles: styles});
 	}
 
 	google.maps.event.addDomListener(window, 'load', initialize);
@@ -48,7 +73,7 @@ $(document).ready(function() {
         var currPosition = Math.abs($(window).scrollTop());
     
         var overClipTop = 0 - currPosition;
-        var overClipBottom = overClipTop + $('.splash').height();     
+        var overClipBottom = overClipTop + $('.splashSection').height();  
         var overRect = 'rect(' +overClipTop + 'px auto ' + overClipBottom + 'px 0px)';
         
         var underClipBottom = currPosition + $(window).height();

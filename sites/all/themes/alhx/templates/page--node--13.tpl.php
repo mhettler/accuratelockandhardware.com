@@ -165,7 +165,7 @@
 <!-- End NAV -->
 
   <?php //if ($page['highlighted']): ?>
-  <div id="map-canvas" class="splashSub">
+  <div id="map-canvas" class="splashSub splashSection">
     <?php //print render($page['highlighted']); ?>
   </div>
   <?php //endif; ?>

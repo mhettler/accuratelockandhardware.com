@@ -33,6 +33,10 @@ h1, h2, h3 {
   font-family: 'Archivo Narrow';
 }
 
+.splashSection {
+  overflow: auto;
+}
+
 .splash {
 /*  z-index: -999;*/
   position: relative;
