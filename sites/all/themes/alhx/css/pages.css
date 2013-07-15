@@ -176,7 +176,11 @@ a.icon-facebook:hover{
 }
 
 /* @end */
-
+.contactIcons h2 {
+  font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace;
+  text-align: center;
+  color: #555;
+}
 
 .contactIcons {
   margin: 1em auto;
