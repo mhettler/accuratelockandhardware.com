@@ -259,8 +259,12 @@ a.icon-facebook:hover{
 
 .overlay {
   z-index: 101;
-  color: #fff;
+  color: #fff !important;
   -webkit-font-smoothing: antialiased;
+}
+
+.overlay h2 {
+  color: #fff;
 }
 
 .overlay .mainNav {
