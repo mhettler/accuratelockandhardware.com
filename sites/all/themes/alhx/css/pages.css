@@ -29,6 +29,10 @@ body {
   border-right: 10px solid #993333;*/
 }
 
+#main {
+  padding: 2em 0;
+}
+
 h1, h2, h3 {
   font-family: 'Archivo Narrow';
 }
@@ -411,6 +415,31 @@ h1.logo a:hover, h1.logo a:active {
 
 /* @group Product Filters */
 
+/* @group Root Product Menu */
+
+.contentBand {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.contentBand .productTypeItems {
+  border: 0;
+}
+
+.contentBand .productTypeItems img {
+  width: 200px;
+  float: none;
+}
+
+.contentBand .productTypeCaption {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* @end */
+
 .productTypeItems {
 	width: 100%;
 	overflow: hidden;
@@ -441,6 +470,10 @@ h1.logo a:hover, h1.logo a:active {
   border-bottom: 2px solid #333;
 }
 
+.views-exposed-form {
+  font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace;
+}
+
 .views-exposed-widget > * {
   /*display: inline-block;*/
 }
@@ -451,12 +484,13 @@ h1.logo a:hover, h1.logo a:active {
 }
 
 .views-exposed-widget {
-  /*float: none !important;
-  display: table-cell;
-  border-top: 2px solid #333;
-  border-right: 2px solid #333;*/
   width: 100%;
-  padding: .5em 1em !important;
+}
+
+.views-exposed-widget {
+  width: 25%;
+  padding: 0 !important;
+  display: inline-block;
 }
 
 .views-exposed-form .views-exposed-widget .form-submit {
@@ -473,9 +507,50 @@ h1.logo a:hover, h1.logo a:active {
 
 .view-content .productItem {
   overflow: auto;
-  border-bottom: 1px solid #e4e4e4;
-  padding-bottom: .5em;
-  margin-bottom: .5em;
+  padding: 2em 0;
+}
+
+.productItem .itemNav {
+  margin-top: -4em;
+  float: right;
+  display: block;
+  font: normal .7em/1.5em "Monaco", "lucida console", "courier", monospace;
+}
+
+.productItem .itemNav a {
+  display: block;
+  color: #285993;
+  text-decoration: none;
+  border: 1px solid #285993;
+  text-align: center;
+  list-style-type: none;
+  display: list-item;
+  padding: .25em .5em;
+}
+
+.productItem .itemNav a:hover {
+  background-color: #d7e6f2;
+}
+
+.itemNav a:first-child {
+  border-radius: .25em .25em 0 0;
+}
+
+.itemNav a:last-child {
+  border-top: none;
+  border-radius: 0 0 .25em .25em;
+}
+
+.productItem h2, .productItem h3 {
+  margin: 0.25em 8em 0 0;
+}
+
+.view-content h2 {
+  font-size: 1.2em !important;
+}
+
+.view-content h3 {
+  font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace;
 }
 
 .view-content .productItem .resultsImageWrap {
@@ -489,6 +564,11 @@ h1.logo a:hover, h1.logo a:active {
 .view-content .productItem img {
   width: 100%;
   height: auto;
+  float: left;
+}
+
+.view-content .itemExtra {
+  display: none;
 }
 
 /* @end */

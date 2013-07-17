@@ -47,10 +47,6 @@ $(document).ready(function() {
 	}
 
 	google.maps.event.addDomListener(window, 'load', initialize);
-  
-
-
-
 
   //ms Carousel Fullscreen hack
     
@@ -59,6 +55,19 @@ $(document).ready(function() {
     console.log(imgSrc);
     $(this).hide();
     $(this).parent().css({'background' : 'url(' + imgSrc + ') no-repeat', 'background-size' : 'cover'});
+  });
+  
+  
+  // Product List Previews
+  
+  $('.itemExtra').before('<div class="itemNav"><a href="#" class="moreInfo">More Info</a><a href="#" class="preview">Preview</a></div>');
+  
+  $('a.preview').toggle(function() {
+    $(this).parent().parent().find('.itemExtra').show();
+    return false;
+  }, function() {
+    $(this).parent().parent().find('.itemExtra').hide();
+    return false;
   });
 
   // Duplicate fixed elements to create white overlay version
