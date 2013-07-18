@@ -537,7 +537,7 @@ h1.logo a:hover, h1.logo a:active {
 }
 
 .headerFixed + .productItem {
-  padding-top: 6em !important;
+  padding-top: 5.5em !important;
 }
 
 .headerFixed {

@@ -121,15 +121,16 @@ $(document).ready(function() {
     $('.view-content > h3').addClass('stickyHeaders');
     $('.stickyHeaders').each(function() {
       
-//      console.log( $(this).offset().top + ' : ' + $(window).scrollTop() + ' || ' + $('.view-content').offset().top );
-      
       var currPos = $(this).offset().top - 32;
       var winPos = $(window).scrollTop();
       
       if ( currPos <= winPos ) {
         $('.headerFixed > .stickyHeaders').unwrap();
         $(this).wrap('<div class="headerFixed" />');
-      } else if ( $('.view-content').offset().top  >= winPos ) {
+      };
+      
+      if ( ($('.view-content').offset().top) >= winPos ) {
+        console.log('clear all');
         $('.headerFixed > .stickyHeaders').unwrap();
       };
 
