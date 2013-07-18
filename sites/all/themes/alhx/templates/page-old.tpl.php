@@ -72,8 +72,7 @@
 
 <div id="page">
 
-  <header id="header" class="header fixed" role="banner">
-
+  <header class="header fixed" role="banner">
     <div class="dup">
       <div class="headerBar">
         <div class="logotype logoCol">
@@ -91,8 +90,7 @@
               </div>
         </div>
       </div>
-    </div> 
-
+    </div>
   </header>
   
     <div class="mainNav fixed">
@@ -148,6 +146,16 @@
       <?php endif; ?>
   
       <?php print render($page['header']); ?>   
+      
+<!--      <div id="masthead">
+        <div class="mastCol">
+          <p>1 Annie Place<br />Stamford, Conn.<br />U.S.A. 06902</p>
+        </div>
+        <div class="mastCol">
+          <p>T: 203.348.8865<br />F: 203.348.5234<br />E: info@accuratelh.com</p>
+        </div>
+      </div>-->
+      
 
     </div>
   </div>
@@ -161,10 +169,11 @@
     <?php print render($page['highlighted']); ?>
   </div>
   <?php endif; ?>
-
+  
   <div id="main">
-
+  
     <div id="content" class="column contentWidth" role="main">
+    <div>
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
       <?php
@@ -182,10 +191,12 @@
    	  			 
    	  <?php
    	  		endif;
-   	  		print render($title_suffix);
-   	  	}   	  
-   	  ?>
+   	  		print render($title_suffix); 
+   	  		
+   	  	}
    	  
+   	  
+   	  ?>
       <?php print $messages; ?>
       <?php print render($tabs); ?>
       <?php print render($page['help']); ?>
@@ -194,8 +205,8 @@
       <?php endif; ?>
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
+    </div>
     </div><!-- /#content -->
-
 
     <?php
       // Render the sidebars to see if there's anything in them.
@@ -213,7 +224,6 @@
   </div><!-- /#main -->
 
   <?php print render($page['footer']); ?>
+</div><!-- /#page --*>
 
-</div><!-- /#page -->
-
-<?php print render($page['bottom']); ?>
+  <?php print render($page['bottom']); ?>

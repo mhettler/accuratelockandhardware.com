@@ -1,4 +1,4 @@
-WHERE TO START
+ WHERE TO START
 --------------
 
 Yay! You opened the correct file first. The first thing that people notice when
@@ -31,7 +31,7 @@ a base theme.
 So how do you create a theme with Zen?
 
 The Zen theme includes the Zen base theme as well as a starter theme called
-"STARTERKIT". You shouldn't modify any of the CSS or PHP files in the zen/
+"STARTERKIT". You shouldn't modify any of the CSS or PHP files in the zen/ 
 folder; but instead you should create a sub-theme of zen and put it in a folder
 outside of the root zen/ folder.
 
