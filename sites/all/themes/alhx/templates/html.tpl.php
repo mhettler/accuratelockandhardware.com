@@ -87,6 +87,9 @@
   <meta http-equiv="cleartype" content="on">
 
   <?php print $styles; ?>
+  
+  <script src="http://biz104.inmotionhosting.com/~accura30/sites/all/themes/alhx/js/jquery-1.10.2.min.js"></script>
+  
   <?php print $scripts; ?>
   <?php if ($add_respond_js): ?>
     <!--[if lt IE 9]>

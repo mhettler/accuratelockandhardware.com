@@ -82,7 +82,6 @@ stylesheets[all][] = css/print.css
 scripts[] = js/script.js
 scripts[] = js/jquery-1.7.1.min.js
 scripts[] = js/imagesloaded.js
-scripts[] = js/application.js
 scripts[] = js/google-maps.js
 
 

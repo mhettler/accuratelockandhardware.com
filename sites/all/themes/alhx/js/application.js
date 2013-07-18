@@ -1,3 +1,5 @@
+(function ($, Drupal, window, document, undefined) {
+
 $(document).ready(function() {
 
   //mh Contact Map 41.047467,-73.557295
@@ -108,6 +110,6 @@ $(document).ready(function() {
       });
     
   };  
-
-
 });
+
+})(jQuery, Drupal, this, this.document);
