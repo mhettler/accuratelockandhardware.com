@@ -79,10 +79,11 @@ stylesheets[all][] = css/print.css
 
 ; Optionally add some JavaScripts to your theme.
 
-scripts[] = js/script.js
-scripts[] = js/jquery-1.7.1.min.js
+
+; scripts[] = js/jquery-1.10.2.min.js
 scripts[] = js/imagesloaded.js
 scripts[] = js/google-maps.js
+scripts[] = js/application.js
 
 
 
