@@ -196,6 +196,8 @@
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
     </div><!-- /#content -->
+    
+    <?php print render($page['header']); ?>  
 
 
     <?php
