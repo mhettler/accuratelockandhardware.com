@@ -72,6 +72,11 @@ $(document).ready(function() {
 
   // Duplicate fixed elements to create white overlay version
   
+  
+  $(document).ajaxSuccess(function() {
+    alert("An individual AJAX call has completed successfully");
+  });
+  
   if ($('.fixed > div').hasClass('dup')) {
     $('.fixed > div').each(function(){
       $(this).clone().appendTo($(this).parent()).addClass('overlay');
@@ -109,5 +114,58 @@ $(document).ready(function() {
     
   };  
 
+  // Sticky series titles in lists
+  
+  
+  
+  $(window).scroll(function() {
+    $('.view-content > h3').addClass('stickyHeaders');
+    $('.stickyHeaders').each(function() {
+      
+//      console.log( $(this).offset().top + ' : ' + $(window).scrollTop() + ' || ' + $('.view-content').offset().top );
+      
+      var currPos = $(this).offset().top - 32;
+      var winPos = $(window).scrollTop();
+      
+      if ( currPos <= winPos ) {
+        $('.headerFixed > .stickyHeaders').unwrap();
+        $(this).wrap('<div class="headerFixed" />');
+      } else if ( $('.view-content').offset().top  >= winPos ) {
+        $('.headerFixed > .stickyHeaders').unwrap();
+      };
+
+    });
+  });
+
+//  $(".view-content").each(function () {
+//      var cname = "sticky";
+//      var v = $(".view-content > h3");
+//      var h = v.outerHeight();
+//      console.log('something');
+//      v.eq(0).addClass(cname);
+//      $(window).scroll(function () {
+//          v.each(function () {
+//              var t = this;
+//   
+//              var top_of_container = $(t).scrollTop();
+//              var top_of_object = $(t).position().top;
+//   
+//   
+//              if (top_of_container > top_of_object) {
+//                  v.removeClass(cname).css("top", "auto");
+//                  $(t).addClass(cname).css("top", 0);
+//              } else if ((top_of_container > top_of_object - h) && top_of_container - top_of_object < 0) {
+//                  $("." + cname).css("top", top_of_object - top_of_container - h + "px")
+//   
+//              }
+//   
+//   
+//          });
+//   
+//   
+//      });
+//  });  
+
+  
 
 });
