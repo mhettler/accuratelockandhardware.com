@@ -74,11 +74,6 @@ $(document).ready(function() {
 
   // Duplicate fixed elements to create white overlay version
   
-  
-  $(document).ajaxSuccess(function() {
-    alert("An individual AJAX call has completed successfully");
-  });
-  
   if ($('.fixed > div').hasClass('dup')) {
     $('.fixed > div').each(function(){
       $(this).clone().appendTo($(this).parent()).addClass('overlay');
@@ -117,7 +112,7 @@ $(document).ready(function() {
   };  
 });
 
-<<<<<<< HEAD
+
   // Sticky series titles in lists
   
   
@@ -141,38 +136,12 @@ $(document).ready(function() {
     });
   });
 
-//  $(".view-content").each(function () {
-//      var cname = "sticky";
-//      var v = $(".view-content > h3");
-//      var h = v.outerHeight();
-//      console.log('something');
-//      v.eq(0).addClass(cname);
-//      $(window).scroll(function () {
-//          v.each(function () {
-//              var t = this;
-//   
-//              var top_of_container = $(t).scrollTop();
-//              var top_of_object = $(t).position().top;
-//   
-//   
-//              if (top_of_container > top_of_object) {
-//                  v.removeClass(cname).css("top", "auto");
-//                  $(t).addClass(cname).css("top", 0);
-//              } else if ((top_of_container > top_of_object - h) && top_of_container - top_of_object < 0) {
-//                  $("." + cname).css("top", top_of_object - top_of_container - h + "px")
-//   
-//              }
-//   
-//   
-//          });
-//   
-//   
-//      });
-//  });  
 
-  
+//  
+//  $(document).ajaxSuccess(function() {
+//    alert("An individual AJAX call has completed successfully");
+//  });
 
-});
-=======
+
 })(jQuery, Drupal, this, this.document);
->>>>>>> 967593b064e1db5eaa4c1a6b5f244861a737cef6
+
