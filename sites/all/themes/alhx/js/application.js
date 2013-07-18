@@ -62,14 +62,20 @@ $(document).ready(function() {
   
   // Product List Previews
   
-  $('.itemExtra').before('<div class="itemNav"><a href="#" class="moreInfo">More Info</a><a href="#" class="preview">Preview</a></div>');
+  $(document).ajaxSuccess(function() {
   
-  $('a.preview').toggle(function() {
-    $(this).parent().parent().find('.itemExtra').show();
-    return false;
-  }, function() {
-    $(this).parent().parent().find('.itemExtra').hide();
-    return false;
+    $('.itemExtra').before('<div class="itemNav"><a href="#" class="moreInfo">View Specs</a><a href="#" class="preview">More Info</a></div>');
+    
+    $('a.preview').toggle(function() {
+      $(this).text('Less Info');
+      $(this).parent().parent().find('.itemExtra').show();
+      return false;
+    }, function() {
+      $(this).text('More Info');
+      $(this).parent().parent().find('.itemExtra').hide();
+      return false;
+    });
+  
   });
 
   // Duplicate fixed elements to create white overlay version

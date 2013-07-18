@@ -560,6 +560,7 @@ h1.logo a:hover, h1.logo a:active {
 
 .view-content .productItem {
   overflow: auto;
+  padding-bottom: .5em;
 }
 
 .productItem .itemNav {
@@ -608,8 +609,8 @@ h1.logo a:hover, h1.logo a:active {
 .view-content .productItem .resultsImageWrap {
   margin-right: .75em;
   overflow: hidden;
-  width: 65px;
-  height: 65px;
+  width: 80px;
+  height: 80px;
   float: left;
 }
 
@@ -622,7 +623,7 @@ h1.logo a:hover, h1.logo a:active {
 .view-content .itemExtra {
   display: none;
   font: normal .7em/1.5em "Monaco", "lucida console", "courier", monospace;
-  margin: 1em 0 0 78px;
+  margin: 1em 0 0 93px;
   padding-left: 1em;
   border-left: 1px solid #b2c9d8;
 }
