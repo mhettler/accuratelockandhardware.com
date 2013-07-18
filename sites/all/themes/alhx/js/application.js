@@ -1,3 +1,5 @@
+(function ($, Drupal, window, document, undefined) {
+
 $(document).ready(function() {
 
   //mh Contact Map 41.047467,-73.557295
@@ -113,7 +115,9 @@ $(document).ready(function() {
       });
     
   };  
+});
 
+<<<<<<< HEAD
   // Sticky series titles in lists
   
   
@@ -169,3 +173,6 @@ $(document).ready(function() {
   
 
 });
+=======
+})(jQuery, Drupal, this, this.document);
+>>>>>>> 967593b064e1db5eaa4c1a6b5f244861a737cef6
