@@ -80,6 +80,7 @@
             <a href="<?php print url('<front>', array('absolute' => TRUE)); ?>" >Lock &amp; Hardware</a>
           </h1>
             <div class="contactIcons">
+              <h2>Made in<br />Stamford, Conn.<br />U.S.A.</h2>
               <ul>
                 <li><a href="#" class="icon-envelop"></a></li>
                 <li><a href="#" class="icon-location"></a></li>
@@ -163,7 +164,7 @@
   <?php endif; ?>
 
 <!-- End NAV -->
-  <div class="splash homeSplash">
+  <div class="splash homeSplash splashSection">
     <?php print render($page['highlighted']); ?>
   </div>
   <div id="main">

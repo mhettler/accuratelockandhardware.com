@@ -81,6 +81,7 @@
             <a href="<?php print url('<front>', array('absolute' => TRUE)); ?>" >Lock &amp; Hardware</a>
           </h1>
               <div class="contactIcons">
+              <h2>Made in<br />Stamford, Conn.<br />U.S.A.</h2>
                 <ul>
                   <li><a href="#" class="icon-envelop"></a></li>
                   <li><a href="#" class="icon-location"></a></li>
@@ -157,7 +158,7 @@
 <!-- End NAV -->
 
   <?php if ($page['highlighted']): ?>
-  <div class="splash splashSub">
+  <div class="splash splashSub splashSection">
     <?php print render($page['highlighted']); ?>
   </div>
   <?php endif; ?>
