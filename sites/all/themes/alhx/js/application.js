@@ -64,7 +64,7 @@ $(document).ready(function() {
   
   $(document).ajaxSuccess(function() {
   
-    $('.itemExtra').before('<div class="itemNav"><a href="#" class="moreInfo">View Specs</a><a href="#" class="preview">More Info</a></div>');
+    //$('.itemExtra').before('<div class="itemNav"><a href="#" class="moreInfo">View Specs</a><a href="#" class="preview">More Info</a></div>');
     
     $('a.preview').toggle(function() {
       $(this).text('Less Info');
@@ -123,25 +123,25 @@ $(document).ready(function() {
   
   
   
-  $(window).scroll(function() {
-    $('.view-content > h3').addClass('stickyHeaders');
-    $('.stickyHeaders').each(function() {
-      
-      var currPos = $(this).offset().top - 32;
-      var winPos = $(window).scrollTop();
-      
-      if ( currPos <= winPos ) {
-        $('.headerFixed > .stickyHeaders').unwrap();
-        $(this).wrap('<div class="headerFixed" />');
-      };
-      
-      if ( ($('.view-content').offset().top) >= winPos ) {
-        console.log('clear all');
-        $('.headerFixed > .stickyHeaders').unwrap();
-      };
-
-    });
-  });
+//   $(window).scroll(function() {
+//     $('.view-content > h3').addClass('stickyHeaders');
+//     $('.stickyHeaders').each(function() {
+//       
+//       var currPos = $(this).offset().top - 32;
+//       var winPos = $(window).scrollTop();
+//       
+//       if ( currPos <= winPos ) {
+//         $('.headerFixed > .stickyHeaders').unwrap();
+//         $(this).wrap('<div class="headerFixed" />');
+//       };
+//       
+//       if ( ($('.view-content').offset().top) >= winPos ) {
+//         console.log('clear all');
+//         $('.headerFixed > .stickyHeaders').unwrap();
+//       };
+// 
+//     });
+//   });
 
 
 //  
