@@ -558,16 +558,17 @@ h1.logo a:hover, h1.logo a:active {
     border-bottom: 3px solid #993333;
 }
 
+h2.stickyHeaders {
+  margin-bottom: 0;
+}
+
 .view-content .productItem {
   overflow: auto;
-  padding-bottom: .5em;
 }
 
 .productItem .itemNav {
-  margin-top: -4em;
   float: right;
   display: block;
-  font: normal .7em/1.5em "Monaco", "lucida console", "courier", monospace;
 }
 
 .productItem .itemNav a {
@@ -575,36 +576,75 @@ h1.logo a:hover, h1.logo a:active {
   color: #285993;
   text-decoration: none;
   border: 1px solid #b2c9d8;
-  text-align: center;
   list-style-type: none;
-  display: list-item;
-  padding: .25em 1em;
+  margin: .9em .25em;
+  padding: .2em 1em;
+  font-size: .8em;
+  border-radius: .5em;
 }
 
 .productItem .itemNav a:hover {
-  background-color: #faf5d6;
+  background-color: #e1edf4;
 }
 
-.itemNav a:first-child {
-  border-radius: .5em .5em 0 0;
+.view-content {
+  font: normal .75em/1.5em "Monaco", "lucida console", "courier", monospace !important;
 }
 
-.itemNav a:last-child {
-  border-top: none;
-  border-radius: 0 0 .5em .5em;
+.productItem {
+/*  width: 100%;*/
+  margin-left: 100px;
+  border-bottom: 1px solid #b2c9d8;
+}
+
+.productItem h2 {
+  width: 4em;
 }
 
 .productItem h2, .productItem h3 {
+  font: normal 1em/1.5em "Monaco", "lucida console", "courier", monospace !important;
+  padding: 1em 0.5em;
+  margin: 0;
+  display: inline-block;
+}
+
+.productItem a:link, .productItem a:active {
+  text-decoration: none;
+}
+
+.headerInfo + .productItem {
+  border-top: 1px solid #b2c9d8;
+}
+
+.productItem a:hover, .productItem a:active {
+/*  background-color: #e1edf4;*/
+  text-decoration: none; !important;
+  border-bottom: 1px solid #b2c9d8;
+}
+
+.seriesInfo .seriesInfo {
+  margin-top: 1em;
+  overflow: auto;
+}
+
+.seriesInfo ul {
+  margin-left: 2em;
+  list-style-type: disc !important;
+}
+
+.seriesInfo img {
+  width: 80px !important;
+  margin-right: 1em;
+}
+
+.seriesImage {
+  margin-top: 1em;
+  float: left;
+}
+
+/*.productItem h2, .productItem h3 {
   margin: 0.25em 8em 0 0;
-}
-
-.view-content h2 {
-  font-size: 1.2em !important;
-}
-
-.view-content h3 {
-  font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace;
-}
+}*/
 
 .view-content .productItem .resultsImageWrap {
   margin-right: .75em;
@@ -620,12 +660,23 @@ h1.logo a:hover, h1.logo a:active {
   float: left;
 }
 
-.view-content .itemExtra {
+.view-content .moreInfo {
   display: none;
-  font: normal .7em/1.5em "Monaco", "lucida console", "courier", monospace;
-  margin: 1em 0 0 93px;
-  padding-left: 1em;
-  border-left: 1px solid #b2c9d8;
+  border-top: 1px solid #e1edf4;
+  padding-top: 1em  ;
+  margin: 0 0 1em 6em;
+  position: relative;
+}
+
+.view-content .moreInfo:before {
+  content: " ";
+  background-image: url(assets/tab-arrow-up.png);
+  width: 16px;
+  height: 8px;
+  display: block;
+  position: absolute;
+  right: 2.6em;
+  top: -8px;
 }
 
 .view-content .itemExtra p {

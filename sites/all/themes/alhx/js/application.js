@@ -62,21 +62,22 @@ $(document).ready(function() {
   
   // Product List Previews
   
-  $(document).ajaxSuccess(function() {
+//  $(document).ajaxSuccess(function() {
   
     //$('.itemExtra').before('<div class="itemNav"><a href="#" class="moreInfo">View Specs</a><a href="#" class="preview">More Info</a></div>');
     
-    $('a.preview').toggle(function() {
-      $(this).text('Less Info');
-      $(this).parent().parent().find('.itemExtra').show();
-      return false;
-    }, function() {
-      $(this).text('More Info');
-      $(this).parent().parent().find('.itemExtra').hide();
+    $('a.preview').click(function() {
+      if ( $(this).text() == 'More Info' ) {
+        $(this).text('Less Info');
+        $(this).parent().parent().find('.moreInfo').show();
+      } else {
+        $(this).text('More Info');
+        $(this).parent().parent().find('.moreInfo').hide();
+      };
       return false;
     });
   
-  });
+//  });
 
   // Duplicate fixed elements to create white overlay version
   
@@ -123,25 +124,24 @@ $(document).ready(function() {
   
   
   
-//   $(window).scroll(function() {
-//     $('.view-content > h3').addClass('stickyHeaders');
-//     $('.stickyHeaders').each(function() {
-//       
-//       var currPos = $(this).offset().top - 32;
-//       var winPos = $(window).scrollTop();
-//       
-//       if ( currPos <= winPos ) {
-//         $('.headerFixed > .stickyHeaders').unwrap();
-//         $(this).wrap('<div class="headerFixed" />');
-//       };
-//       
-//       if ( ($('.view-content').offset().top) >= winPos ) {
-//         console.log('clear all');
-//         $('.headerFixed > .stickyHeaders').unwrap();
-//       };
-// 
-//     });
-//   });
+   $(window).scroll(function() {
+     $('.view-content > h3').addClass('stickyHeaders');
+     $('.stickyHeaders').each(function() {
+       
+       var currPos = $(this).offset().top - 32;
+       var winPos = $(window).scrollTop();
+       
+       if ( currPos <= winPos ) {
+         $('.headerFixed > .stickyHeaders').unwrap();
+         $(this).wrap('<div class="headerFixed" />');
+       };
+       
+       if ( ($('.view-content').offset().top) >= winPos ) {
+         $('.headerFixed > .stickyHeaders').unwrap();
+       };
+ 
+     });
+   });
 
 
 //  
