@@ -441,7 +441,7 @@ h1.logo a:hover, h1.logo a:active {
 
 /* @end */
 
-.productTypeItems {
+/*.productTypeItems {
 	width: 100%;
 	overflow: hidden;
 	margin: 15px 0 0 0;
@@ -461,7 +461,7 @@ h1.logo a:hover, h1.logo a:active {
 	padding: 5px;
 	width: 75%;
 	margin: 0 0 0 22%;
-	}
+	}*/
 
 /*.productFilterBar {
   font: normal .75em/1.5em "Monaco", "lucida console", "courier", monospace;
@@ -475,29 +475,39 @@ h1.logo a:hover, h1.logo a:active {
   font: normal .75em/1.5em "Monaco", "lucida console", "courier", monospace;
 }
 
+.views-exposed-form .clearfix:after {
+  display: none;
+}
+
+.views-exposed-widgets div {
+  margin: 0;
+  padding: 0;
+}
+
 .views-exposed-widgets {
+  display: table;
   border: 1px solid #b2c9d8;
   border-radius: .5em;
-  margin: 0 !important;
+  margin: 0 0 3em 0 !important;
   overflow: hidden;
 }
 
-.views-exposed-widget > * {
-  /*display: inline-block;*/
+.views-exposed-widgets > div {
+  display: table-row;
+  padding: 0;
+  margin: 0;
 }
 
-.views-exposed-widget {
-  width: 100%;
-}
-
-.views-exposed-widget {
+.views-exposed-widgets > div > div {
   width: 25%;
   padding: 0em !important;
-  display: inline-block;
+  display: table-cell !important;
   border-right: 1px solid #b2c9d8;
-  border-bottom: 1px solid #b2c9d8 !important;
-  box-sizing: border-box;
+/*  box-sizing: border-box;*/
   margin: 0;
+  background-color: #fff;
+  float: none !important;
+  border-bottom: 1px solid #b2c9d8;
 }
 
 .views-exposed-widget > label {
@@ -516,12 +526,12 @@ h1.logo a:hover, h1.logo a:active {
   border-right: none !important;
 }
 
-.views-exposed-widget:nth-last-child(-n+2) {
+.views-exposed-widgets > div:last-child > div {
   border-bottom: none !important;
 }
 
 .views-exposed-form .views-exposed-widget .form-submit {
-  margin-top: 0em !important;
+  margin: 0em !important;
 }
 
 /* @end */
@@ -545,6 +555,7 @@ h1.logo a:hover, h1.logo a:active {
   top: 0;
   background-color: #fff;
   width: 50%;
+  box-shadow: 0 8px 12px -10px rgba(0,0,0,.75);
 }
 
 .view-content {
@@ -628,7 +639,7 @@ h2.stickyHeaders {
 }
 
 .seriesInfo ul {
-  margin-left: 2em;
+  margin: 0 0 2em 2.5em;
   list-style-type: disc !important;
 }
 
