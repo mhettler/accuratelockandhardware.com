@@ -868,6 +868,23 @@ ul.horizontal-tabs-list {
   background-color: #fff !important;
 }
 
+.contentBand h6 {
+}
+.contentBand ul.inlineGrid {
+}
+.contentBand ul.inlineGrid li {
+	width: 30%;
+	height: 50px;
+	line-height: 1.2em;
+	overflow: hidden;
+	text-align: center;
+	padding: 30px 1.5% 30px 1.5%;
+	float: left;
+}
+
+.contentBand ul.inlineGrid li span.gridIcon {
+}
+
 /* @group Blockquotes */
 
 .contentBand blockquote {
@@ -884,8 +901,8 @@ ul.horizontal-tabs-list {
 
 /* @group In-page Carousel Styles */
 
-.contentBand .flex-caption {margin: 1.5em 0 0 0; text-align: center;}
-.contentBand .flex-control-nav {bottom: 1.4em;}
+.contentBand .flex-caption {margin: 1.5em auto 0 auto; width: 75%; padding: 1em 0 1em 0; border-bottom: 1px solid #dbdbdb; text-align: center;}
+.contentBand .flex-control-nav {  }
 .contentBand .flex-control-paging li a { background: #777; background: rgba(0,0,0,0.5);}
 .contentBand .flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
 .contentBand .flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9);}
