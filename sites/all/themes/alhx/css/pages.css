@@ -19,7 +19,8 @@ html, body {
   color: #333;
   margin: 0;
   padding: 0;
-  font: 16px/1.8em "Old Standard TT", "Times New Roman", Times , Serif;
+  font: 16px/1.5em "Monaco", "lucida console", "courier", monospace;
+/*  font: 16px/1.8em "Old Standard TT", "Times New Roman", Times , Serif;*/
 /*  background: url(assets/bg-sample.jpg) no-repeat center top #fff;*/
 }
 
@@ -35,7 +36,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Archivo Narrow';
+  font-family: 'Archivo Narrow', Impact, Helvetica, Arial, sans-serif;
 }
 
 .splashSection {
@@ -141,7 +142,7 @@ a:hover, a:active {
  
 
 header, .mainNav {
-  font: normal 1em/1.5em "Monaco", "lucida console", "courier", monospace;
+
 }
 
 header > div {
@@ -181,7 +182,7 @@ a.icon-facebook:hover{
 }
 
 /* @end */
-.contactIcons h2 {
+.header h2 {
   font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace;
   text-align: center;
   color: #555;
@@ -344,7 +345,6 @@ h1.logo a:link, h1.logo a:visited {
   color: #333;
   padding-top: 3.2em;
   color: #933;
-  font: normal 1em/1.5em "Monaco", "lucida console", "courier", monospace;
   text-align: center;
   overflow: hidden;
   display: block;
@@ -357,8 +357,7 @@ h1.logo a:hover, h1.logo a:active {
 }
 
 .header h1 {
-  font-size: 1em;
-  font-weight: bold;
+  font: normal 1em/1.8em "Monaco", "lucida console", "courier", monospace;
   margin: 0;
 }
 
@@ -441,38 +440,9 @@ h1.logo a:hover, h1.logo a:active {
 
 /* @end */
 
-/*.productTypeItems {
-	width: 100%;
-	overflow: hidden;
-	margin: 15px 0 0 0;
-	padding: 0 0 15px 0;
-	border-bottom: 1px solid #e4e4e4;
-	}
-.productTypeItems img {
-	width: 20%;
-	height: auto;
-	float: left;
-	}
-.productTypeItems h2 {
-	margin: 0;
-	}
-.productTypeCaption {
-	height: 100%;
-	padding: 5px;
-	width: 75%;
-	margin: 0 0 0 22%;
-	}*/
-
-/*.productFilterBar {
-  font: normal .75em/1.5em "Monaco", "lucida console", "courier", monospace;
-/*  letter-spacing: .3em;*!/
-  font-weight: bold;
-  padding: .5em 0;
-  border-bottom: 2px solid #333;
-}*/
-
 .views-exposed-form {
-  font: normal .75em/1.5em "Monaco", "lucida console", "courier", monospace;
+  font-size: .75em;
+  line-height: 1.5em;
 }
 
 .views-exposed-form .clearfix:after {
@@ -551,12 +521,13 @@ h1.logo a:hover, h1.logo a:active {
     height: 100%;
     overflow: auto;
 }*/
-.headerFixed h3.stickyHeaders {
+.headerFixed h2.stickyHeaders {
   margin: 1em 0 0 0 !important;
 }
 
+
 .headerFixed + .productItem {
-  padding-top: 5.5em !important;
+  padding-top: 6em !important;
 }
 
 .headerFixed {
@@ -573,7 +544,8 @@ h1.logo a:hover, h1.logo a:active {
 }
 
 .view-content > h3, .stickyHeaders {
-    font: bold 1.6em/1.5em 'Archivo Narrow', Impact, Helvetica, Arial, sans-serif !important;
+    font: bold 1.8em/1.5em 'Archivo Narrow', Impact, Helvetica, Arial, sans-serif !important;
+    padding: .25em 0;
     border-top: 3px solid #285993;
     border-bottom: 3px solid #993333;
 }
@@ -608,7 +580,7 @@ h2.stickyHeaders {
 }
 
 .view-content {
-  font: normal .75em/1.5em "Monaco", "lucida console", "courier", monospace !important;
+  font: normal .75em/1.5em "Monaco", "lucida console", "courier", monospace;
 }
 
 .productItem {
@@ -761,6 +733,7 @@ h2.stickyHeaders {
 }
 
 .profileTile {
+  font-size: 1.2em;
   min-height: 16em;
   display: block;
   text-align: center;
@@ -879,6 +852,49 @@ ul.horizontal-tabs-list {
 	width: 100%;
 	}
 /* @end */
+
+/* @group Page/Node Styles */
+
+.contentBand {
+  font: 16px/1.8em "Georgia", "Times New Roman", Times , Serif;
+  overflow: auto;
+}
+
+.contentBand p {
+  margin-bottom: 1.5em;
+}
+
+.contentBand ul.slides li {
+  background-color: #fff !important;
+}
+
+/* @group Blockquotes */
+
+.contentBand blockquote {
+  float: right;
+  padding: 0;
+  margin: .5em 0 .5em 1em;
+  border-top: 3px solid #285993;
+  border-bottom: 3px solid #993333;
+  width: 33%;
+  font: normal 1.5em/1.5em 'Archivo Narrow', Impact, Helvetica, Arial, sans-serif;
+}
+
+/* @end */
+
+/* @group In-page Carousel Styles */
+
+.contentBand .flex-caption {margin: 1.5em 0 0 0; text-align: center;}
+.contentBand .flex-control-nav {bottom: 1.4em;}
+.contentBand .flex-control-paging li a { background: #777; background: rgba(0,0,0,0.5);}
+.contentBand .flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.contentBand .flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9);}
+
+/* @end */
+
+/* @end */
+
+/* @group Defaults */
 
 #name-and-slogan { /* Wrapper for website name and slogan */
   float: left;
@@ -1022,6 +1038,8 @@ span.field-label { /* The inline field label used by the Fences module */
 
 .region-sidebar-second {
 }
+
+/* @end */
 
 /* @group Footer */
 
