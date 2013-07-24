@@ -166,7 +166,7 @@
   <div id="main">
 
     <div id="content" class="column contentWidth" role="main">
-      <?php print $breadcrumb; ?>
+      <?php //print $breadcrumb; ?>
       <a id="main-content"></a>
       <?php
       $current_path = current_path();
