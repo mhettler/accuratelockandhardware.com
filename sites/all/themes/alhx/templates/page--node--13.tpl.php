@@ -174,7 +174,7 @@
   <div id="main">
   
     <div id="content" class="column contentWidth" role="main">
-    <div>
+    <div class="column contentBand">
       <!--<?php print $breadcrumb; ?>-->
       <a id="main-content"></a>
       <?php
