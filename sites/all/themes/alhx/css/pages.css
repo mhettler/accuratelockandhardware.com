@@ -440,6 +440,18 @@ h1.logo a:hover, h1.logo a:active {
 
 /* @end */
 
+/* @group Breadcrumbs Menu */
+
+.block-crumbs {
+  font-size: .75em;
+  border-top: 1px solid #b2c9d8;
+  border-bottom: 1px solid #b2c9d8;
+  padding: .25em 0;
+  margin: 1em 0;
+}
+
+/* @end */
+
 .views-exposed-form {
   font-size: .75em;
   line-height: 1.5em;
@@ -885,7 +897,9 @@ div.innerPageNav div.innerNavItem {
   background-color: #fff !important;
 }
 
-.contentBand h6 {
+.contentBand h4 {
+	font: normal 1.25em/1.5em 'Archivo Narrow', Impact, Helvetica, Arial, sans-serif;
+	color: #285993;
 }
 
 .contentBand ul.inlineGrid {
