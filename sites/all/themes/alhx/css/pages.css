@@ -855,6 +855,23 @@ ul.horizontal-tabs-list {
 
 /* @group Page/Node Styles */
 
+/* @group Inner Page Navigation (Contents) */
+
+div.innerPageNav {
+  font-size: 1em;
+  text-align: center;
+  border-top: 1px solid #b2c9d8;
+  border-bottom: 1px solid #b2c9d8;
+  padding: .5em 0;
+}
+
+div.innerPageNav div.innerNavItem {
+  margin: .25em .5em;
+  display: inline-block;
+}
+
+/* @end */
+
 .contentBand {
   font: 16px/1.8em "Georgia", "Times New Roman", Times , Serif;
   overflow: auto;
@@ -870,8 +887,10 @@ ul.horizontal-tabs-list {
 
 .contentBand h6 {
 }
+
 .contentBand ul.inlineGrid {
 }
+
 .contentBand ul.inlineGrid li {
 	width: 30%;
 	height: 50px;
@@ -880,6 +899,38 @@ ul.horizontal-tabs-list {
 	text-align: center;
 	padding: 30px 1.5% 30px 1.5%;
 	float: left;
+}
+
+ol.inlineGrid {
+  padding: 0;
+  counter-reset: li; /* Initiate a counter */
+  list-style: none; /* Remove default numbering */
+  *list-style: decimal;
+  overflow: auto;
+}
+
+ol.inlineGrid li {
+  width: 30%;
+  height: 9em;
+  line-height: 1.2em;
+  text-align: center;
+  padding: 30px 1.5% 30px 1.5%;
+  float: left;
+}
+
+ol.inlineGrid li:before {
+  content: counter(li);
+  counter-increment: li;
+  display: block;
+  margin: 0 auto .25em auto;
+  text-align: center;
+	font-weight: bold;
+	color: #fff;
+	background-color: #933;
+  width: 1em;
+  padding: .25em;
+  border-radius: 50%;
+	font: normal 4em/1em 'Archivo Narrow', Impact, Helvetica, Arial, sans-serif;
 }
 
 .contentBand ul.inlineGrid li span.gridIcon {

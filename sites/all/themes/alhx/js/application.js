@@ -60,6 +60,15 @@ $(document).ready(function() {
   });
   
   
+  // Smooth jump to anchor
+  
+  $('a[href^="#"]').click(function() {
+    var anchorY = $("a[name='"+ $(this).attr('href').substring(1) +"']");
+  	$('html,body').animate({ scrollTop: anchorY.offset().top }, 200);
+  	event.preventDefault();
+  });
+  
+  
   // Product List Previews
   
 //  $(document).ajaxSuccess(function() {
@@ -119,10 +128,7 @@ $(document).ready(function() {
   };  
 });
 
-
   // Sticky series titles in lists
-  
-  
   
    $(window).scroll(function() {
      $('.view-content > h3').addClass('stickyHeaders');
