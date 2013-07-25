@@ -63,8 +63,11 @@ $(document).ready(function() {
   // Smooth jump to anchor
   
   $('a[href^="#"]').click(function() {
-    var anchorY = $("a[name='"+ $(this).attr('href').substring(1) +"']");
-  	$('html,body').animate({ scrollTop: anchorY.offset().top }, 200);
+    var anchor = $(this).attr('href').substring(1);
+    if (anchor != '') { // Ignore blank href="#"
+      var anchorY = $("a[name='"+ anchor +"']");
+  	  $('html,body').animate({ scrollTop: anchorY.offset().top }, 200);
+  	};
   	event.preventDefault();
   });
   
@@ -83,7 +86,7 @@ $(document).ready(function() {
         $(this).text('More Info');
         $(this).parent().parent().find('.moreInfo').hide();
       };
-      return false;
+      event.preventDefault();
     });
   
 //  });
