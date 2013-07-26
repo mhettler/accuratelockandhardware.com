@@ -11,7 +11,7 @@
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error { /* Highlight the form elements that caused a form submission error */
-  border: 1px solid #c00;
+/*  border: 1px solid #c00;*/
 }
 
 .form-item label { /* The label for a form element */
@@ -25,7 +25,7 @@
 }
 
 .form-required { /* The part of the label that indicates a required field */
-  color: #c00;
+  color: #933;
 }
 
 .form-item .description { /* The descriptive help text (separate from the label) */

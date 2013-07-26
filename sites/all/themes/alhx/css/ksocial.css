@@ -27,34 +27,106 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-twitter, .icon-share, .icon-feed, .icon-facebook, .icon-location, .icon-phone, .icon-envelop {
+.icon-zoom-in, .icon-zoom-out, .icon-envelop, .icon-location, .icon-facebook, .icon-flickr, .icon-vimeo, .icon-google-plus, .icon-feed, .icon-twitter, .icon-tumblr, .icon-share, .icon-pinterest, .icon-search, .icon-checkmark, .icon-close, .icon-spam, .icon-phone, .icon-heart, .icon-youtube, .icon-printer, .icon-print, .icon-arrow-left, .icon-arrow-down, .icon-arrow-up, .icon-arrow-right, .icon-comment, .icon-user, .icon-export, .icon-book, .icon-cart {
 	font-family: 'icons';
 	speak: none;
 	font-style: normal;
-	font-weight: normal !important;
+	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
-.icon-twitter:before {
-	content: "\74";
+.icon-zoom-in:before {
+	content: "\21";
 }
-.icon-share:before {
-	content: "\73";
+.icon-zoom-out:before {
+	content: "\2f";
 }
-.icon-feed:before {
-	content: "\72";
-}
-.icon-facebook:before {
-	content: "\66";
+.icon-envelop:before {
+	content: "\65";
 }
 .icon-location:before {
 	content: "\6c";
 }
-.icon-phone:before {
-	content: "\70";
+.icon-facebook:before {
+	content: "\66";
 }
-.icon-envelop:before {
-	content: "\6d";
+.icon-flickr:before {
+	content: "\2e";
+}
+.icon-vimeo:before {
+	content: "\22";
+}
+.icon-google-plus:before {
+	content: "\23";
+}
+.icon-feed:before {
+	content: "\28";
+}
+.icon-twitter:before {
+	content: "\74";
+}
+.icon-tumblr:before {
+	content: "\29";
+}
+.icon-share:before {
+	content: "\73";
+}
+.icon-pinterest:before {
+	content: "\2a";
+}
+.icon-search:before {
+	content: "\2d";
+}
+.icon-checkmark:before {
+	content: "\2b";
+}
+.icon-close:before {
+	content: "\2c";
+}
+.icon-spam:before {
+	content: "\30";
+}
+.icon-phone:before {
+	content: "\31";
+}
+.icon-heart:before {
+	content: "\32";
+}
+.icon-youtube:before {
+	content: "\24";
+}
+.icon-printer:before {
+	content: "\25";
+}
+.icon-print:before {
+	content: "\26";
+}
+.icon-arrow-left:before {
+	content: "\34";
+}
+.icon-arrow-down:before {
+	content: "\35";
+}
+.icon-arrow-up:before {
+	content: "\5e";
+}
+.icon-arrow-right:before {
+	content: "\36";
+}
+.icon-comment:before {
+	content: "\37";
+}
+.icon-user:before {
+	content: "\38";
+}
+.icon-export:before {
+	content: "\39";
+}
+.icon-book:before {
+	content: "\33";
+}
+.icon-cart:before {
+	content: "\27";
 }

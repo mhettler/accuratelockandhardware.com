@@ -523,6 +523,11 @@ h1.logo a:hover, h1.logo a:active {
 
 .views-submit-button {
   background-color: #e1edf4 !important;
+  transition: all .1s linear;
+}
+
+.views-submit-button:hover {
+  background-color: #f4eed7 !important;
 }
 
 /* @end */
@@ -749,9 +754,9 @@ h2.stickyHeaders {
   min-height: 16em;
   display: block;
   text-align: center;
-  width: 30%;
+  width: 28%;
   float: left;
-  margin: .5em 0;
+  margin: 1.5em 0;
 }
 
 .profileTile h2 {
@@ -765,7 +770,7 @@ h2.stickyHeaders {
 }
 
 .profileTile:nth-child(3n+2) {
-  margin: .5em 5%;
+  margin: 1.5em 5%;
 }
 
 /* @end */
@@ -915,7 +920,7 @@ div.innerPageNav div.innerNavItem {
 }
 
 ol.inlineGrid {
-  padding: 0;
+  padding: 1em 0;
   counter-reset: li; /* Initiate a counter */
   list-style: none; /* Remove default numbering */
   *list-style: decimal;
@@ -949,20 +954,14 @@ ol.inlineGrid li:before {
 	font: normal 4em/1em 'Archivo Narrow', Impact, Helvetica, Arial, sans-serif;
 }
 
-.contentBand ul.inlineGrid li span.gridIcon {
-}
-
-.contentBand span.lineBreak {
+.contentBand:not(:last-child):after {
+  content: ' ';
 	width: 50%;
-	height: 1px;
+	border-bottom: 1px solid #b2c9d8;
 	display: block;
-	background-color: #DADADA;
-	margin: 4em auto 2em auto;
+	margin: 4em auto;
 }
 
-.views-row-last .lineBreak {
-  display: none;
-}
 
 /* @group Blockquotes */
 
@@ -983,13 +982,156 @@ ol.inlineGrid li:before {
 .contentBand .flexslider {
   background-color: #fff;
 }
-.contentBand .flex-caption {margin: 1.5em auto 1em auto; width: 75%; padding: 1em 0 1em 0; border-bottom: 1px solid #DADADA; text-align: center;}
-.contentBand .flex-control-nav {  }
+.contentBand .flex-caption {
+  margin: 1.5em auto 1em auto; width: 75%; padding: 1em 0 1em 0; text-align: center;
+  font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace;
+}
+.contentBand .flex-control-nav { bottom: 45px }
 .contentBand .flex-control-paging li a { background: #777; background: rgba(0,0,0,0.5);}
 .contentBand .flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
 .contentBand .flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9);}
 
 /* @end */
+
+/* @end */
+
+/* @group Contact Styles */
+
+ul#contactInfo {
+  list-style-type: none;
+}
+
+ul#contactInfo li {
+  font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace;
+  display: block;
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+ul#contactInfo .address {
+  float: left;
+  width: 18em;
+}
+
+ul#contactInfo .address:before {
+  content: "\6c";
+}
+
+ul#contactInfo .tel:before {
+  content: "\31";
+}
+
+ul#contactInfo .fax:before {
+  content: "\25";
+}
+
+ul#contactInfo li:before {
+  color: #933;
+  font: normal 1.25em/1em 'icons';
+  margin: .25em 0 0 -1.5em;
+  float: left;
+  display: block;
+}
+
+.webform-client-form {
+  border: 1px solid #b2c9d8;
+  border-radius: .5em;
+  padding: 0;
+  font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace;
+  overflow: hidden;
+}
+
+.webform-client-form > div {
+  display: table;
+  width: 100%;
+}
+
+.webform-client-form > div > div {
+  display: table-row;
+  width: 100%;
+}
+
+.webform-client-form > div > div > label {
+  display: table-cell;
+  border-bottom: 1px solid #b2c9d8;
+}
+
+.webform-client-form > div > div:last-child  > label {
+  border: 0;
+}
+/*
+.webform-client-form > div:last-child > div > * {
+  border: 0;
+}*/
+
+.webform-client-form label, .webform-client-form .form-actions {
+  padding: .5em;
+  font-weight: normal !important;
+  white-space: nowrap;
+}
+
+.webform-client-form input[type=text], .webform-client-form input[type=email], .webform-client-form textarea, .webform-client-form select   {
+  font: normal 1em/1.5em "Monaco", "lucida console", "courier", monospace;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  display: table-cell;
+  padding: 7px .5em;
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 1px solid #b2c9d8;
+  border-left: 1px solid #b2c9d8;
+}
+
+.webform-client-form select {
+  border-radius: 0;
+  background: #fff;
+  height: 32px;
+  overflow: hidden;
+  -webkit-appearance: none;
+  margin: 0;
+  border-bottom: 0;
+  background: url(assets/menu-arrows.png) no-repeat right #fff;
+  transition: all .1s linear;
+}
+
+.webform-client-form textarea {
+  border-radius: 0;
+  background: #fff;
+  margin: 0;
+  margin-top: -7px;
+  overflow: hidden;
+  border-top: 1px solid #b2c9d8;
+  border-bottom: 0;
+  height: 16em;
+}
+
+.webform-client-form .form-actions {
+  border-right: 1px solid #b2c9d8;
+}
+
+.webform-client-form .form-actions input[type=submit] {
+  font: normal 1em/1.5em "Monaco", "lucida console", "courier", monospace;
+  width: 101%;
+  padding: .5em;
+  background: transparent;
+  border: 0;
+  float: left;
+  margin-top: -30px;
+  background-color: #e1edf4;
+  border-top: 1px solid #b2c9d8;
+  border-right: 1px solid #b2c9d8;
+  transition: all .1s linear;
+}
+
+.webform-client-form .form-actions input[type=submit]:hover, .webform-client-form select:hover {
+  background-color: #f4eed7;
+} 
+
+.messages {
+  border-radius: .25em;
+  font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace;
+}
 
 /* @end */
 

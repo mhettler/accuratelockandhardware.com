@@ -193,7 +193,6 @@
    	  		endif;
    	  		print render($title_suffix);
    	  ?>
-      <?php print $messages; ?>
       <?php print render($tabs); ?>
       <?php print render($page['help']); ?>
       <?php if ($action_links): ?>
@@ -201,9 +200,10 @@
       <?php endif; ?>
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
+      <?php print $messages; ?>
     </div>
     </div><!-- /#content -->
-
+  
     <?php
       // Render the sidebars to see if there's anything in them.
       $sidebar_first  = render($page['sidebar_first']);
