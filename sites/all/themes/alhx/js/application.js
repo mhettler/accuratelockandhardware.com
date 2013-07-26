@@ -66,7 +66,8 @@ $(document).ready(function() {
     var anchor = $(this).attr('href').substring(1);
     if (anchor != '') { // Ignore blank href="#"
       var anchorY = $("a[name='"+ anchor +"']");
-  	  $('html,body').animate({ scrollTop: anchorY.offset().top }, 200);
+      var distance = anchorY.offset().top;
+  	  $('html,body').animate({ scrollTop: distance }, (distance/10));
   	};
   	event.preventDefault();
   });

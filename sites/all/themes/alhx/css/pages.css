@@ -522,6 +522,19 @@ h1.logo a:hover, h1.logo a:active {
 }
 
 /* @end */
+
+.field {
+  overflow: auto;
+}
+
+.field-group-format .field {
+  overflow: visible;
+}
+
+.field > .field-items {
+  float: right;
+}
+
 .views-exposed-form, .attribute-widgets {
   font-size: .75em;
   line-height: 1.5em;
@@ -876,7 +889,14 @@ h1.title {
   line-height: 1em;
 }
 
-.horizontal-tabs {
+.commerce-product-sku {
+  border-top: 1px solid #b2c9d8;
+  border-bottom: 1px solid #b2c9d8;
+  padding: .5em 0;
+  font-size: .75em;
+}
+
+/*.horizontal-tabs {
   font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace;
   border: 1px solid #b2c9d8 !important;
 }
@@ -926,11 +946,11 @@ ul.horizontal-tabs-list {
 
 .horizontal-tabs-panes .form-wrapper {
   padding: .5em !important;
-}
-
-/*.horizontal-tabs-panes {
-  padding: .5em 0;
 }*/
+
+.field-items ul {
+  margin-left: 2em;
+}
 
 .field-group-format-wrapper .field-label {
   display: inline-block;
@@ -971,10 +991,10 @@ ul.horizontal-tabs-list {
 .field-type-image img {
 	width: auto;
 	}
-.field-name-field-products {
+/*.field-name-field-products {
 	width: 30%;
 	margin-left: 65%;
-	}
+	}*/
 .field-group-htabs-wrapper {
 	clear: both;
 	width: 100%;
@@ -988,15 +1008,29 @@ ul.horizontal-tabs-list {
 div.innerPageNav {
   font-size: 1em;
   text-align: center;
-  border-top: 1px solid #b2c9d8;
-  border-bottom: 1px solid #b2c9d8;
-  padding: .5em 0;
+/*  border-top: 1px solid #b2c9d8;
+  border-bottom: 1px solid #b2c9d8;*/
+  margin: .5em 0 -1em 0;
 }
 
 div.innerPageNav div.innerNavItem {
-  margin: .25em .5em;
+  margin: .25em;
   display: inline-block;
 }
+
+div.innerPageNav div.innerNavItem a {
+  border: 1px solid #b2c9d8;
+  background-color: #e1edf4;
+  border-radius: .4em;
+  padding: .5em 1em;
+  text-decoration: none;
+}
+
+div.innerPageNav div.innerNavItem a:hover {
+  background-color: #f4eed7;
+  color: #9d8e54;
+}
+
 
 /* @end */
 
@@ -1065,12 +1099,12 @@ ol.inlineGrid li:before {
 	font: normal 4em/1em 'Archivo Narrow', Impact, Helvetica, Arial, sans-serif;
 }
 
-.contentBand:not(:last-child):after {
-  content: ' ';
-	width: 50%;
+div.innerPageNav:after, .contentBand:not(:last-child):after {
+  content: '';
+	width: 75%;
 	border-bottom: 1px solid #b2c9d8;
 	display: block;
-	margin: 4em auto;
+	margin: 3em auto;
 }
 
 
