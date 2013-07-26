@@ -869,7 +869,7 @@ h2.stickyHeaders {
 
 /* @end */
 
-/* @group Product Page Styles */
+/* @group Series Page Styles */
 
 h1.title {
   margin: 0;
@@ -932,17 +932,34 @@ ul.horizontal-tabs-list {
   padding: .5em 0;
 }*/
 
-.horizontal-tabs-panes .field-label {
-  display: block;
-  width: 14em;
+.field-group-format-wrapper .field-label {
+  display: inline-block;
+  width: 30%;
+  margin-right: 5%;
   font-weight: normal;
 }
 
-.horizontal-tabs-panes .commerce-product-field {
+.field-group-format-wrapper .field-label + .field-items {
+  display: inline-block;
+  width: 65%;
+}
+
+.field-group-div {
+  font-size: .75em;
+  line-height: 1.5em;
+}
+
+.commerce-product-field {
   padding: .5em;
 }
 
-.horizontal-tabs-panes .commerce-product-field:nth-child(even) {
+.field-group-format-wrapper .field-label + .field-items > .field-item {
+  display: inline-block;
+  min-width: 6em;
+  margin-right: 1em;
+}
+
+.field-group-format-wrapper .commerce-product-field:nth-child(even) {
   background-color: #eee;
 }
 
@@ -1180,14 +1197,13 @@ ul#contactInfo li:before {
 select {
   cursor: pointer;
   border-radius: 0;
-  background: #fff;
+  background: url(assets/menu-arrows.png) right 0 no-repeat #fff;
   height: 32px;
   overflow: hidden;
   -webkit-appearance: none;
   margin: 0;
   border-bottom: 0;
-  background: url(assets/menu-arrows.png) no-repeat right #fff;
-  transition: all .1s linear;
+  transition: background-color .1s linear;
 }
 
 .webform-client-form textarea {
@@ -1226,6 +1242,7 @@ select {
 .webform-client-form .form-actions input[type=submit]:hover, select:hover {
   background-color: #f4eed7;
   color: #9d8e54;
+  background-position: right -30px;
 } 
 
 .messages {
