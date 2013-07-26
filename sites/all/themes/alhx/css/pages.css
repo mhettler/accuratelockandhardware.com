@@ -575,7 +575,7 @@ h1.logo a:hover, h1.logo a:active {
   border-bottom: 1px solid #b2c9d8;
 }
 
-#edit-submit {
+.commerce-add-to-cart input[type=submit] {
   display: none;
 }
 
@@ -1197,6 +1197,7 @@ ul#contactInfo li:before {
 }
 
 .webform-client-form > div > div > label {
+  background-color: #eee;
   display: table-cell;
   border-bottom: 1px solid #b2c9d8;
 }
