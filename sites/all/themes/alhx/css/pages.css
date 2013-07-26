@@ -1073,7 +1073,7 @@ ul#contactInfo li:before {
 .webform-client-form input[type=text], .webform-client-form input[type=email], .webform-client-form textarea, .webform-client-form select   {
   font: normal 1em/1.5em "Monaco", "lucida console", "courier", monospace;
   background-color: transparent;
-  width: 100%;
+  width: 101%;
   outline: none;
   display: table-cell;
   padding: 7px .5em;
@@ -1084,6 +1084,7 @@ ul#contactInfo li:before {
 }
 
 .webform-client-form select {
+  cursor: pointer;
   border-radius: 0;
   background: #fff;
   height: 32px;
@@ -1096,6 +1097,7 @@ ul#contactInfo li:before {
 }
 
 .webform-client-form textarea {
+  resize: none;
   border-radius: 0;
   background: #fff;
   margin: 0;
@@ -1104,6 +1106,8 @@ ul#contactInfo li:before {
   border-top: 1px solid #b2c9d8;
   border-bottom: 0;
   height: 16em;
+  width: 100%;
+  overflow: auto;
 }
 
 .webform-client-form .form-actions {
