@@ -886,7 +886,6 @@ div.innerPageNav div.innerNavItem {
 
 .contentBand {
   font: 16px/1.8em "Georgia", "Times New Roman", Times , Serif;
-  overflow: auto;
 }
 
 .contentBand p {
@@ -961,6 +960,10 @@ ol.inlineGrid li:before {
 	margin: 4em auto 2em auto;
 }
 
+.views-row-last .lineBreak {
+  display: none;
+}
+
 /* @group Blockquotes */
 
 .contentBand blockquote {
@@ -977,6 +980,9 @@ ol.inlineGrid li:before {
 
 /* @group In-page Carousel Styles */
 
+.contentBand .flexslider {
+  background-color: #fff;
+}
 .contentBand .flex-caption {margin: 1.5em auto 1em auto; width: 75%; padding: 1em 0 1em 0; border-bottom: 1px solid #DADADA; text-align: center;}
 .contentBand .flex-control-nav {  }
 .contentBand .flex-control-paging li a { background: #777; background: rgba(0,0,0,0.5);}

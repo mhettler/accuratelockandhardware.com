@@ -187,13 +187,11 @@
    			print render($title_prefix);
    			if ($title):
    	  ?>
-   	  			 <h1 class="title" id="page-title"><?php print $title; ?></h1>
+   	  			 <h2 class="title" id="page-title"><?php print $title; ?></h2>
    	  			 
    	  <?php
    	  		endif;
    	  		print render($title_suffix);
-   	  		   	  
-   	  
    	  ?>
       <?php print $messages; ?>
       <?php print render($tabs); ?>
