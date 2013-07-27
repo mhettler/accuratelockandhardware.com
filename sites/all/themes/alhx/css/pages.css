@@ -594,6 +594,14 @@ h1.logo a:hover, h1.logo a:active {
   border-left: 0 !important;
 }
 
+.selectYes {
+  color: #080;
+}
+
+.selectNo {
+  color: #933;
+}
+
 .views-exposed-widget > label, .attribute-widgets label {
   font-weight: normal !important;
 /*  text-decoration: underline;*/

@@ -59,6 +59,25 @@ $(document).ready(function() {
     $(this).parent().css({'background' : 'url(' + imgSrc + ') no-repeat', 'background-size' : 'cover'});
   });
   
+  // Forms > Select Menu - Assign red/green to No/Yes
+  
+  $('select').each(function() {
+   if ( $(this).val() == '1' ) {
+     $(this).addClass('selectYes');
+   } else if ( $(this).val() == '0' ) {
+     $(this).addClass('selectNo');;
+   };
+  });
+  
+  $(document).ajaxSuccess(function() {
+    $('select').each(function() {
+     if ( $(this).val() == '1' ) {
+       $(this).addClass('selectYes');
+     } else if ( $(this).val() == '0' ) {
+       $(this).addClass('selectNo');
+     };
+    });
+  });
   
   // Smooth jump to anchor
   
@@ -152,6 +171,7 @@ $(document).ready(function() {
  
      });
    });
+
 
 
 //  
