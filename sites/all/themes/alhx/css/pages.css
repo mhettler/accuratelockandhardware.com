@@ -595,7 +595,7 @@ h1.logo a:hover, h1.logo a:active {
 }
 
 .selectYes {
-  color: #080;
+  color: #0b0;
 }
 
 .selectNo {
@@ -965,6 +965,11 @@ ul.horizontal-tabs-list {
   width: 30%;
   margin-right: 5%;
   font-weight: normal;
+}
+
+.field-group-format h3 {
+  font-size: 2em;
+  margin: 1em 0 .5em 0;
 }
 
 .field-group-format-wrapper .field-label + .field-items {
