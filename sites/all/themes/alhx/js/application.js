@@ -25,9 +25,9 @@ $(document).ready(function() {
 			  var styles = [
 			    {
 			      stylers: [
-			        { hue: "#00d4ff" },
+//			        { hue: "#000000" },
 			        { saturation: -80 },
-			        { lightness: -30 }
+			        { lightness: -40 }
 			      ]
 			    },{
 			      featureType: "road",

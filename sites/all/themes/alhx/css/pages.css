@@ -60,6 +60,7 @@ body {
 }
 
 h1, h2, h3 {
+  margin: 0;
   font-family: 'Archivo Narrow', Impact, Helvetica, Arial, sans-serif;
 }
 
@@ -711,9 +712,9 @@ h2.stickyHeaders {
   color: #9d8e54;
 }
 
-.view-content {
+/*.view-content {
   font: normal .75em/1.5em "Monaco", "lucida console", "courier", monospace;
-}
+}*/
 
 .productItem {
 /*  width: 100%;*/
@@ -860,18 +861,22 @@ h2.stickyHeaders {
   overflow: auto;
 }
 
+.view-employee-profiles > div {
+  text-align: center;
+}
+
 .profileTile > img {
   border-radius: 50%;
 }
 
 .profileTile {
-  font-size: 1.2em;
+  font-size: .9em;
   min-height: 16em;
-  display: block;
+  display: inline-block;
   text-align: center;
-  width: 28%;
-  float: left;
+  width: 25%;
   margin: 1.5em 0;
+  vertical-align: top;
 }
 
 .profileTile h2 {
@@ -1001,6 +1006,7 @@ ul.horizontal-tabs-list {
 	float: left;
 	overflow: hidden;
 	}
+	
 .field-type-image img {
 	width: auto;
 	}
@@ -1024,6 +1030,7 @@ div.innerPageNav {
 /*  border-top: 1px solid #b2c9d8;
   border-bottom: 1px solid #b2c9d8;*/
   margin: .5em 0 -1em 0;
+  font-size: .75em;
 }
 
 div.innerPageNav div.innerNavItem {
@@ -1047,8 +1054,50 @@ div.innerPageNav div.innerNavItem a:hover {
 
 /* @end */
 
+/* @group News Articles */
+
+.node-article .field-items {
+  font-family: "Georgia", "Times New Roman", Times , Serif;
+}
+
+.node-article header p{
+  font-size: .8em;
+  border-top: 1px solid #b2c9d8;
+  border-bottom: 1px solid #b2c9d8;
+  margin: 1em 0;
+}
+
+.node-article .field-type-image {
+	width: 100%;
+	float: none;
+	overflow: hidden;
+}
+
+.node-article .field-type-image * {
+  width: 100%;
+}
+	
+
+/* @end */
+
 .contentBand {
   font: 16px/1.8em "Georgia", "Times New Roman", Times , Serif;
+}
+
+.contentBand ul {
+  list-style-type: none;
+  padding-left: 2em;
+}
+
+.contentBand ul li:before {
+  content: '\00d7 ';
+  color: #933;
+  padding-right: .5em;
+  font-weight: bold;
+}
+
+.contentBand h2 {
+  margin-bottom: 1em;
 }
 
 .contentBand p {
@@ -1140,10 +1189,16 @@ div.innerPageNav:after, .contentBand:not(:last-child):after {
 .contentBand .flexslider {
   background-color: #fff;
 }
+
+.contentBand .flexslider ul li:before {
+  content: none;
+}
+
 .contentBand .flex-caption {
   margin: 1.5em auto 1em auto; width: 75%; padding: 1em 0 1em 0; text-align: center;
   font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace;
 }
+.contentBand .flex-direction-nav a { top: 45%; }
 .contentBand .flex-control-nav { bottom: 45px }
 .contentBand .flex-control-paging li a { background: #777; background: rgba(0,0,0,0.5);}
 .contentBand .flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
@@ -1282,7 +1337,7 @@ select {
   margin-top: -30px;
   background-color: #e1edf4;
   border-top: 1px solid #b2c9d8;
-  border-right: 1px solid #b2c9d8;
+/*  border-right: 1px solid #b2c9d8;*/
   transition: all .1s linear;
   color: #285993;
 }
