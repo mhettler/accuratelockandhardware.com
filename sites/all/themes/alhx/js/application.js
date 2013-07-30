@@ -154,7 +154,7 @@ $(document).ready(function() {
   // Sticky series titles in lists
   
    $(window).scroll(function() {
-     $('.view-content > h3').addClass('stickyHeaders');
+     //$('.view-content > h3').addClass('stickyHeaders');
      $('.stickyHeaders').each(function() {
        
        var currPos = $(this).offset().top - 32;
