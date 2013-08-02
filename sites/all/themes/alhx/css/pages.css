@@ -436,6 +436,10 @@ h1.logo a:hover, h1.logo a:active {
   text-decoration: underline;
 }
 
+.node-promoted {
+	display: none;
+	}
+
 /* @end */
 
 /* @group Product Filters */
