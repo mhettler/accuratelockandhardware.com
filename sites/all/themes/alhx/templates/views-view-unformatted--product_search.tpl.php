@@ -7,6 +7,7 @@
  * @ingroup views_templates
  */
 ?>
+<div class="allProductResults">
 <?php if (!empty($title)): ?>
   <div class="headerInfo"><?php print $title; ?></div>
 <?php endif; ?>
@@ -15,3 +16,4 @@
     <?php print $row; ?>
   </div>
 <?php endforeach; ?>
+</div>
