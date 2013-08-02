@@ -51,10 +51,23 @@
     
       <div id="<?php print $widget->id; ?>-wrapper" class="views-exposed-widget views-widget-<?php print $id; ?>">
         <?php if (!empty($widget->label)): ?>
-          <label for="<?php print $widget->id; ?>">
+          <div class="<?php print $widget->id; ?>"><label for="<?php print $widget->id; ?>">
             <?php print $widget->label; ?>
-          </label>
+            <?php
+            $toolTipURL = strtolower($widget->label);
+            $toolTipURL = preg_replace("/[^A-Za-z0-9 ]/", '', $toolTipURL);
+            $toolTipURL = str_replace(" ", "-", $toolTipURL);
+            ?>
+          </label><?php if (!empty($widget->description)): ?><a class="alhToolTip" href="<?php echo 'http://biz104.inmotionhosting.com/~accura30/help/'.$toolTipURL; ?>"><?php print $widget->description; ?></a><?php endif; ?></div>
+      <!-- 
+    <?php if (!empty($widget->description)): ?>
+          <div class="description">
+            <?php print $widget->description; ?>
+          </div>
+         <?php endif; ?>
+ -->
         <?php endif; ?>
+        
         <?php if (!empty($widget->operator)): ?>
           <div class="views-operator">
             <?php print $widget->operator; ?>
@@ -63,11 +76,6 @@
         <div class="views-widget">
           <?php print $widget->widget; ?>
         </div>
-        <?php if (!empty($widget->description)): ?>
-          <div class="description">
-            <?php print $widget->description; ?>
-          </div>
-        <?php endif; ?>
       </div>
       
        <?php
