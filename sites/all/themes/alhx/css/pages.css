@@ -562,6 +562,10 @@ h1.logo a:hover, h1.logo a:active {
   overflow: hidden;
 }
 
+.attribute-widgets {
+  margin-bottom: 0 !important;
+}
+
 .views-exposed-widgets > div {
   display: table-row;
   padding: 0;
