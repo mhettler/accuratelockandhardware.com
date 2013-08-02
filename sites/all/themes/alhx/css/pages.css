@@ -567,6 +567,13 @@ a.alhToolTip:hover {
 .field > .field-items {
   float: right;
 }
+.field-name-field-primary-project-image > .field-items {
+  float: none;
+}
+
+.field-name-field-sub-title > .field-items {
+  float: none;
+}
 
 .views-exposed-form, .attribute-widgets {
   font-size: .75em;
@@ -982,13 +989,28 @@ h1.title {
   line-height: 1em;
 }
 
-.group_product_name {
+.group_product_name, .group-project-details {
   border-top: 1px solid #b2c9d8;
   border-bottom: 1px solid #b2c9d8;
   padding: .5em 0;
   margin-bottom: 2em;
   font-size: .75em;
 }
+
+.group-project-details {
+  margin-top: 1.5em;
+}
+
+.group-project-details .field-type-text .field-label {
+	display: inline-block;
+	width: 15%;
+	margin-right: 0;
+	font-weight: normal;
+	}
+.group-project-details .field-type-text .field-label + .field-items {
+	display: inline-block;
+	width: 85%;
+	}
 
 .group_product_name * {
   float: none !important;
