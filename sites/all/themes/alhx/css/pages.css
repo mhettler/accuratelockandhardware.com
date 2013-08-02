@@ -12,7 +12,7 @@
  * Body
  */
  
-@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT:400,700,400italic|Archivo+Narrow:700);
+@import url(http://fonts.googleapis.com/css?family=Archivo+Narrow:700);
 
 html, body {
   height: 100%;
@@ -715,6 +715,12 @@ a.alhToolTip:hover {
     height: 100%;
     overflow: auto;
 }*/
+
+.allProductResults {
+  font-size: .75em;
+  line-height: 1.5em;
+}
+
 .headerFixed h2.stickyHeaders {
   margin: 1em 0 0 0 !important;
 }
@@ -727,6 +733,7 @@ a.alhToolTip:hover {
 .headerFixed {
   position: fixed;
   top: 0;
+  z-index: 10;
   background-color: #fff;
   width: 50%;
   box-shadow: 0 8px 12px -10px rgba(0,0,0,.75);
@@ -737,7 +744,7 @@ a.alhToolTip:hover {
   position: relative;
 }
 
-.view-content > h3, .stickyHeaders {
+.stickyHeaders {
     font: bold 1.8em/1.5em 'Archivo Narrow', Impact, Helvetica, Arial, sans-serif !important;
     padding: .25em 0;
     border-top: 3px solid #285993;
@@ -850,7 +857,7 @@ h2.stickyHeaders {
 
 .view-content .moreInfo {
   display: none;
-  border-top: 1px solid #e1edf4;
+  border-top: 1px solid #b2c9d8;
   padding-top: 1em  ;
   margin: 0 0 1em 6em;
   position: relative;
@@ -859,6 +866,7 @@ h2.stickyHeaders {
 .view-content .moreInfo:before {
   content: " ";
   background-image: url(assets/tab-arrow-up.png);
+  z-index: 5;
   width: 16px;
   height: 8px;
   display: block;
