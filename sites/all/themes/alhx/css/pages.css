@@ -1141,7 +1141,7 @@ ul.horizontal-tabs-list {
 	clear: both;
 	width: 100%;
 	}
-.field-name-body {	
+.node-projects-testimonials .field-name-body {	
 	font: 16px/1.8em "Georgia", "Times New Roman", Times , Serif;
 	}
 /* @end */
@@ -1238,8 +1238,10 @@ div.innerPageNav div.innerNavItem a:hover {
   list-style-type: none;
   padding-left: 1.5em;
 }
-
-.contentBand ul li:before {
+.node .field-group-format ul li {
+  list-style-type: none;
+}
+.contentBand ul li:before, .node .field-group-format ul li:before {
   content: '\00d7 ';
   color: #933;
   margin-left: -1.5em;
@@ -1334,6 +1336,15 @@ div.gridItem:after {
   margin: .5em 0 .5em 1em;
   border-top: 3px solid #285993;
   border-bottom: 3px solid #993333;
+  width: 33%;
+  font: normal 1.5em/1.5em 'Archivo Narrow', Impact, Helvetica, Arial, sans-serif;
+}
+
+.field-name-body blockquote img {
+  float: right;
+  padding: 0;
+  margin: .5em 0 .5em 1em;
+  border-top: 1px solid #424242;
   width: 33%;
   font: normal 1.5em/1.5em 'Archivo Narrow', Impact, Helvetica, Arial, sans-serif;
 }
