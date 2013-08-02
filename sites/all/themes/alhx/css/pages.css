@@ -623,7 +623,7 @@ h1.logo a:hover, h1.logo a:active {
   color: #ccc;
 }
 
-.views-exposed-widget > label, .attribute-widgets label {
+.views-exposed-widget > div > label, .attribute-widgets label {
   font-weight: normal !important;
 /*  text-decoration: underline;*/
   background-color: #eee;
@@ -631,15 +631,28 @@ h1.logo a:hover, h1.logo a:active {
   border-bottom: 1px solid #b2c9d8;
 }
 
-.views-exposed-widget > div {
-  padding: .5em 1em 1em 1em;
+.views-exposed-widget .form-item {
+  padding: 0 1em;
+}
+
+.views-exposed-widget .form-item:first-child {
+  padding-top: .5em;
+}
+
+.views-exposed-widget .form-item:last-child {
+  padding-bottom: 1em;
+}
+
+.views-exposed-widget .form-type-select {
+  padding: 0 !important;
 }
 
 .views-exposed-widget > div select {
   border: 0;
-  padding: 0 1em !important;
+  width: 100%;
+/*  padding: 0 1em !important;
   box-sizing: content-box;
-  margin: -.5em -1em 0 -1em;
+  margin: -.5em -1em 0 -1em;*/
 }
 
 .views-exposed-widget:nth-child(4n+4) {
