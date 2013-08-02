@@ -51,14 +51,16 @@
     
       <div id="<?php print $widget->id; ?>-wrapper" class="views-exposed-widget views-widget-<?php print $id; ?>">
         <?php if (!empty($widget->label)): ?>
-          <div class="<?php print $widget->id; ?>"><label for="<?php print $widget->id; ?>">
-            <?php print $widget->label; ?>
-            <?php
-            $toolTipURL = strtolower($widget->label);
-            $toolTipURL = preg_replace("/[^A-Za-z0-9 ]/", '', $toolTipURL);
-            $toolTipURL = str_replace(" ", "-", $toolTipURL);
-            ?>
-          </label><?php if (!empty($widget->description)): ?><a class="alhToolTip" href="<?php echo 'http://biz104.inmotionhosting.com/~accura30/help/'.$toolTipURL; ?>"><?php print $widget->description; ?></a><?php endif; ?></div>
+          <div class="<?php print $widget->id; ?>">
+			  <label for="<?php print $widget->id; ?>">
+					<?php print $widget->label; ?>
+					<?php
+					$toolTipURL = strtolower($widget->label);
+					$toolTipURL = preg_replace("/[^A-Za-z0-9 ]/", '', $toolTipURL);
+					$toolTipURL = str_replace(" ", "-", $toolTipURL);
+					?>
+				  <?php if (!empty($widget->description)): ?><a class="alhToolTip" href="<?php echo 'http://biz104.inmotionhosting.com/~accura30/help/'.$toolTipURL; ?>"><?php print $widget->description; ?></a><?php endif; ?></div>
+			  </label>
       <!-- 
     <?php if (!empty($widget->description)): ?>
           <div class="description">
