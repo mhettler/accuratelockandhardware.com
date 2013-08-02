@@ -1106,18 +1106,21 @@ ul.horizontal-tabs-list {
   border: 1px solid #999;
 }
 
-.field-type-image {
+.field-name-field-image-gallery {
 	width: 60%;
 	float: left;
 	overflow: hidden;
 	}
 	
-.field-type-image img {
+.field-name-field-image-gallery img {
 	width: auto;
 	}
 .field-group-htabs-wrapper {
 	clear: both;
 	width: 100%;
+	}
+.field-name-body {	
+	font: 16px/1.8em "Georgia", "Times New Roman", Times , Serif;
 	}
 /* @end */
 
