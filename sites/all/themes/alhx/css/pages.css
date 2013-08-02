@@ -131,6 +131,15 @@ a:hover, a:active {
   margin: 0;
 }
 
+.btn {
+	display: inline-block;
+	
+	}
+.btn img {
+	width: 35px;
+	display: inline-block;
+	height: auto;
+	}
 /*
  * The skip-link link will be completely hidden until a user tabs to the link.
  * See the element-focusable rule in system.base.css.
