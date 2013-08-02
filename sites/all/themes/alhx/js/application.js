@@ -64,7 +64,7 @@ $(document).ready(function() {
   $('select').each(function() {
    if ( $(this).val() == '1' ) {
      $(this).addClass('selectYes');
-   } else if ( $(this).val() == '0' ) {
+   } else if ( $(this).find(':selected').html() == '- None -' ) {
      $(this).addClass('selectNo');;
    };
   });
@@ -73,7 +73,7 @@ $(document).ready(function() {
     $('select').each(function() {
      if ( $(this).val() == '1' ) {
        $(this).addClass('selectYes');
-     } else if ( $(this).val() == '0' ) {
+     } else if ( $(this).find(':selected').html() == '- None -' ) {
        $(this).addClass('selectNo');
      };
     });

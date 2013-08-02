@@ -27,7 +27,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-zoom-in, .icon-zoom-out, .icon-envelop, .icon-location, .icon-facebook, .icon-flickr, .icon-vimeo, .icon-google-plus, .icon-feed, .icon-twitter, .icon-tumblr, .icon-share, .icon-pinterest, .icon-search, .icon-checkmark, .icon-close, .icon-spam, .icon-phone, .icon-heart, .icon-youtube, .icon-printer, .icon-print, .icon-arrow-left, .icon-arrow-down, .icon-arrow-up, .icon-arrow-right, .icon-comment, .icon-user, .icon-export, .icon-book, .icon-cart {
+.icon-zoom-in, .icon-zoom-out, .icon-envelop, .icon-location, .icon-facebook, .icon-flickr, .icon-vimeo, .icon-google-plus, .icon-feed, .icon-twitter, .icon-tumblr, .icon-share, .icon-pinterest, .icon-search, .icon-checkmark, .icon-close, .icon-spam, .icon-phone, .icon-heart, .icon-youtube, .icon-printer, .icon-print, .icon-arrow-left, .icon-arrow-down, .icon-arrow-up, .icon-arrow-right, .icon-comment, .icon-user, .icon-export, .icon-book, .icon-cart, .icon-quill, .icon-warning, .icon-help {
 	font-family: 'icons';
 	speak: none;
 	font-style: normal;
@@ -129,4 +129,13 @@ you can use the generic selector below, but it's slower:
 }
 .icon-cart:before {
 	content: "\27";
+}
+.icon-quill:before {
+	content: "\3a";
+}
+.icon-warning:before {
+	content: "\3c";
+}
+.icon-help:before {
+	content: "\3f";
 }

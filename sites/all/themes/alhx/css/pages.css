@@ -543,6 +543,19 @@ h1.logo a:hover, h1.logo a:active {
 
 /* @end */
 
+a.alhToolTip {
+  text-decoration: none;
+  color: #b2c9d8 !important;
+  font: normal 1.25em/1em 'icons';
+  margin: 0 -.5em 0 .25em ;
+  float: right;
+  display: block;
+}
+
+a.alhToolTip:hover {
+  color: #285993 !important;
+}
+
 .field {
   overflow: auto;
 }
@@ -1109,6 +1122,30 @@ ul.horizontal-tabs-list {
 /* @end */
 
 /* @group Page/Node Styles */
+
+/* @group Home Page */
+
+.btn {
+  margin: 0 2em;
+}
+
+.btn:before {
+  color: #933;
+  font: normal 1.25em/1em 'icons';
+  margin: .25em 0 0 -1.5em;
+  float: left;
+  display: block;
+}
+
+.readMoreBtn:before {
+  content: '\33';
+}
+
+.searchBtn:before {
+  content: '\2d';
+}
+
+/* @end */
 
 /* @group Inner Page Navigation (Contents) */
 
