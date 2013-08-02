@@ -456,27 +456,30 @@ h1.logo a:hover, h1.logo a:active {
 /* @group Root Product Menu */
 
 .gridItem {
-  width: 48%;
+  width: 30%;
   float: left;
   text-align: center;
   margin: 1%;
+  vertical-align: top;
 }
 
 .gridItem .productTypeItems {
-  border: 0;
-  border: 1px solid #933;
+  padding: 1em 0;
+  height: 240px;
+  border: 2px solid #933;
   border-radius: .5em;;
 }
 
 .gridItem .productTypeItems img {
-  width: 200px;
+  width: 100%;
   float: none;
 }
 
-.gridItem .productTypeCaption {
+.gridItem .productTypeCaption h2 {
   padding: 0;
   margin: 0;
   width: 100%;
+  font-size: 1.4em !important;
 }
 
 /* @end */
@@ -929,9 +932,14 @@ h2.stickyHeaders {
   min-height: 16em;
   display: inline-block;
   text-align: center;
-  width: 25%;
-  margin: 1.5em 0;
+  width: 28%;
+  margin: 1% 0;
   vertical-align: top;
+}
+
+li.gridTile:before {
+  content: none !important;
+  margin: 0;
 }
 
 .gridTile ul li {
