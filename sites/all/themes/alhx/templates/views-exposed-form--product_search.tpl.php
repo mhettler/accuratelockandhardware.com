@@ -61,6 +61,7 @@
 					$toolTipURL = str_replace(" ", "-", $toolTipURL);
 					?>
 			  </label>
+		  </div>
       <!-- 
     <?php if (!empty($widget->description)): ?>
           <div class="description">
