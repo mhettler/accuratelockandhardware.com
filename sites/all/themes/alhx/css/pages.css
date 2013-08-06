@@ -543,6 +543,8 @@ h1.logo a:hover, h1.logo a:active {
 
 /* @end */
 
+/* @group Tooltips */
+
 a.alhToolTip {
   text-decoration: none;
   color: #b2c9d8 !important;
@@ -555,6 +557,12 @@ a.alhToolTip {
 a.alhToolTip:hover {
   color: #285993 !important;
 }
+
+.bt-content .contentWidth {
+  width: 100%;
+}
+
+/* @end */
 
 .field {
   overflow: auto;
@@ -1363,6 +1371,11 @@ div.gridItem:after {
 
 .contentBand .flexslider {
   background-color: #fff;
+}
+
+.contentBand .flexslider > ul, .contentBand .flexslider > ul > li {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .contentBand .flexslider ul li:before {
