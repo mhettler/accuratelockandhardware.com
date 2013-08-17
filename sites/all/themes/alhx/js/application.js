@@ -113,26 +113,29 @@ $(document).ready(function() {
 
   // Duplicate fixed elements to create white overlay version
   
-  if ($('.fixed > div').hasClass('dup')) {
+  if ($('.fixed > div').hasClass('dup') && $window.width() > 540 ) {
     $('.fixed > div').each(function(){
       $(this).clone().appendTo($(this).parent()).addClass('overlay');
       $(this).addClass('underlay');
     });
     
       function cropScroll() {
-        var currPosition = Math.abs($(window).scrollTop());
-    
-        var overClipTop = 0 - currPosition;
-        var overClipBottom = overClipTop + $('.splashSection').height();  
-        var overRect = 'rect(' +overClipTop + 'px auto ' + overClipBottom + 'px 0px)';
-        
-        var underClipBottom = currPosition + $(window).height();
-        var underClipTop= overClipBottom;
-        
-        var underRect = 'rect(' + underClipTop + 'px auto ' + underClipBottom + 'px 0px)';
-        
-        $('.overlay').css({clip : overRect});
-        $('.underlay').css({clip : underRect});
+      
+        if ( $window.width() > 540 ) {
+          var currPosition = Math.abs($(window).scrollTop());
+      
+          var overClipTop = 0 - currPosition;
+          var overClipBottom = overClipTop + $('.splashSection').height();  
+          var overRect = 'rect(' +overClipTop + 'px auto ' + overClipBottom + 'px 0px)';
+          
+          var underClipBottom = currPosition + $(window).height();
+          var underClipTop= overClipBottom;
+          
+          var underRect = 'rect(' + underClipTop + 'px auto ' + underClipBottom + 'px 0px)';
+          
+          $('.overlay').css({clip : overRect});
+          $('.underlay').css({clip : underRect});
+        };
 
       };
       

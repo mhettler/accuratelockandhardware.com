@@ -1,0 +1,22 @@
+.header {
+  height: 100%;
+  width: 30%;
+  left: 0;
+  position: fixed;
+  z-index: 100;
+  line-height: 1.5em !important;
+}
+
+.contentWidth {
+  width: 70%;
+  margin-left: 30%;
+}
+
+.mainNav {
+  width: 30%;
+  left: 0;
+  top: 200px;
+  position: fixed;
+  z-index: 100;
+  text-align: center;
+}

@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  height: auto;
+  left: 0;
+  z-index: 100;
+  line-height: 1.5em !important;
+  position: static;
+}
+
+.contentWidth {
+  width: 100%;
+  margin: 0;
+}
+
+.mainNav {
+  width: 100%;
+  left: 0;
+  position: static;
+  z-index: 100;
+  text-align: center;
+}
+
+.splashSub {
+  margin-top: 200px;
+  position: relative;
+  height: 30% !important;
+  overflow: hidden;
+}
