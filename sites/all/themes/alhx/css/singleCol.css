@@ -1,22 +1,54 @@
 .header {
   height: 100%;
-  width: 30%;
-  left: 0;
+  width: 155px;
+  left: 15px;
+  margin: 0;
   position: fixed;
   z-index: 100;
   line-height: 1.5em !important;
 }
 
 .contentWidth {
-  width: 70%;
-  margin-left: 30%;
+  width: auto;
+  padding: 0 2em;
+  margin-left: 170px;
 }
 
 .mainNav {
-  width: 30%;
+  width: 170px;
   left: 0;
-  top: 200px;
+  top: 160px;
   position: fixed;
   z-index: 100;
+}
+
+.mainNav > div {
+  width: 100%;
+  padding: 0;
+  margin:  0 auto;
+}
+
+.mainNav ul {
+  width: 100%;
+  display: block;
+  float: none;
+}
+
+.mainNav li {
   text-align: center;
 }
+
+footer {
+  padding: 0 !important;
+  margin: 0 2em 0 202px !important;
+}
+
+
+
+/*.overlay {
+  display: none;
+}
+
+.underlay {
+  clip: auto;
+}*/

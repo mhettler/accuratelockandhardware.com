@@ -339,8 +339,9 @@ a.icon-facebook:hover{
 
 .header {
   height: 100%;
-  right: 77%;
-  width: 200px;
+  left: 25%;
+  width: 150px;
+  margin-left: -180px;
   position: fixed;
   z-index: 100;
   line-height: 1.5em !important;
@@ -1190,11 +1191,11 @@ ul.horizontal-tabs-list {
 
 /* @group Inner Page Navigation (Contents) */
 
-div.innerPageNav {
+/*div.innerPageNav {
   font-size: 1em;
   text-align: center;
 /*  border-top: 1px solid #b2c9d8;
-  border-bottom: 1px solid #b2c9d8;*/
+  border-bottom: 1px solid #b2c9d8;*!/
   margin: .5em 0 -1em 0;
   font-size: .75em;
 }
@@ -1215,7 +1216,38 @@ div.innerPageNav div.innerNavItem a {
 div.innerPageNav div.innerNavItem a:hover {
   background-color: #f4eed7;
   color: #9d8e54;
+}*/
+
+div.innerPageNav {
+  font-size: 1em;
+  text-align: center;
+/*  border-top: 1px solid #b2c9d8;
+  border-bottom: 1px solid #b2c9d8;*/
+  font-size: .8em;
 }
+
+div.innerPageNav div.innerNavItem {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+div.innerPageNav div.innerNavItem a {
+  border-right: 1px solid #285993;
+  padding: 0 1em 0 .5em;
+  margin: 0 !important;
+  text-decoration: none;
+}
+
+div.innerPageNav div.innerNavItem:last-child a {
+  border: none;
+}
+
+div.innerPageNav div.innerNavItem a:hover {
+  color: #933;
+  text-decoration: underline;
+}
+
 
 
 /* @end */
@@ -1337,6 +1369,7 @@ div.innerPageNav:after, .contentBand:not(:last-child):after {
 	display: block;
 	margin: 3em auto;
 }
+
 div.gridItem:after {
 	margin: 0 !important;
 	border-bottom: 0 !important;

@@ -113,7 +113,7 @@ $(document).ready(function() {
 
   // Duplicate fixed elements to create white overlay version
   
-  if ($('.fixed > div').hasClass('dup') && $window.width() > 540 ) {
+  if ($('.fixed > div').hasClass('dup') && $(window).width() > 540 ) {
     $('.fixed > div').each(function(){
       $(this).clone().appendTo($(this).parent()).addClass('overlay');
       $(this).addClass('underlay');
@@ -121,7 +121,7 @@ $(document).ready(function() {
     
       function cropScroll() {
       
-        if ( $window.width() > 540 ) {
+        if ( $(window).width() > 540 ) {
           var currPosition = Math.abs($(window).scrollTop());
       
           var overClipTop = 0 - currPosition;
@@ -133,8 +133,15 @@ $(document).ready(function() {
           
           var underRect = 'rect(' + underClipTop + 'px auto ' + underClipBottom + 'px 0px)';
           
-          $('.overlay').css({clip : overRect});
-          $('.underlay').css({clip : underRect});
+//          $('.overlay').css({clip : overRect});
+//          $('.underlay').css({clip : underRect});
+          
+          $('.overlay').each(function() {
+            $(this).css({clip : overRect});
+          });
+          $('.underlay').each(function() {
+            $(this).css({clip : underRect});
+          });
         };
 
       };
