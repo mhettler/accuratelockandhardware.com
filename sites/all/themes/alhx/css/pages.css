@@ -821,7 +821,7 @@ h2.stickyHeaders {
 }
 
 .productItem h2, .productItem h3 {
-  font: normal 1em/1.5em "Monaco", "lucida console", "courier", monospace !important;
+  font: normal 1em/1.5em "Monaco", "lucida console", "AppleColorEmoji", "courier", monospace !important;
   padding: 1em 0.5em;
   margin: 0;
   display: inline-block;

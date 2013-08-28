@@ -7,9 +7,32 @@
   position: static;
 }
 
+.headerBar {
+  text-align: center;
+}
+
+.header > div, .header > div > div {
+  height: auto;
+  width: 100% !important;
+}
+
+.main-menu {
+  margin: .5em 0;
+}
+
+.main-menu > ul > li {
+  margin: 0 .5em;
+  display: inline-block !important;
+}
+
+.contactIcons {
+  display: none;
+}
+
 .contentWidth {
   width: auto;
   margin: 0;
+  padding: 0 1em;
 }
 
 /*.mainNav {
@@ -20,6 +43,10 @@
   text-align: center;
 }*/
 
+.contentBand h2 {
+  text-align: center;
+}
+
 .contentBand blockquote {
   width: 100%;
   float: none;
@@ -27,7 +54,7 @@
 }
 
 .splashSub {
-  margin-top: 200px;
+  margin-top: 120px;
   position: relative;
   height: 30% !important;
   overflow: hidden;
