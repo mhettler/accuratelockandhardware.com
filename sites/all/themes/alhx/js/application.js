@@ -54,9 +54,14 @@ $(document).ready(function() {
     
   $('.flexslider ul#flexslider_views_slideshow_flexslider_galleries-block img').each(function(){
     var imgSrc = $(this).attr('src');
-    console.log(imgSrc);
     $(this).hide();
     $(this).parent().css({'background' : 'url(' + imgSrc + ') no-repeat', 'background-size' : 'cover'});
+  });
+  
+  $('.splashSub').each(function(){
+    var imgSrc = $(this).find('img').attr('src');
+    $(this).find('img').hide();
+    $(this).css({'background' : 'url(' + imgSrc + ') no-repeat', 'background-size' : 'cover'});
   });
   
   // Forms > Select Menu - Assign red/green to No/Yes

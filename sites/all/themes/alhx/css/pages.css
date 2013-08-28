@@ -90,6 +90,7 @@ h1, h2, h3 {
 /*  z-index: -999;*/
   position: relative;
   height: 50% !important;
+  background-color: red;
   overflow: hidden;
 /*  display: block;*/
 }
@@ -401,6 +402,20 @@ h1.logo a:hover, h1.logo a:active {
   max-width: 900px;
   display: block;
   margin: 1em auto 0 auto;
+}
+
+.fullMenu {
+  display: block;
+}
+
+.inlineMenu {
+  margin-top: 2em;
+  display: none;
+}
+
+.inlineMenu li {
+  display: list-item !important;
+  text-align: center;
 }
 
 /* @end */
@@ -1740,6 +1755,14 @@ footer {
 footer > div {
   border-top: 2px solid #993333;
   padding: 1em 0 .5em 0;
+}
+
+/* @end */
+
+/* @group Resets & Overrides */
+
+.block {
+  margin: 0 !important;
 }
 
 /* @end */

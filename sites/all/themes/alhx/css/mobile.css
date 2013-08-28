@@ -8,16 +8,22 @@
 }
 
 .contentWidth {
-  width: 100%;
+  width: auto;
   margin: 0;
 }
 
-.mainNav {
+/*.mainNav {
   width: 100%;
   left: 0;
   position: static;
   z-index: 100;
   text-align: center;
+}*/
+
+.contentBand blockquote {
+  width: 100%;
+  float: none;
+  margin: 0em;
 }
 
 .splashSub {
@@ -25,4 +31,9 @@
   position: relative;
   height: 30% !important;
   overflow: hidden;
+}
+
+footer {
+  padding: 0 !important;
+  margin: 0 !important;
 }

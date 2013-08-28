@@ -80,6 +80,29 @@
           <h1 class="logo">
             <a href="<?php print url('<front>', array('absolute' => TRUE)); ?>" >Lock &amp; Hardware</a>
           </h1>
+          
+          <?php if ($main_menu): ?>
+            <nav class="main-menu inlineMenu" role="navigation">
+              <?php
+              // This code snippet is hard to modify. We recommend turning off the
+              // "Main menu" on your sub-theme's settings form, deleting this PHP
+              // code block, and, instead, using the "Menu block" module.
+              // @see http://drupal.org/project/menu_block
+              print theme('links__system_main_menu', array(
+                'links' => $main_menu,
+                'attributes' => array(
+                  'class' => array('links', 'inline', 'clearfix'),
+                ),
+                'heading' => array(
+                  'text' => t('Main menu'),
+                  'level' => 'h2',
+                  'class' => array('element-invisible'),
+                ),
+              )); ?>
+            </nav>
+            <?php endif; ?>
+          
+          
               <div class="contactIcons">
               <h2>Made in<br />Stamford, Conn.<br />U.S.A.</h2>
                 <ul>
@@ -99,7 +122,7 @@
     <div class="mainNav fixed">
       <div class="dup">
       <?php if ($main_menu): ?>
-        <nav class="main-menu" role="navigation">
+        <nav class="main-menu fullMenu" role="navigation">
           <?php
           // This code snippet is hard to modify. We recommend turning off the
           // "Main menu" on your sub-theme's settings form, deleting this PHP
