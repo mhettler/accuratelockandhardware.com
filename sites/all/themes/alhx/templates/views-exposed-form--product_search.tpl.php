@@ -57,8 +57,10 @@
 					$toolTipURL = strtolower($widget->label);
 					$toolTipURL = preg_replace("/[^A-Za-z0-9 ]/", '', $toolTipURL);
 					$toolTipURL = str_replace(" ", "-", $toolTipURL);
+					$toolTipURL .= '?width=500&height=500&iframe=true';
 					?>
-				    <?php if (!empty($widget->description)): ?><a class="alhToolTip" href="<?php echo 'http://biz104.inmotionhosting.com/~accura30/help/'.$toolTipURL; ?>"><?php print $widget->description; ?></a><?php endif; ?>
+<!--				    <?php if (!empty($widget->description)): ?><a class="alhToolTip" href="<?php echo 'http://biz104.inmotionhosting.com/~accura30/help/'.$toolTipURL; ?>"><?php print $widget->description; ?></a><?php endif; ?>-->
+				    <?php if (!empty($widget->description)): ?><a class="colorbox-load" href="<?php echo 'http://biz104.inmotionhosting.com/~accura30/help/'.$toolTipURL; ?>"><?php print $widget->description; ?></a><?php endif; ?>
 					<?php print $widget->label; ?>
 			  </label>
 		  </div>

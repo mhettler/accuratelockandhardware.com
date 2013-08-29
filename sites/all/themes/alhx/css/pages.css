@@ -12,14 +12,14 @@
  * Body
  */
  
-@import url(http://fonts.googleapis.com/css?family=Archivo+Narrow:700);
+@import url(http://fonts.googleapis.com/css?family=Archivo+Narrow:700|Inconsolata);
 
 html, body {
   height: 100%;
   color: #333;
   margin: 0;
   padding: 0;
-  font: 16px/1.5em "Monaco", "lucida console", "courier", monospace;
+  font: 16px/1.5em "Monaco", "lucida console", "Inconsolata", "courier", monospace;
 /*  font: 16px/1.8em "Old Standard TT", "Times New Roman", Times , Serif;*/
 /*  background: url(assets/bg-sample.jpg) no-repeat center top #fff;*/
 }
@@ -218,7 +218,7 @@ a.icon-facebook:hover{
 
 /* @end */
 .header h2 {
-  font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace;
+  font: normal .8em/1.5em "Monaco", "lucida console", "Inconsolata", "courier", monospace;
   text-align: center;
   color: #555;
 }
@@ -393,7 +393,7 @@ h1.logo a:hover, h1.logo a:active {
 }
 
 .header h1 {
-  font: normal 1em/1.8em "Monaco", "lucida console", "courier", monospace;
+  font: normal 1em/1.8em "Monaco", "lucida console", "Inconsolata", "courier", monospace;
   margin: 0;
 }
 
@@ -580,9 +580,9 @@ a.alhToolTip:hover {
 
 /* @end */
 
-.field {
+/*.field {
   overflow: auto;
-}
+}*/
 
 .field-group-format .field {
   overflow: visible;
@@ -621,9 +621,9 @@ a.alhToolTip:hover {
   overflow: hidden;
 }
 
-.attribute-widgets {
+/*.attribute-widgets {
   margin-bottom: 0 !important;
-}
+}*/
 
 .views-exposed-widgets > div {
   display: table-row;
@@ -711,7 +711,7 @@ a.alhToolTip:hover {
 }
 
 .views-exposed-form .views-exposed-widget .form-submit {
-  font: normal 1em/1.5em "Monaco", "lucida console", "courier", monospace;
+  font: normal 1em/1.5em "Monaco", "lucida console", "Inconsolata", "courier", monospace;
   margin: 0em !important;
   background-color: transparent;
   border: 0;
@@ -807,7 +807,7 @@ h2.stickyHeaders {
 }
 
 /*.view-content {
-  font: normal .75em/1.5em "Monaco", "lucida console", "courier", monospace;
+  font: normal .75em/1.5em "Monaco", "lucida console", "Inconsolata", "courier", monospace;
 }*/
 
 .productItem {
@@ -821,7 +821,7 @@ h2.stickyHeaders {
 }
 
 .productItem h2, .productItem h3 {
-  font: normal 1em/1.5em "Monaco", "lucida console", "AppleColorEmoji", "courier", monospace !important;
+  font: normal 1em/1.5em "Monaco", "lucida console", "Inconsolata", "AppleColorEmoji", "courier", monospace !important;
   padding: 1em 0.5em;
   margin: 0;
   display: inline-block;
@@ -1005,7 +1005,7 @@ li.gridTile:before {
 
 .profileTile h3 {
   margin: 0;
-  font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace !important;
+  font: normal .8em/1.5em "Monaco", "lucida console", "Inconsolata", "courier", monospace !important;
 }
 
 .profileTile:nth-child(3n+2) {
@@ -1023,7 +1023,7 @@ h1.title {
 
 .group_product_name, .group-project-details {
   border-top: 1px solid #b2c9d8;
-  border-bottom: 1px solid #b2c9d8;
+/*  border-bottom: 1px solid #b2c9d8;*/
   padding: .5em 0;
   margin-bottom: 2em;
   font-size: .75em;
@@ -1049,8 +1049,8 @@ h1.title {
   display: inline !important;
 }
 
-/*.horizontal-tabs {
-  font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace;
+.horizontal-tabs {
+  font: normal .8em/1.5em "Monaco", "lucida console", "Inconsolata", "courier", monospace;
   border: 1px solid #b2c9d8 !important;
 }
 
@@ -1064,14 +1064,14 @@ ul.horizontal-tabs-list {
 }
 
 .horizontal-tabs ul.horizontal-tabs-list li {
-  width: 33.3333333% !important;
+  width: 25% !important;
   padding: 0 !important;
   float: none !important;
-  display: inline-block !important;
+  display: table-cell !important;
+  vertical-align: middle;
   text-align: center;
   height: auto !important;
   border-right: 1px solid #b2c9d8 !important;
-  border-bottom: 1px solid #b2c9d8 !important;
   box-sizing: border-box !important;
   outline: none !important;
 }
@@ -1099,7 +1099,51 @@ ul.horizontal-tabs-list {
 
 .horizontal-tabs-panes .form-wrapper {
   padding: .5em !important;
-}*/
+}
+
+.horizontal-tab-button {
+  border-bottom: 1px solid #b2c9d8 !important;
+}
+
+.selected {
+  border-bottom: none !important;
+}
+
+.fieldset-wrapper .field-items {
+  width: 65% !important;
+  float: none !important;
+}
+
+.fieldset-wrapper .field-name-field-finishes > div > .field-item {
+  width: auto !important;
+  display: inline-block;
+  margin-right: 1.5em;
+}
+
+.fieldset-wrapper .field-name-field-finishes .content {
+  float: none !important;
+  text-align: center;
+}
+
+.fieldset-wrapper .field > .field-label + .field-items {
+  width: 65%;
+  display: inline-block;
+}
+
+.fieldset-wrapper .field > .field-label {
+  font-weight: normal !important;
+  width: 35%;
+  display: inline-block;
+}
+
+.fieldset-wrapper > div {
+  padding: .5em;
+  clear: both;
+}
+
+.fieldset-wrapper > div:nth-child(even) {
+  background-color: #eee;
+}
 
 .field-items ul {
   margin-left: 2em;
@@ -1146,7 +1190,7 @@ ul.horizontal-tabs-list {
 }
 
 .field-name-field-finishes h2 {
-  font: normal 1em/1.5em "Monaco", "lucida console", "courier", monospace !important;
+  font: normal 1em/1.5em "Monaco", "lucida console", "Inconsolata", "courier", monospace !important;
   display: inline !important;
 }
 
@@ -1326,6 +1370,7 @@ div.innerPageNav div.innerNavItem a:hover {
 
 .contentBand h4 {
 	font: normal 1.25em/1.5em 'Archivo Narrow', Impact, Helvetica, Arial, sans-serif;
+	text-align: center;
 	color: #933;
 }
 
@@ -1343,21 +1388,22 @@ div.innerPageNav div.innerNavItem a:hover {
 }
 
 ol.inlineGrid {
-  padding: 1em 0;
+  padding: 0;
   counter-reset: li; /* Initiate a counter */
   list-style: none; /* Remove default numbering */
   *list-style: decimal;
   overflow: auto;
+  padding-bottom: 2em;
 }
 
 ol.inlineGrid li {
   width: 30%;
-  height: 9em;
+  height: 10em;
   line-height: 1.4em;
   text-align: center;
   padding: 30px 1.5% 30px 1.5%;
   float: left;
-  font-family: Monaco;
+  font-family: "Monaco", "lucida console", "Inconsolata", "courier", monospace;
   font-size: 0.8em;
   color: #933;
 }
@@ -1420,19 +1466,20 @@ div.gridItem:after {
 .contentBand .flexslider {
   background-color: #fff;
 }
-
 .contentBand .flexslider > ul, .contentBand .flexslider > ul > li {
   padding: 0 !important;
-  margin: 0 !important;
+/*  margin: 0 !important;*/
 }
-
 .contentBand .flexslider ul li:before {
   content: none;
 }
 
 .contentBand .flex-caption {
-  margin: 1.5em auto 1em auto; width: 75%; padding: 1em 0 1em 0; text-align: center;
-  font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace;
+  margin: 1.5em auto 1em auto;
+  width: 75%;
+  padding: 1em 0 1em 0;
+  text-align: center;
+  font: normal .8em/1.5em "Monaco", "lucida console", "Inconsolata", "courier", monospace;
 }
 .contentBand .flex-direction-nav a { top: 45%; }
 .contentBand .flex-control-nav { bottom: 45px }
@@ -1451,7 +1498,7 @@ ul#contactInfo {
 }
 
 ul#contactInfo li {
-  font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace;
+  font: normal .8em/1.5em "Monaco", "lucida console", "Inconsolata", "courier", monospace;
   display: block;
   padding-left: 1.5em;
   margin-bottom: 1em;
@@ -1486,7 +1533,7 @@ ul#contactInfo li:before {
   border: 1px solid #b2c9d8;
   border-radius: .5em;
   padding: 0;
-  font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace;
+  font: normal .8em/1.5em "Monaco", "lucida console", "Inconsolata", "courier", monospace;
   overflow: hidden;
 }
 
@@ -1521,7 +1568,7 @@ ul#contactInfo li:before {
 }
 
 .webform-client-form input[type=text], .webform-client-form input[type=email], .webform-client-form textarea, select   {
-  font: normal 1em/1.5em "Monaco", "lucida console", "courier", monospace;
+  font: normal 1em/1.5em "Monaco", "lucida console", "Inconsolata", "courier", monospace;
   background-color: transparent;
   width: 101%;
   outline: none;
@@ -1564,7 +1611,7 @@ select {
 }
 
 .webform-client-form .form-actions input[type=submit] {
-  font: normal 1em/1.5em "Monaco", "lucida console", "courier", monospace;
+  font: normal 1em/1.5em "Monaco", "lucida console", "Inconsolata", "courier", monospace;
   width: 101%;
   padding: .5em;
   background: transparent;
@@ -1586,7 +1633,7 @@ select {
 
 .messages {
   border-radius: .25em;
-  font: normal .8em/1.5em "Monaco", "lucida console", "courier", monospace;
+  font: normal .8em/1.5em "Monaco", "lucida console", "Inconsolata", "courier", monospace;
 }
 
 /* @end */
@@ -1741,7 +1788,7 @@ span.field-label { /* The inline field label used by the Fences module */
 /* @group Footer */
 
 #footer {
-  font: normal .75em/1.6em "Monaco", "lucida console", "courier", monospace;
+  font: normal .75em/1.6em "Monaco", "lucida console", "Inconsolata", "courier", monospace;
   clear: both;
   text-align: center;
 }

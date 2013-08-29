@@ -18,11 +18,16 @@
 
 .main-menu {
   margin: .5em 0;
+  text-align: center;
+}
+
+.main-menu > ul {
+  text-align: center;
 }
 
 .main-menu > ul > li {
-  margin: 0 .5em;
-  display: inline-block !important;
+  float: left;
+  width: 20%;
 }
 
 .contactIcons {
