@@ -218,10 +218,14 @@
       <?php endif; ?>
       <?php print render($page['content']); ?>
 <!--      <?php print $feed_icons; ?>-->
-    </div><!-- /#content -->
     
     <?php print render($page['header']); ?>  
-
+	
+	<?php if ($page['sub_content']): ?>
+      <?php print render($page['sub_content']); ?>
+    <?php endif; ?>
+    
+    </div><!-- /#content -->
 
     <?php
       // Render the sidebars to see if there's anything in them.
