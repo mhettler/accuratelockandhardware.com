@@ -90,6 +90,8 @@
    	 	$counter++;
     	?>
     <?php endforeach; ?>
+    
+    </div>
 
     <?php if (!empty($sort_by)): ?>
       <div class="views-exposed-widget views-widget-sort-by">
