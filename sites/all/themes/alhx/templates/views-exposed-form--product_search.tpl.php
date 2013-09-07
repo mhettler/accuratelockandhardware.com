@@ -49,15 +49,13 @@
     }
     ?>
     
+    <?php if ($widget->id != "edit-keyed"): ?>
+    
       <div id="<?php print $widget->id; ?>-wrapper" class="views-exposed-widget views-widget-<?php print $id; ?>">
+      
+    <?php endif; ?>
         
         <?php if (!empty($widget->label)): ?>
-        	
-        	<?php if ($widget->id == "edit-locking"): ?>
-        		
-        		  <div class="lockingFilterGroup">
-			  
-			<?php endif; ?>
 			
 				  <div class="<?php print $widget->id; ?>">
 					  <label for="<?php print $widget->id; ?>">
@@ -71,42 +69,43 @@
 							<?php if (!empty($widget->description)): ?><a class="colorbox-load" href="<?php echo 'http://biz104.inmotionhosting.com/~accura30/help/'.$toolTipURL; ?>"><?php print $widget->description; ?></a><?php endif; ?>
 							<?php print $widget->label; ?>
 					  </label>
-				  </div>
-				  
-			<?php if ($widget->id == "edit-keyed"): ?>
-				  
-				  </div>
-			  
-			<?php endif; ?>  
+				  </div> 
 		  
-		  <!-- 
-			<?php if (!empty($widget->description)): ?>
-			  <div class="description">
-				<?php print $widget->description; ?>
-			  </div>
-			 <?php endif; ?>
- 		  -->
-        <?php endif; ?>
+				  <!-- 
+					<?php if (!empty($widget->description)): ?>
+					  <div class="description">
+						<?php print $widget->description; ?>
+					  </div>
+					 <?php endif; ?>
+				  -->
+				<?php endif; ?>
+		
+				<?php if (!empty($widget->operator)): ?>
+				  <div class="views-operator">
+					<?php print $widget->operator; ?>
+				  </div>
+				<?php endif; ?>
+				<div class="views-widget">
+				  <?php print $widget->widget; ?>
+				</div>
         
-        <?php if (!empty($widget->operator)): ?>
-          <div class="views-operator">
-            <?php print $widget->operator; ?>
-          </div>
-        <?php endif; ?>
-        <div class="views-widget">
-          <?php print $widget->widget; ?>
-        </div>
-      </div>
+      <?php if ($widget->id != "edit-locking"): ?>
+      </div><!-- filter wrapper -->
+      <?php endif; ?>
       
        <?php
-    	if ($counter == 4 || $counter == 8 || $counter == 12 || $counter == 16 || $counter == 20) {
+       //close row/group div
+    	if (($counter == 4 || $counter == 8 || $counter == 12 || $counter == 16 || $counter == 20) && $widget->id != "edit-locking") {
     		echo "</div>";
    	 	}
-   	 	$counter++;
+   	 	
+   	 	if ($widget->id != "edit-locking"):
+   	 		$counter++;
+   	 	endif;
     	?>
     <?php endforeach; ?>
     
-    </div>
+    </div><!-- .views-exposed-widgets -->
 
     <?php if (!empty($sort_by)): ?>
       <div class="views-exposed-widget views-widget-sort-by">
@@ -126,8 +125,6 @@
         <?php print $offset; ?>
       </div>
     <?php endif; ?>
-
-  </div>
   
     <div class="views-exposed-widget views-submit-button">
       <?php print $button; ?>
@@ -138,4 +135,4 @@
       </div>
     <?php endif; ?>
     
-</div>
+</div><!-- .views-exposed-form -->
