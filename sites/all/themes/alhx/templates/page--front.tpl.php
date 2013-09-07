@@ -72,89 +72,114 @@
 
 <div id="page" class="frontPage">
 
-<header id="header" class="header fixed" role="banner">
-  <div class="dup">
-    <div class="headerBar">
-      <div class="logotype logoCol">
-        <h1 class="logo">
+  <header id="header" class="header fixed" role="banner">
+
+    <div class="dup">
+      <div class="headerBar">
+        <div class="logotype logoCol">
+          <h1 class="logo">
             <a href="<?php print url('<front>', array('absolute' => TRUE)); ?>" >Lock &amp; Hardware</a>
           </h1>
-            <div class="contactIcons">
+          
+          <?php if ($main_menu): ?>
+            <nav class="main-menu inlineMenu" role="navigation">
+              <?php
+              // This code snippet is hard to modify. We recommend turning off the
+              // "Main menu" on your sub-theme's settings form, deleting this PHP
+              // code block, and, instead, using the "Menu block" module.
+              // @see http://drupal.org/project/menu_block
+              print theme('links__system_main_menu', array(
+                'links' => $main_menu,
+                'attributes' => array(
+                  'class' => array('links', 'inline', 'clearfix'),
+                ),
+                'heading' => array(
+                  'text' => t('Main menu'),
+                  'level' => 'h2',
+                  'class' => array('element-invisible'),
+                ),
+              )); ?>
+            </nav>
+            <?php endif; ?>
+          
+          
+              <div class="contactIcons">
               <h2>Made in<br />Stamford, Conn.<br />U.S.A.</h2>
-              <ul>
-                <li><a href="#" class="icon-envelop"></a></li>
-                <li><a href="#" class="icon-location"></a></li>
-        <!--        <li><a href="#" class="icon-phone"></a></li>-->
-                <li><a href="#" class="icon-twitter"></a></li>
-                <li><a href="#" class="icon-facebook"></a></li>
-              </ul>
-            </div>
+                <ul>
+                  <li><a href="#" class="icon-envelop"></a></li>
+                  <li><a href="#" class="icon-location"></a></li>
+          <!--        <li><a href="#" class="icon-phone"></a></li>-->
+                  <li><a href="#" class="icon-twitter"></a></li>
+                  <li><a href="#" class="icon-facebook"></a></li>
+                </ul>
+              </div>
+        </div>
       </div>
-    </div>
-  </div>
-</header>
+    </div> 
+
+  </header>
   
     <div class="mainNav fixed">
       <div class="dup">
-      
-    <?php if ($main_menu): ?>
-        
-			<nav class="main-menu" role="navigation">
-			  <?php
-			  // This code snippet is hard to modify. We recommend turning off the
-			  // "Main menu" on your sub-theme's settings form, deleting this PHP
-			  // code block, and, instead, using the "Menu block" module.
-			  // @see http://drupal.org/project/menu_block
-			  print theme('links__system_main_menu', array(
-				'links' => $main_menu,
-				'attributes' => array(
-				  'class' => array('links', 'inline', 'clearfix'),
-				),
-				'heading' => array(
-				  'text' => t('Main menu'),
-				  'level' => 'h2',
-				  'class' => array('element-invisible'),
-				),
-			  )); ?>
-			</nav>    
+      <?php if ($main_menu): ?>
+        <nav class="main-menu fullMenu" role="navigation">
+          <?php
+          // This code snippet is hard to modify. We recommend turning off the
+          // "Main menu" on your sub-theme's settings form, deleting this PHP
+          // code block, and, instead, using the "Menu block" module.
+          // @see http://drupal.org/project/menu_block
+          print theme('links__system_main_menu', array(
+            'links' => $main_menu,
+            'attributes' => array(
+              'class' => array('links', 'inline', 'clearfix'),
+            ),
+            'heading' => array(
+              'text' => t('Main menu'),
+              'level' => 'h2',
+              'class' => array('element-invisible'),
+            ),
+          )); ?>
+        </nav>
   
-		  <?php if ($site_name || $site_slogan): ?>
-			<hgroup id="name-and-slogan">
-			  <?php if ($site_name): ?>
-				<h1 id="site-name">
-				  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-				</h1>
-			  <?php endif; ?>
+      <?php if ($site_name || $site_slogan): ?>
+        <hgroup id="name-and-slogan">
+          <?php if ($site_name): ?>
+            <h1 id="site-name">
+              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+            </h1>
+          <?php endif; ?>
   
-			  <?php if ($site_slogan): ?>
-				<h2 id="site-slogan"><?php print $site_slogan; ?></h2>
-			  <?php endif; ?>
-			</hgroup><!-- /#name-and-slogan -->
-		  <?php endif; ?>
+          <?php if ($site_slogan): ?>
+            <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
+          <?php endif; ?>
+        </hgroup><!-- /#name-and-slogan -->
+      <?php endif; ?>
   
-		  <?php if ($secondary_menu): ?>
-			<nav id="secondary-menu" role="navigation">
-			  <?php print theme('links__system_secondary_menu', array(
-				'links' => $secondary_menu,
-				'attributes' => array(
-				  'class' => array('links', 'inline', 'clearfix'),
-				),
-				'heading' => array(
-				  'text' => $secondary_menu_heading,
-				  'level' => 'h2',
-				  'class' => array('element-invisible'),
-				),
-			  )); ?>
-			</nav>
-    	  <?php endif; ?>
+      <?php if ($secondary_menu): ?>
+        <nav id="secondary-menu" role="navigation">
+          <?php print theme('links__system_secondary_menu', array(
+            'links' => $secondary_menu,
+            'attributes' => array(
+              'class' => array('links', 'inline', 'clearfix'),
+            ),
+            'heading' => array(
+              'text' => $secondary_menu_heading,
+              'level' => 'h2',
+              'class' => array('element-invisible'),
+            ),
+          )); ?>
+        </nav>
+      <?php endif; ?>
   
+      <?php print render($page['header']); ?>   
 
-    	</div>
-  	</div>
+    </div>
+  </div>
     
   <?php endif; ?>
 
 <!-- End NAV -->
+
   <div class="splash homeSplash splashSection">
     <?php print render($page['highlighted']); ?>
   </div>
