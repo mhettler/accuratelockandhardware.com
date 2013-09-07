@@ -118,7 +118,7 @@ $(document).ready(function() {
 
   // Duplicate fixed elements to create white overlay version
   
-  if ($('.fixed > div').hasClass('dup') && $(window).width() > 540 ) {
+  if ($('.fixed > div').hasClass('dup')) {
     $('.fixed > div').each(function(){
       $(this).clone().appendTo($(this).parent()).addClass('overlay');
       $(this).addClass('underlay');

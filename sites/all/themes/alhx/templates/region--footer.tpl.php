@@ -29,6 +29,16 @@
 <?php if ($content): ?>
   <footer id="footer" class="<?php print $classes; ?> contentWidth">
   	<div>
+  	  <div class="footerContactIcons">
+  	      <h2>Made in Stamford, Conn. U.S.A.</h2>
+  	        <ul>
+  	          <li><a href="#" class="icon-envelop"></a></li>
+  	          <li><a href="#" class="icon-location"></a></li>
+  	  <!--        <li><a href="#" class="icon-phone"></a></li>-->
+  	          <li><a href="#" class="icon-twitter"></a></li>
+  	          <li><a href="#" class="icon-facebook"></a></li>
+  	        </ul>
+  	      </div>
     	<?php print $content; ?>
     </div>
   </footer><!-- region__footer -->

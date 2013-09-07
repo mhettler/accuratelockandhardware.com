@@ -232,25 +232,37 @@ a.icon-facebook:hover{
   font-size: 1.2em;
 }
 
-.contactIcons ul {
+.contactIcons ul, .footerContactIcons ul {
   text-align: center;
   padding: 0;
 }
 
-.contactIcons ul li {
+.contactIcons ul li, .footerContactIcons ul li  {
   font-size: 1.2em;
   display: inline;
 }
 
-.contactIcons a:link, .contactIcons a:visited {
+.contactIcons a:link, .contactIcons a:visited, .footerContactIcons a:link, .footerContactIcons a:visited {
   color: #333;
   text-decoration: none;
 }
 
-.contactIcons a:hover, .contactIcons a:active {
+.contactIcons a:hover, .contactIcons a:active, .footerContactIcons a:hover, .footerContactIcons a:active  {
   color: #000;
 /*  padding-bottom: 3px;
   border-bottom: 1px solid #333;*/
+}
+
+.footerContactIcons ul li {
+  font-size: 1.4em;
+}
+
+.footerContactIcons h2 {
+  font: inherit !important;
+}
+
+.footerContactIcons {
+  display: none;
 }
 
 
@@ -495,7 +507,7 @@ h1.logo a:hover, h1.logo a:active {
   padding: 0;
   margin: 0;
   width: 100%;
-  font-size: 1.4em !important;
+  font-size: 1.2em !important;
 }
 
 /* @end */
@@ -506,7 +518,7 @@ h1.logo a:hover, h1.logo a:active {
   font-size: .75em;
 /*  border-top: 1px solid #b2c9d8;
   border-bottom: 1px solid #b2c9d8;*/
-  padding: .25em 0;
+  padding: .25em 0 2em 0 !important;
   margin: 1em 0;
   overflow: auto;
 }
@@ -561,7 +573,11 @@ h1.logo a:hover, h1.logo a:active {
 
 /* @group Tooltips */
 
-a.alhToolTip {
+iframe header, iframe footer {
+  display: none !important;
+}
+
+a.colorbox-load {
   text-decoration: none;
   color: #b2c9d8 !important;
   font: normal 1.25em/1em 'icons';
@@ -570,7 +586,7 @@ a.alhToolTip {
   display: block;
 }
 
-a.alhToolTip:hover {
+a.colorbox-load:hover {
   color: #285993 !important;
 }
 
@@ -760,7 +776,6 @@ a.alhToolTip:hover {
   z-index: 10;
   background-color: #fff;
   width: 50%;
-  box-shadow: 0 8px 12px -10px rgba(0,0,0,.75);
 }
 
 .view-content {
@@ -773,6 +788,10 @@ a.alhToolTip:hover {
     padding: .25em 0;
     border-top: 3px solid #285993;
     border-bottom: 3px solid #993333;
+}
+
+.headerFixed .stickyHeaders {
+  box-shadow: 0 8px 12px -10px rgba(0,0,0,.75);
 }
 
 h2.stickyHeaders {
@@ -916,7 +935,7 @@ h2.stickyHeaders {
 /* @group Content Column */
 
 #content {
-/* padding-top: 2em;*/
+  padding-bottom: 2em;
 }
 
 #content h2 {
@@ -960,7 +979,7 @@ h2.stickyHeaders {
   text-align: center;
 }
 
-.profileTile > img {
+.profileTile > a > img {
   border-radius: 50%;
 }
 
@@ -1035,13 +1054,13 @@ h1.title {
 
 .group-project-details .field-type-text .field-label {
 	display: inline-block;
-	width: 15%;
+	width: 25%;
 	margin-right: 0;
 	font-weight: normal;
 	}
 .group-project-details .field-type-text .field-label + .field-items {
 	display: inline-block;
-	width: 85%;
+	width: 75%;
 	}
 
 .group_product_name * {
@@ -1109,10 +1128,10 @@ ul.horizontal-tabs-list {
   border-bottom: none !important;
 }
 
-.fieldset-wrapper .field-items {
+/*.fieldset-wrapper .field-items {
   width: 65% !important;
   float: none !important;
-}
+}*/
 
 .fieldset-wrapper .field-name-field-finishes > div > .field-item {
   width: auto !important;
@@ -1151,8 +1170,8 @@ ul.horizontal-tabs-list {
 
 .field-group-format .field-label {
   display: inline-block;
-  width: 30%;
-  margin-right: 5%;
+  width: 25%;
+/*  margin-right: 5%;*/
   font-weight: normal;
 }
 
@@ -1163,7 +1182,11 @@ ul.horizontal-tabs-list {
 
 .field-group-format .field-label + .field-items {
   display: inline-block;
-  width: 65%;
+  width: 75%;
+}
+
+.field-name-field-profile-image .field-items {
+  float: none;
 }
 
 .field-group-div {
@@ -1356,7 +1379,7 @@ div.innerPageNav div.innerNavItem a:hover {
   font-weight: bold;
 }
 
-.contentBand h2 {
+.contentBand h2, .block-views h2 {
   margin-bottom: 1em;
 }
 
@@ -1423,7 +1446,7 @@ ol.inlineGrid li:before {
 	font: normal 4em/1em 'Archivo Narrow', Impact, Helvetica, Arial, sans-serif;
 }
 
-div.innerPageNav:after, .contentBand:not(:last-child):after {
+div.innerPageNav:after, .contentBand:not(:last-child):after, .innerViewWrap:after, .view-featured-products:after {
   content: '';
 	width: 75%;
 	border-bottom: 1px solid #b2c9d8;
@@ -1463,29 +1486,53 @@ div.gridItem:after {
 
 /* @group In-page Carousel Styles */
 
-.contentBand .flexslider {
+.contentBand .flexslider, .block-views .flexslider {
   background-color: #fff;
 }
-.contentBand .flexslider > ul, .contentBand .flexslider > ul > li {
+
+.block-views .flexslider {
+  padding: 1em 0; 
+}  
+
+.contentBand .flexslider > ul, .contentBand .flexslider > ul > li,
+.block-views .flexslider > ul, .block-views .flexslider > ul > li {
   padding: 0 !important;
 /*  margin: 0 !important;*/
 }
-.contentBand .flexslider ul li:before {
+
+.contentBand .flexslider ul li:before,
+.block-views .flexslider ul li:before {
   content: none;
 }
 
-.contentBand .flex-caption {
+.contentBand .flex-caption, .block-views .flexslider ul.slides li > a + a {
   margin: 1.5em auto 1em auto;
   width: 75%;
+  display: block;
   padding: 1em 0 1em 0;
   text-align: center;
   font: normal .8em/1.5em "Monaco", "lucida console", "Inconsolata", "courier", monospace;
 }
+
+.flexslider ul.slides li > a + a {
+  margin-top: 2em !important;
+}
+
 .contentBand .flex-direction-nav a { top: 45%; }
 .contentBand .flex-control-nav { bottom: 45px }
 .contentBand .flex-control-paging li a { background: #777; background: rgba(0,0,0,0.5);}
 .contentBand .flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
 .contentBand .flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9);}
+
+.block-views .flex-direction-nav a { top: 45%; }
+.block-views .flex-control-nav { bottom: 75px }
+.block-views .flex-control-paging li a { background: #777; background: rgba(0,0,0,0.5);}
+.block-views .flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.block-views .flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9);}
+
+.splash .flex-control-paging li a { background: #777; background: rgba(255,255,255,0.5);}
+.splash .flex-control-paging li a:hover { background: #333; background: rgba(255,255,255,0.7); }
+.splash .flex-control-paging li a.flex-active { background: #000; background: rgba(255,255,255,0.9);}
 
 /* @end */
 
