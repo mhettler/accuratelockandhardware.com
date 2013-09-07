@@ -461,7 +461,7 @@ h1.logo a:hover, h1.logo a:active {
   text-decoration: underline;
 }
 
-.node-promoted {
+.frontPage .node-promoted {
 	display: none;
 	}
 

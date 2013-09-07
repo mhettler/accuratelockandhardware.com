@@ -70,7 +70,7 @@
  */
 ?>
 
-<div id="page">
+<div id="page" class="frontPage">
 
 <header id="header" class="header fixed" role="banner">
   <div class="dup">
