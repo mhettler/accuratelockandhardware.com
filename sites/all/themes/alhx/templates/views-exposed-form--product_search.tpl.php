@@ -50,27 +50,42 @@
     ?>
     
       <div id="<?php print $widget->id; ?>-wrapper" class="views-exposed-widget views-widget-<?php print $id; ?>">
+        
         <?php if (!empty($widget->label)): ?>
-          <div class="<?php print $widget->id; ?>">
-			  <label for="<?php print $widget->id; ?>">
-			  		<?php
-					$toolTipURL = strtolower($widget->label);
-					$toolTipURL = preg_replace("/[^A-Za-z0-9 ]/", '', $toolTipURL);
-					$toolTipURL = str_replace(" ", "-", $toolTipURL);
-					$toolTipURL .= '?width=500&height=500&iframe=true';
-					?>
-<!--				    <?php if (!empty($widget->description)): ?><a class="alhToolTip" href="<?php echo 'http://biz104.inmotionhosting.com/~accura30/help/'.$toolTipURL; ?>"><?php print $widget->description; ?></a><?php endif; ?>-->
-				    <?php if (!empty($widget->description)): ?><a class="colorbox-load" href="<?php echo 'http://biz104.inmotionhosting.com/~accura30/help/'.$toolTipURL; ?>"><?php print $widget->description; ?></a><?php endif; ?>
-					<?php print $widget->label; ?>
-			  </label>
-		  </div>
-      <!-- 
-    <?php if (!empty($widget->description)): ?>
-          <div class="description">
-            <?php print $widget->description; ?>
-          </div>
-         <?php endif; ?>
- -->
+        	
+        	<?php if ($widget->id == "edit-locking"): ?>
+        		
+        		  <div class="lockingFilterGroup">
+			  
+			<?php endif; ?>
+			
+				  <div class="<?php print $widget->id; ?>">
+					  <label for="<?php print $widget->id; ?>">
+							<?php
+							$toolTipURL = strtolower($widget->label);
+							$toolTipURL = preg_replace("/[^A-Za-z0-9 ]/", '', $toolTipURL);
+							$toolTipURL = str_replace(" ", "-", $toolTipURL);
+							$toolTipURL .= '?width=500&height=500&iframe=true';
+							?>
+							<!-- <?php if (!empty($widget->description)): ?><a class="alhToolTip" href="<?php echo 'http://biz104.inmotionhosting.com/~accura30/help/'.$toolTipURL; ?>"><?php print $widget->description; ?></a><?php endif; ?>-->
+							<?php if (!empty($widget->description)): ?><a class="colorbox-load" href="<?php echo 'http://biz104.inmotionhosting.com/~accura30/help/'.$toolTipURL; ?>"><?php print $widget->description; ?></a><?php endif; ?>
+							<?php print $widget->label; ?>
+					  </label>
+				  </div>
+				  
+			<?php if ($widget->id == "edit-keyed"): ?>
+				  
+				  </div>
+			  
+			<?php endif; ?>  
+		  
+		  <!-- 
+			<?php if (!empty($widget->description)): ?>
+			  <div class="description">
+				<?php print $widget->description; ?>
+			  </div>
+			 <?php endif; ?>
+ 		  -->
         <?php endif; ?>
         
         <?php if (!empty($widget->operator)): ?>
@@ -111,6 +126,9 @@
         <?php print $offset; ?>
       </div>
     <?php endif; ?>
+
+  </div>
+  
     <div class="views-exposed-widget views-submit-button">
       <?php print $button; ?>
     </div>
@@ -119,5 +137,5 @@
         <?php print $reset_button; ?>
       </div>
     <?php endif; ?>
-  </div>
+    
 </div>
