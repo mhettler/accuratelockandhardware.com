@@ -692,6 +692,7 @@ a.colorbox-load:hover {
   background-color: #eee;
   padding: .5em 1em;
   border-bottom: 1px solid #b2c9d8;
+  min-height: 3em;
 }
 
 .views-exposed-widget .form-item {

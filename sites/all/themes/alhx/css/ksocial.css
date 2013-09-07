@@ -27,7 +27,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-zoom-in, .icon-zoom-out, .icon-envelop, .icon-location, .icon-facebook, .icon-flickr, .icon-vimeo, .icon-google-plus, .icon-feed, .icon-twitter, .icon-tumblr, .icon-share, .icon-pinterest, .icon-search, .icon-checkmark, .icon-close, .icon-spam, .icon-phone, .icon-heart, .icon-youtube, .icon-printer, .icon-print, .icon-arrow-left, .icon-arrow-down, .icon-arrow-up, .icon-arrow-right, .icon-comment, .icon-user, .icon-export, .icon-book, .icon-cart, .icon-quill, .icon-warning, .icon-help {
+.icon-zoom-in, .icon-zoom-out, .icon-envelop, .icon-location, .icon-facebook, .icon-flickr, .icon-vimeo, .icon-google-plus, .icon-feed, .icon-twitter, .icon-tumblr, .icon-share, .icon-pinterest, .icon-search, .icon-checkmark, .icon-close, .icon-spam, .icon-phone, .icon-heart, .icon-youtube, .icon-printer, .icon-print, .icon-arrow-left, .icon-arrow-down, .icon-arrow-up, .icon-arrow-right, .icon-comment, .icon-user, .icon-export, .icon-book, .icon-cart, .icon-quill, .icon-warning, .icon-help, .icon-UL, .icon-keyed, .icon-fire-rated, .icon-egress {
 	font-family: 'icons';
 	speak: none;
 	font-style: normal;
@@ -138,4 +138,16 @@ you can use the generic selector below, but it's slower:
 }
 .icon-help:before {
 	content: "\3f";
+}
+.icon-UL:before {
+	content: "\3b";
+}
+.icon-keyed:before {
+	content: "\3e";
+}
+.icon-fire-rated:before {
+	content: "\40";
+}
+.icon-egress:before {
+	content: "\41";
 }
