@@ -933,7 +933,7 @@ h2.stickyHeaders {
   width: 14em;
   margin-right: 1em;
   display: block;
-  min-height: 2em;
+  min-height: 1.6em;
   float: left;
 }
 
@@ -944,7 +944,7 @@ h2.stickyHeaders {
 
 .resultsIcons li {
   display: inline-block;
-  margin-right: 1em;
+  margin-right: .25em;
 }
 
 .resultsIcons li.iconKeyed:before {
@@ -953,6 +953,30 @@ h2.stickyHeaders {
 
 .resultsIcons li.iconEgress:before {
 	content: "\41";
+}
+
+.resultsIcons li.iconUL:before {
+	content: "\3b";
+}
+
+.resultsIcons li.iconFireRated:before {
+	content: "\40";
+}
+
+.resultsIcons li.iconUDC:before {
+	content: "\42";
+}
+
+.resultsIcons .iconInactive {
+  color: #ccc;
+}
+
+.resultsIcons .iconActive {
+  color: #111;
+}
+
+.resultsIcons ul {
+  margin: 0;
 }
 
 /* @end */
