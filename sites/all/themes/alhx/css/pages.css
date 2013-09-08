@@ -741,6 +741,12 @@ a.colorbox-load:hover {
   color: #285993 !important;
   background-color: #e1edf4 !important;
   transition: all .1s linear;
+  clear: both !important;
+  float: none !important;
+  margin-bottom: 2em;
+  border: 1px solid #b2c9d8;
+  border-radius: .4em;
+  padding: .5em !important;
 }
 
 .views-submit-button:hover {
@@ -929,6 +935,24 @@ h2.stickyHeaders {
   display: block;
   min-height: 2em;
   float: left;
+}
+
+.resultsIcons {
+  font-family: 'icons';
+  font-size: 2em;
+}
+
+.resultsIcons li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.resultsIcons li.iconKeyed:before {
+  content: "\3e";
+}
+
+.resultsIcons li.iconEgress:before {
+	content: "\41";
 }
 
 /* @end */
