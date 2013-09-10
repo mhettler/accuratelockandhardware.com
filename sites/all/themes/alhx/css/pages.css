@@ -699,6 +699,11 @@ a.colorbox-load:hover {
   padding: 0 1em;
 }
 
+.views-widget + .edit-keyed label {
+  border-top: 1px solid #b2c9d8;
+  background-color: transparent;
+}
+
 .views-exposed-widget .form-item:first-child {
   padding-top: .5em;
 }
@@ -766,6 +771,7 @@ a.colorbox-load:hover {
 .allProductResults {
   font-size: .75em;
   line-height: 1.5em;
+  margin-bottom: 1em;
 }
 
 .headerFixed h2.stickyHeaders {
@@ -815,7 +821,7 @@ h2.stickyHeaders {
 }
 
 .productItem .itemNav a {
-  display: block;
+  display: table-cell;
   color: #285993;
   text-decoration: none;
   border: 1px solid #b2c9d8;
@@ -832,14 +838,22 @@ h2.stickyHeaders {
   color: #9d8e54;
 }
 
-/*.view-content {
-  font: normal .75em/1.5em "Monaco", "lucida console", "Inconsolata", "courier", monospace;
-}*/
+.productItem .resultsIcons {
+  width: 8em;
+  display: block;
+  float: left;
+  margin: .25em 0;
+}
+
+.suppInfo {
+  width: 100%;
+}
 
 .productItem {
 /*  width: 100%;*/
   margin-left: 100px;
   border-bottom: 1px solid #b2c9d8;
+  padding: .5em 0;
 }
 
 .productItem h2 {
@@ -848,24 +862,24 @@ h2.stickyHeaders {
 
 .productItem h2, .productItem h3 {
   font: normal 1em/1.5em "Monaco", "lucida console", "Inconsolata", "AppleColorEmoji", "courier", monospace !important;
-  padding: 1em 0.5em;
   margin: 0;
-  display: inline-block;
+  display: inline;
 }
 
 .productItem a:link, .productItem a:active {
   text-decoration: none;
+  float: none !important;
 }
 
 .headerInfo + .productItem {
   border-top: 1px solid #b2c9d8;
 }
 
-.productItem a:hover, .productItem a:active {
-/*  background-color: #e1edf4;*/
+/*.productItem a:hover, .productItem a:active {
+/*  background-color: #e1edf4;*!/
   text-decoration: none; !important;
   border-bottom: 1px solid #b2c9d8;
-}
+}*/
 
 .seriesInfo .seriesInfo {
   margin-top: 1em;
@@ -937,9 +951,13 @@ h2.stickyHeaders {
   float: left;
 }
 
+.productItem a {
+  float: left;
+}
+
 .resultsIcons {
   font-family: 'icons';
-  font-size: 2em;
+  font-size: 1.2em;
 }
 
 .resultsIcons li {
@@ -968,11 +986,11 @@ h2.stickyHeaders {
 }
 
 .resultsIcons .iconInactive {
-  color: #ccc;
+  color: #eee;
 }
 
 .resultsIcons .iconActive {
-  color: #111;
+  color: #b2c9d8;
 }
 
 .resultsIcons ul {

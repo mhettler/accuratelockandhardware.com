@@ -51,6 +51,14 @@ footer {
   display: block;
 }
 
+.headerFixed {
+  margin: 0;
+  padding-right: 235px;
+  box-sizing: border-box;
+  width: 100%;
+  display: inline-block;
+}
+
 
 
 /*.overlay {
