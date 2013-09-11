@@ -702,6 +702,7 @@ a.colorbox-load:hover {
 .views-widget + .edit-keyed label {
   border-top: 1px solid #b2c9d8;
   background-color: transparent;
+  min-height: 0 !important;
 }
 
 .views-exposed-widget .form-item:first-child {
@@ -737,9 +738,8 @@ a.colorbox-load:hover {
   margin: 0em !important;
   background-color: transparent;
   border: 0;
-  width: 100%;
-  height: 100%;
   color: inherit;
+  width: 100%;
 }
 
 .views-submit-button {
@@ -747,16 +747,21 @@ a.colorbox-load:hover {
   background-color: #e1edf4 !important;
   transition: all .1s linear;
   clear: both !important;
-  float: none !important;
   margin-bottom: 2em;
   border: 1px solid #b2c9d8;
   border-radius: .4em;
   padding: .5em !important;
+  width: 6em !important;
+  float: right !important;
 }
 
 .views-submit-button:hover {
   color: #9d8e54 !important;
   background-color: #f4eed7 !important;
+}
+
+.disableForm {
+  color: #888 !important;
 }
 
 /* @end */
@@ -840,9 +845,12 @@ h2.stickyHeaders {
 
 .productItem .resultsIcons {
   width: 8em;
-  display: block;
   float: left;
   margin: .25em 0;
+}
+
+.productItem .resultsIcons li {
+  display: inline-block;
 }
 
 .suppInfo {
@@ -921,10 +929,20 @@ h2.stickyHeaders {
 
 .view-content .moreInfo {
   display: none;
+  margin-top: 2.75em !important;
   border-top: 1px solid #b2c9d8;
-  padding-top: 1em  ;
-  margin: 0 0 1em 6em;
+  padding-top: .5em;
+  margin: 0 0 .5em 0;
   position: relative;
+  font-size: 1em;
+  line-height: 1.25em;
+  padding-left: 2em;
+}
+
+.view-content .moreInfo h4 {
+  text-decoration: underline;
+  font-size: .9em;
+  margin: 0.5em 0;
 }
 
 .view-content .moreInfo:before {
@@ -955,14 +973,33 @@ h2.stickyHeaders {
   float: left;
 }
 
-.resultsIcons {
-  font-family: 'icons';
-  font-size: 1.2em;
+.resultsIcons li {
+  margin-right: .25em;
 }
 
-.resultsIcons li {
+.searchLegend {
+  font-size: .75em;
   display: inline-block;
-  margin-right: .25em;
+  padding-bottom: 2em;
+  line-height: 1.5em;
+}
+
+.searchLegend p {
+  margin: 0.5em 0em;
+}
+
+.searchLegend li:before {
+  margin-right: 1em;
+}
+
+.searchLegend ul {
+  display: block;
+  list-style: none;
+}
+
+.resultsIcons li:before {
+  font-family: 'icons';
+  font-size: 1.2em;
 }
 
 .resultsIcons li.iconKeyed:before {

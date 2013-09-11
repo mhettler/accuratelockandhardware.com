@@ -2,6 +2,53 @@
 
 $(document).ready(function() {
 
+if ( $('#edit-stile').val() != 'All' ) {
+  $('#edit-backset').attr('disabled','disabled');
+  $('.edit-backset').addClass('disableForm');
+} else {
+  $('#edit-stile').removeAttr('disabled');
+  $('.edit-backset').removeClass('disableForm');
+};
+if ( $('#edit-backset').val() != 'All' ) {
+  $('#edit-stile').attr('disabled','disabled');
+  $('.edit-stile').addClass('disableForm');
+} else {
+  $('#edit-stile').removeAttr('disabled');
+  $('.edit-stile').removeClass('disableForm');
+};
+
+// Disable Filters
+
+$('#edit-backset').change(function(){
+  if ( $('#edit-backset').val() != 'All' ) {
+    $('#edit-stile').attr('disabled','disabled');
+    $('.edit-stile').addClass('disableForm');
+  } else {
+    $('#edit-stile').removeAttr('disabled');
+    $('.edit-stile').removeClass('disableForm');
+  };
+});
+
+$('#edit-stile').change(function(){
+  if ( $('#edit-stile').val() != 'All' ) {
+    $('#edit-backset').attr('disabled','disabled');
+    $('.edit-backset').addClass('disableForm');
+  } else {
+    $('#edit-stile').removeAttr('disabled');
+    $('.edit-backset').removeClass('disableForm');
+  };
+});
+
+$('#edit-locking-1').change(function(){
+  if ( $(this).is(':checked')) {
+    $('#edit-keyed-1').attr('disabled','disabled');
+    $('.edit-keyed').addClass('disableForm');
+  } else {
+    $('#edit-keyed-1').removeAttr('disabled','disabled');
+    $('.edit-keyed').removeClass('disableForm');
+  };
+});
+
   //mh Contact Map 41.047467,-73.557295
   
   function initialize() {
@@ -106,10 +153,10 @@ $(document).ready(function() {
     $('a.preview').click(function() {
       if ( $(this).text() == 'More Info' ) {
         $(this).text('Less Info');
-        $(this).parent().parent().find('.moreInfo').show();
+        $(this).parent().parent().parent().find('.moreInfo').show();
       } else {
         $(this).text('More Info');
-        $(this).parent().parent().find('.moreInfo').hide();
+        $(this).parent().parent().parent().find('.moreInfo').hide();
       };
       event.preventDefault();
     });
@@ -193,7 +240,6 @@ $(document).ready(function() {
 //  $(document).ajaxSuccess(function() {
 //    alert("An individual AJAX call has completed successfully");
 //  });
-
 
 })(jQuery, Drupal, this, this.document);
 
