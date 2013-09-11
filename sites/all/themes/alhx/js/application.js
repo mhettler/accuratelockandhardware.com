@@ -16,6 +16,13 @@ if ( $('#edit-backset').val() != 'All' ) {
   $('#edit-stile').removeAttr('disabled');
   $('.edit-stile').removeClass('disableForm');
 };
+if ( $('#edit-locking-1').is(':checked')) {
+  $('#edit-keyed-1').removeAttr('disabled','disabled');
+  $('.edit-keyed').removeClass('disableForm');
+} else {
+  $('#edit-keyed-1').attr('disabled','disabled');
+  $('.edit-keyed').addClass('disableForm');
+};
 
 // Disable Filters
 
@@ -41,11 +48,11 @@ $('#edit-stile').change(function(){
 
 $('#edit-locking-1').change(function(){
   if ( $(this).is(':checked')) {
-    $('#edit-keyed-1').attr('disabled','disabled');
-    $('.edit-keyed').addClass('disableForm');
-  } else {
     $('#edit-keyed-1').removeAttr('disabled','disabled');
     $('.edit-keyed').removeClass('disableForm');
+  } else {
+    $('#edit-keyed-1').attr('disabled','disabled');
+    $('.edit-keyed').addClass('disableForm');
   };
 });
 
