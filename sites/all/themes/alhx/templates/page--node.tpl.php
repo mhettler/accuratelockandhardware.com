@@ -223,6 +223,9 @@
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
     </div>
+    <?php if ($page['sub_content']): ?>
+      <?php print render($page['sub_content']); ?>
+    <?php endif; ?>
     </div><!-- /#content -->
 
     <?php
