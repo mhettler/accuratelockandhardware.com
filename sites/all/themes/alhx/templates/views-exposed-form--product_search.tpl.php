@@ -103,7 +103,13 @@
    	 		$counter++;
    	 	endif;
     	?>
-    <?php endforeach; ?>
+    <?php endforeach; 
+    
+    	if ($counter == "7" && $widget->id == "edit-keyed"):
+   	 		echo "</div>";
+   	 	endif;
+   	 	
+   	 ?>
     
     </div><!-- .views-exposed-widgets -->
 
